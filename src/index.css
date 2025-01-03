@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: NotoSansCJKKR;
+  }
+}
+@font-face {
+  font-family: NotoSansCJKKR;
+  src: local(NotoSansCJKKR-Regular),
+    url(/path/to/NotoSansCJKKR-Regular.woff2) format("woff2"),
+    url(/path/to/NotoSansCJKKR-Regular.woff) format("woff"),
+    url(/path/to/NotoSansCJKKR-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@layer base {
+}
+@font-face {
+  font-family: NotoSansCJKKR;
+  src: local(NotoSansCJKKR-Medium),
+    url(/path/to/NotoSansCJKKR-Medium.woff2) format("woff2"),
+    url(/path/to/NotoSansCJKKR-Medium.woff) format("woff"),
+    url(/path/to/NotoSansCJKKR-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@layer base {
+}
+@font-face {
+  font-family: NotoSansCJKKR;
+  src: local(NotoSansCJKKR-Bold),
+    url(/path/to/NotoSansCJKKR-Bold.woff2) format("woff2"),
+    url(/path/to/NotoSansCJKKR-Bold.woff) format("woff"),
+    url(/path/to/NotoSansCJKKR-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
