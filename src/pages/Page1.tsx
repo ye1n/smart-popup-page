@@ -6,6 +6,7 @@ import { SideMenuData, TopBtnData } from "../data/buttonData";
 import { useState } from "react";
 import Icon from "../components/Icon";
 import { icons } from "../constants/icons";
+import TableLabel from "../components/TableLabel";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
@@ -82,11 +83,99 @@ export default function Page1() {
             <Button label="안심차단신청조회" onClick={() => {}} />
           </div>
           {/* 판정결과/신청정보 */}
-          <div></div>
+          <div className="flex gap-6">
+            <div className="w-1/3">
+              <TableLabel label="판정결과" />
+              {/* <table>
+                <colgroup>
+                  <col width="15%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="35%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <td className="text-xs text-center text-custom-black bg-custom-label-bg">
+                      판정
+                    </td>
+                    <td>금리</td>
+                    <td>한도</td>
+                    <td>판정일시</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="text-xs text-center text-custom-black">
+                      승인
+                    </td>
+                    <td>13.36%</td>
+                    <td>100,000,000</td>
+                    <td>2024-12-31 23:33:45</td>
+                  </tr>
+                </tbody>
+              </table> */}
+            </div>
+            <div className="w-2/3">
+              <TableLabel label="신청정보" />
+            </div>
+          </div>
           {/* 소득정보/차량정보 */}
+          <div className="flex gap-2">
+            {/* 소득정보 */}
+            <div className="w-1/2">
+              <TableLabel label="소득정보" />
+            </div>
+            {/* 차량정보 */}
+            <div className="w-1/2">
+              <TableLabel label="차량정보" />
+            </div>
+          </div>
           {/* 고객정보/소득정보 */}
+          <div className="flex gap-2">
+            {/* 고객정보 */}
+            <div className="flex flex-col w-1/2 gap-2">
+              <TableLabel label="고객정보" />
+              <div className="flex gap-2">
+                <Button label="신분증 진위확인" onClick={() => {}} />
+                <Button label="KCB소유부동산" onClick={() => {}} />
+              </div>
+            </div>
+            {/* 소득정보 */}
+            <div className="flex flex-col w-1/2 gap-2">
+              <TableLabel label="소득정보" />
+              <div>
+                <Button label="건보료계산기" onClick={() => {}} />
+              </div>
+            </div>
+          </div>
           {/* 임대아파트정보 */}
+          <div className="flex flex-col gap-2">
+            <TableLabel label="임대아파트정보" />
+            <div className="flex gap-2">
+              <Button label="신분증 진위확인" onClick={() => {}} />
+              <Button label="담보정보" onClick={() => {}} />
+              <Button label="채무상환능력" onClick={() => {}} />
+              <Button label="당행거래내역 조회" onClick={() => {}} />
+              <Button label="기업일보조회" onClick={() => {}} />
+              <Button label="CSS 조회결과" onClick={() => {}} />
+              <Button label="RCLIPS조회결과" onClick={() => {}} />
+              <Button label="품의서 출력" onClick={() => {}} />
+              <Button label="LTI계산" onClick={() => {}} />
+              <Button label="제비용등록" onClick={() => {}} />
+              <Button label="송금정보" onClick={() => {}} />
+              <Button label="실행(기표)" onClick={() => {}} />
+            </div>
+          </div>
           {/* 약정정보 */}
+          <div className="flex flex-col gap-2">
+            <TableLabel label="약정정보" />
+            <div className="flex gap-2">
+              <Button label="약정정보 저장" onClick={() => {}} />
+              <Button label="알람" onClick={() => {}} />
+              <Button label="상환액계산기" onClick={() => {}} />
+              <Button label="이기종계산기" onClick={() => {}} />
+            </div>
+          </div>
         </div>
       </div>
       {/* 사이드메뉴 */}
