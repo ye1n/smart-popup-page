@@ -1,21 +1,14 @@
-import Topbtn01 from "../assets/icons/property-1-icon-topbtn-01.svg?react";
-import Topbtn02 from "../assets/icons/property-1-icon-topbtn-02.svg?react";
-import Topbtn03 from "../assets/icons/property-1-icon-topbtn-03.svg?react";
-import Topbtn04 from "../assets/icons/property-1-icon-topbtn-04.svg?react";
-import Topbtn05 from "../assets/icons/property-1-icon-topbtn-05.svg?react";
-import Topbtn06 from "../assets/icons/property-1-icon-topbtn-06.svg?react";
-import Topbtn07 from "../assets/icons/property-1-icon-topbtn-07.svg?react";
-import Topbtn08 from "../assets/icons/property-1-icon-topbtn-08.svg?react";
+import { icons } from "../constants/icons";
 
-export const buttonData = [
-  { icon: Topbtn01, label: "초본" },
-  { icon: Topbtn02, label: "차량담보" },
-  { icon: Topbtn03, label: "부동산" },
-  { icon: Topbtn04, label: "소득금액증명" },
-  { icon: Topbtn05, label: "부가세 과세" },
-  { icon: Topbtn06, label: "첨부(이미지)" },
-  { icon: Topbtn07, label: "건보" },
-  { icon: Topbtn08, label: "원장생성" },
+export const TopBtnData = [
+  { icon: icons.topBtn01, label: "초본" },
+  { icon: icons.topBtn02, label: "차량담보" },
+  { icon: icons.topBtn03, label: "부동산" },
+  { icon: icons.topBtn04, label: "소득금액증명" },
+  { icon: icons.topBtn05, label: "부가세 과세" },
+  { icon: icons.topBtn06, label: "첨부(이미지)" },
+  { icon: icons.topBtn07, label: "건보" },
+  { icon: icons.topBtn08, label: "원장생성" },
   { icon: null, label: "소득금액증명" },
   { icon: null, label: "부가세 과세" },
   { icon: null, label: "사업자등록증" },
@@ -24,4 +17,24 @@ export const buttonData = [
   { icon: null, label: "재산세 과세증명" },
   { icon: null, label: "지방세 과세증명" },
   { icon: null, label: "국세 과세증명" },
+];
+
+export const SideMenuData = [
+  { icon: icons.sideMn01, label: "연계검사" },
+  { icon: icons.sideMn02, label: "CB조회" },
+  { icon: null, label: "신용공여\n정보" },
+  { icon: icons.sideMn03, label: "사기방지" },
+  { icon: null, label: "Rclips 조회" },
+  { icon: icons.sideMn04, label: "햇살론 조회" },
+  { icon: icons.sideMn05, label: "사잇돌 조회" },
+  { icon: null, label: "금리인하 및\n만기재취급" },
+  { icon: icons.sideMn06, label: "KCB부동산" },
+  { icon: null, label: "고객등록" },
+  { icon: null, label: "고객폐쇄\n/재등록" },
+  { icon: icons.sideMn08, label: "승녹/녹취" },
+  { icon: icons.sideMn09, label: "자동메모" },
+  { icon: icons.sideMn10, label: "원장저장" },
+  { icon: null, label: "자동송금\n진행여부" },
+  { icon: null, label: "자동송금\n으로변경" },
+  { icon: null, label: "수동송금\n으로변경" },
 ];

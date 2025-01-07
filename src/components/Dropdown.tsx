@@ -1,5 +1,6 @@
 import React from "react";
-import ArrBottom from "../assets/icons/arr-bottom.svg?react";
+import { icons } from "../constants/icons";
+import Icon from "./Icon";
 
 type DropdownProps = {
   placeholder?: string;
@@ -32,7 +33,12 @@ const Dropdown: React.FC<DropdownProps> = ({
           </option>
         ))}
       </select>
-      <ArrBottom className="absolute top-0 h-full right-1" />
+      <Icon
+        icon={icons.arrBottom}
+        width="20"
+        height="20"
+        className="absolute top-0 h-full right-1"
+      />
     </div>
   );
 };

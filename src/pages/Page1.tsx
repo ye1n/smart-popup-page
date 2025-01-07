@@ -2,12 +2,16 @@ import Button from "../components/Button";
 import Dropdown from "../components/Dropdown";
 import Input from "../components/Input";
 import InputGroup from "../components/InputGroup";
-import { buttonData } from "../data/buttonData";
-import ArrRight from "../assets/icons/arr-right.svg?react";
+import { SideMenuData, TopBtnData } from "../data/buttonData";
+import { useState } from "react";
+import Icon from "../components/Icon";
+import { icons } from "../constants/icons";
 
 export default function Page1() {
+  const [selectedSideMenu, setSelectedSideMenu] = useState(0);
+
   return (
-    <div>
+    <div className="flex">
       {/* 메인화면 */}
       <div>
         {/* 메인상단 */}
@@ -42,7 +46,7 @@ export default function Page1() {
           </div>
           {/* 메인하단 - 버튼목록 */}
           <div className="grid grid-cols-8 gap-2 w-fit grid-rows-auto">
-            {buttonData.map((item, index) => (
+            {TopBtnData.map((item, index) => (
               <button
                 key={index}
                 className="flex items-center rounded shadow bg-custom-white w-[120px] h-[26px] px-2"
@@ -61,14 +65,14 @@ export default function Page1() {
             <div className="flex border border-custom-form-line">
               <div className="flex items-center justify-between bg-custom-form-bg w-[122px] h-[26px] p-2">
                 <p className="text-xs text-black">진행상태</p>
-                <ArrRight />
+                <Icon icon={icons.arrRight} />
               </div>
               <div className="flex items-center bg-custom-white w-[122px] h-[26px] p-2">
                 <p className="text-xs text-black">진행</p>
               </div>
               <div className="flex items-center justify-between bg-custom-form-bg w-[122px] h-[26px] p-2">
                 <p className="text-xs text-black">경과시간</p>
-                <ArrRight />
+                <Icon icon={icons.arrRight} />
               </div>
               <div className="flex items-center bg-custom-white w-[122px] h-[26px] p-2">
                 <p className="text-xs text-black">33일 23시간 58분</p>
@@ -86,9 +90,35 @@ export default function Page1() {
         </div>
       </div>
       {/* 사이드메뉴 */}
-      <div></div>
+      <div className="shadow-lg w-20 bg-custom-white py-[10px] rounded-b-lg">
+        <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
+          {SideMenuData.map((item, index) => (
+            <div className="w-20">
+              <button
+                key={index}
+                className={`w-full flex flex-col items-center justify-center bg-custom-white rounded-lg h-[56px] transition ${
+                  selectedSideMenu === index
+                    ? "bg-custom-secondary shadow-inner text-custom-white"
+                    : "text-custom-black"
+                }`}
+                onClick={() => setSelectedSideMenu(index)}
+              >
+                {item.icon && (
+                  <Icon
+                    icon={item.icon}
+                    width="20"
+                    height="20"
+                    className="text-custom-white"
+                  />
+                )}
+                <p className="text-xs whitespace-pre-wrap">{item.label}</p>
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
       {/* 우측메모란 */}
-      <div></div>
+      <div className=""></div>
     </div>
   );
 }
