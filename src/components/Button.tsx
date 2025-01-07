@@ -6,7 +6,9 @@ interface Props {
 const Button: React.FC<Props> = ({ label, onClick }) => {
   return (
     <button
-      className={"h-[26px] rounded bg-custom-btn-default outline-none px-2"}
+      className={
+        "h-[26px] rounded bg-custom-btn-default outline-none px-2 py-1.5"
+      }
       onClick={onClick}
     >
       <p className="text-xs font-bold text-white whitespace-nowrap">{label}</p>
