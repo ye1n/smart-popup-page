@@ -11,7 +11,7 @@ export default {
           secondary: "#ff9015",
           grey: {
             1: "#444444",
-            2: "#888888",
+            3: "#888888",
             4: "#bdbdbd",
           },
           form: {
