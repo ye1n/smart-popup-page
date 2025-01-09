@@ -6,7 +6,7 @@ import { SideMenuData, TopBtnData } from "../data/buttonData";
 import { useState } from "react";
 import Icon from "../components/Icon";
 import { icons } from "../constants/icons";
-import TableLabel from "../components/TableLabel";
+import Label from "../components/Label";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
@@ -85,7 +85,7 @@ export default function Page1() {
           {/* 판정결과/신청정보 */}
           <div className="flex gap-6">
             <div className="w-1/3">
-              <TableLabel label="판정결과" />
+              <Label label="판정결과" />
               {/* <table>
                 <colgroup>
                   <col width="15%" />
@@ -116,25 +116,25 @@ export default function Page1() {
               </table> */}
             </div>
             <div className="w-2/3">
-              <TableLabel label="신청정보" />
+              <Label label="신청정보" />
             </div>
           </div>
           {/* 소득정보/차량정보 */}
           <div className="flex gap-2">
             {/* 소득정보 */}
             <div className="w-1/2">
-              <TableLabel label="소득정보" />
+              <Label label="소득정보" />
             </div>
             {/* 차량정보 */}
             <div className="w-1/2">
-              <TableLabel label="차량정보" />
+              <Label label="차량정보" />
             </div>
           </div>
           {/* 고객정보/소득정보 */}
           <div className="flex gap-2">
             {/* 고객정보 */}
             <div className="flex flex-col w-1/2 gap-2">
-              <TableLabel label="고객정보" />
+              <Label label="고객정보" />
               <div className="flex gap-2">
                 <Button label="신분증 진위확인" onClick={() => {}} />
                 <Button label="KCB소유부동산" onClick={() => {}} />
@@ -142,7 +142,7 @@ export default function Page1() {
             </div>
             {/* 소득정보 */}
             <div className="flex flex-col w-1/2 gap-2">
-              <TableLabel label="소득정보" />
+              <Label label="소득정보" />
               <div>
                 <Button label="건보료계산기" onClick={() => {}} />
               </div>
@@ -150,7 +150,7 @@ export default function Page1() {
           </div>
           {/* 임대아파트정보 */}
           <div className="flex flex-col gap-2">
-            <TableLabel label="임대아파트정보" />
+            <Label label="임대아파트정보" />
             <div className="flex gap-2">
               <Button label="신분증 진위확인" onClick={() => {}} />
               <Button label="담보정보" onClick={() => {}} />
@@ -168,7 +168,7 @@ export default function Page1() {
           </div>
           {/* 약정정보 */}
           <div className="flex flex-col gap-2">
-            <TableLabel label="약정정보" />
+            <Label label="약정정보" />
             <div className="flex gap-2">
               <Button label="약정정보 저장" onClick={() => {}} />
               <Button label="알람" onClick={() => {}} />
@@ -211,7 +211,7 @@ export default function Page1() {
         {/* 메모 */}
         <div className="flex flex-col w-full gap-2">
           <div className="flex items-start justify-between">
-            <TableLabel label="메모" />
+            <Label label="메모" />
             <Button label="등록" onClick={() => {}} />
           </div>
           <div className="flex gap-2">
@@ -227,7 +227,7 @@ export default function Page1() {
         {/* 문자발송 및 메모이력확인 */}
         <div className="flex flex-col w-full gap-2">
           <div className="flex items-start justify-between">
-            <TableLabel label="문자발송 및 메모이력확인" />
+            <Label label="문자발송 및 메모이력확인" />
             <Button label="발송" onClick={() => {}} />
           </div>
           <div className="flex flex-wrap gap-2">
