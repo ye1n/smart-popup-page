@@ -7,9 +7,17 @@ import { useState } from "react";
 import Icon from "../components/Icon";
 import { icons } from "../constants/icons";
 import Label from "../components/Label";
+import Tabs from "../components/Tabs";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
+  const customInfoTabs = [
+    { id: "basic", label: "기본정보" },
+    { id: "assets", label: "자산정보" },
+    { id: "dsr", label: "DSR산출정보" },
+    { id: "score", label: "스코어" },
+    { id: "transfer", label: "송금정보" },
+  ];
 
   return (
     <div className="flex">
@@ -135,9 +143,12 @@ export default function Page1() {
             {/* 고객정보 */}
             <div className="flex flex-col w-1/2 gap-2">
               <Label label="고객정보" />
-              <div className="flex gap-2">
-                <Button label="신분증 진위확인" onClick={() => {}} />
-                <Button label="KCB소유부동산" onClick={() => {}} />
+              <div className="flex items-center justify-between">
+                <Tabs tabs={customInfoTabs} />
+                <div className="flex gap-2">
+                  <Button label="신분증 진위확인" onClick={() => {}} />
+                  <Button label="KCB소유부동산" onClick={() => {}} />
+                </div>
               </div>
             </div>
             {/* 소득정보 */}
