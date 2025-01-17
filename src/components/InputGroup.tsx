@@ -1,16 +1,12 @@
 import React from "react";
 
-type InputGroupProps = {
+type Props = {
   label?: string;
   className?: string;
   children: React.ReactNode;
 };
 
-const InputGroup: React.FC<InputGroupProps> = ({
-  label,
-  children,
-  className = "",
-}) => {
+const InputGroup: React.FC<Props> = ({ label, children, className = "" }) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       {label && (

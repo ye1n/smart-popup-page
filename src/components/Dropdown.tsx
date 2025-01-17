@@ -2,7 +2,7 @@ import React from "react";
 import { icons } from "../constants/icons";
 import Icon from "./Icon";
 
-type DropdownProps = {
+type Props = {
   placeholder?: string;
   value?: string;
   options: string[];
@@ -11,7 +11,7 @@ type DropdownProps = {
   onChange?: (value: string) => void;
 };
 
-const Dropdown: React.FC<DropdownProps> = ({
+const Dropdown: React.FC<Props> = ({
   placeholder = "",
   value,
   options,
