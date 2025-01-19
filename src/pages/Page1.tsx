@@ -72,7 +72,7 @@ export default function Page1() {
         {/* 메인하단 */}
         <div className="flex flex-col gap-4 p-4">
           <div className="flex gap-2">
-            <div className="flex border border-custom-form-line">
+            <div className="flex border divide-x border-custom-form-line divide-custom-form-line">
               <div className="flex items-center justify-between bg-custom-form-bg w-[122px] h-[26px] p-2">
                 <p className="text-xs text-black">진행상태</p>
                 <Icon icon={icons.arrRight} />
