@@ -17,8 +17,7 @@
   font-style: normal;
   font-stretch: normal;
 }
-@layer base {
-}
+
 @font-face {
   font-family: NotoSansCJKKR;
   src: local(NotoSansCJKKR-Medium),
@@ -29,8 +28,7 @@
   font-style: normal;
   font-stretch: normal;
 }
-@layer base {
-}
+
 @font-face {
   font-family: NotoSansCJKKR;
   src: local(NotoSansCJKKR-Bold),
