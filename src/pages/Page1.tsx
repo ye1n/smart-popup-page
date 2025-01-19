@@ -29,12 +29,12 @@ export default function Page1() {
           {/* 메인상단 - 고객정보 */}
           <div className="flex gap-6">
             <InputGroup label="고객명">
-              <Input defaultValue="김저축" />
+              <Input defaultValue="김저축" width="w-[150px]" />
             </InputGroup>
             <InputGroup label="주민등록번호">
               <div className="flex gap-0.5">
-                <Input defaultValue="900101-1234567" />
-                <Input defaultValue="남 만 30세 (호랑이)" />
+                <Input defaultValue="900101-1234567" width="w-[150px]" />
+                <Input defaultValue="남 만 30세 (호랑이)" width="w-[150px]" />
               </div>
             </InputGroup>
             <InputGroup label="상담상태">
@@ -47,7 +47,7 @@ export default function Page1() {
             <InputGroup label="접수번호">
               <div className="flex gap-2">
                 <div className="flex gap-0.5">
-                  <Input defaultValue="202411210000251" />
+                  <Input defaultValue="202411210000251" width="w-[150px]" />
                   <Input defaultValue="신규" width="w-[80px]" />
                 </div>
                 <Button label="식별정보 확인" onClick={() => {}} />
@@ -204,6 +204,36 @@ export default function Page1() {
                   <Button label="KCB소유부동산" onClick={() => {}} />
                 </div>
               </div>
+              {/* 테이블 */}
+              <div className="border-t border-t-[#333333]">
+                <table className="w-full break-keep">
+                  <tbody>
+                    <tr>
+                      <td className="px-2 pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg">
+                        고객명
+                      </td>
+                      <td>
+                        <Input defaultValue="김저축" />
+                      </td>
+                      <td className="px-2 pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg">
+                        주민등록번호
+                      </td>
+                      <td>
+                        <Input defaultValue="입력" />
+                      </td>
+                      <td className="px-2 pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg">
+                        휴대폰
+                      </td>
+                      <td>
+                        <Dropdown options={["LG U+ 알뜰폰"]} isRequired />
+                      </td>
+                      <td>
+                        <Input defaultValue="010-1234-5678" isRequired />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             {/* 소득정보 */}
             <div className="flex flex-col w-1/2 gap-2">
@@ -247,7 +277,7 @@ export default function Page1() {
       <div className="shadow-lg w-20 h-fit bg-custom-white py-[10px] rounded-b-lg">
         <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
           {SideMenuData.map((item, index) => (
-            <div className="w-20">
+            <div key={index} className="w-20">
               <button
                 key={index}
                 className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] transition ${

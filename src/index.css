@@ -6,6 +6,11 @@
   html {
     font-family: NotoSansCJKKR;
   }
+
+  td,
+  th {
+    padding: 0;
+  }
 }
 @font-face {
   font-family: NotoSansCJKKR;
