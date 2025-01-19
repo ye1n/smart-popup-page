@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 type Props = {
   tabs: Tab[];
+  className?: string;
 };
 
 type Tab = {
@@ -9,11 +10,13 @@ type Tab = {
   label: string;
 };
 
-const Tabs: React.FC<Props> = ({ tabs }) => {
+const Tabs: React.FC<Props> = ({ tabs, className = "" }) => {
   const [activeTab, setActiveTab] = useState<string>(tabs[0].id);
 
   return (
-    <div className="flex h-[26px] rounded overflow-hidden divide-x divide-custom-white">
+    <div
+      className={`flex h-[26px] rounded overflow-hidden divide-x divide-custom-white ${className}`}
+    >
       {tabs.map((tab) => (
         <button
           key={tab.id}

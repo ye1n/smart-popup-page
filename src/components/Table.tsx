@@ -1,6 +1,7 @@
 type Props = {
   data: TableGroup;
   colWidths?: string[];
+  className?: string;
 };
 
 type TableGroup = {
@@ -8,9 +9,9 @@ type TableGroup = {
   rows: (string | number)[][];
 };
 
-const Table: React.FC<Props> = ({ data, colWidths }) => {
+const Table: React.FC<Props> = ({ data, colWidths, className = "" }) => {
   return (
-    <div className="border-t border-t-[#333333]">
+    <div className={`border-t border-t-[#333333] ${className}`}>
       <table className="w-full">
         {colWidths && (
           <colgroup>
