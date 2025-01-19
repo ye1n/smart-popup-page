@@ -7,7 +7,7 @@ type Props = {
 
 const Input: React.FC<Props> = ({
   defaultValue = "",
-  width = "",
+  width = "w-full",
   className = "",
   isRequired = false,
 }) => (
