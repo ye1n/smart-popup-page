@@ -8,6 +8,7 @@ import Icon from "../components/Icon";
 import { icons } from "../constants/icons";
 import Label from "../components/Label";
 import Tabs from "../components/Tabs";
+import Table from "../components/Table";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
@@ -93,38 +94,55 @@ export default function Page1() {
           {/* 판정결과/신청정보 */}
           <div className="flex gap-6">
             <div className="w-1/3">
-              <Label label="판정결과" />
-              {/* <table>
-                <colgroup>
-                  <col width="15%" />
-                  <col width="25%" />
-                  <col width="25%" />
-                  <col width="35%" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <td className="text-xs text-center text-custom-black bg-custom-label-bg">
-                      판정
-                    </td>
-                    <td>금리</td>
-                    <td>한도</td>
-                    <td>판정일시</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="text-xs text-center text-custom-black">
-                      승인
-                    </td>
-                    <td>13.36%</td>
-                    <td>100,000,000</td>
-                    <td>2024-12-31 23:33:45</td>
-                  </tr>
-                </tbody>
-              </table> */}
+              <Label label="판정결과" className="mb-2" />
+              <Table
+                colWidths={["15%", "25%", "25%", "35%"]}
+                data={{
+                  headers: ["판정", "금리", "한도", "판정일시"],
+                  rows: [
+                    ["승인", "13.36%", "100,000,000", "2024-12-31 23:33:45"],
+                  ],
+                }}
+              />
             </div>
             <div className="w-2/3">
-              <Label label="신청정보" />
+              <Label label="신청정보" className="mb-2" />
+              <Table
+                colWidths={[
+                  "10%",
+                  "10%",
+                  "10%",
+                  "10%",
+                  "10%",
+                  "10%",
+                  "10%",
+                  "10%",
+                ]}
+                data={{
+                  headers: [
+                    "SEG구분",
+                    "상품유형",
+                    "상품명",
+                    "채널",
+                    "채널상세",
+                    "SP업권 경험",
+                    "DSR대상",
+                    "적합성,적정성",
+                  ],
+                  rows: [
+                    [
+                      "일반-테스트",
+                      "신용-일반",
+                      "애드론-S",
+                      "다이렉트",
+                      "카카오페이",
+                      "Y",
+                      "Y",
+                      "Y",
+                    ],
+                  ],
+                }}
+              />
             </div>
           </div>
           {/* 소득정보/차량정보 */}
