@@ -1,11 +1,11 @@
-interface Props {
+type Props = {
   variant?: "blue" | "white-outline-shadow" | "white-outline" | "gray";
   label: string;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   className?: string;
   onClick: () => void;
-}
+};
 
 const Button: React.FC<Props> = ({
   variant = "blue",

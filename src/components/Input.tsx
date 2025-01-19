@@ -1,7 +1,7 @@
-interface Props {
+type Props = {
   defaultValue?: string;
   width?: string;
-}
+};
 
 const Input: React.FC<Props> = ({ defaultValue = "", width = "w-[150px]" }) => (
   <input

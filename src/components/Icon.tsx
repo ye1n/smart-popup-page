@@ -1,9 +1,9 @@
-interface Props {
+type Props = {
   icon: any;
   width?: string;
   height?: string;
   className?: string;
-}
+};
 
 const Icon: React.FC<Props> = ({
   icon,

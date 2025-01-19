@@ -1,6 +1,6 @@
-interface Props {
+type Props = {
   label: string;
-}
+};
 
 const Label: React.FC<Props> = ({ label }) => {
   return (
