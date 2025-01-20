@@ -9,6 +9,7 @@ import { icons } from "../constants/icons";
 import Label from "../components/Label";
 import Tabs from "../components/Tabs";
 import Table from "../components/Table";
+import CustomerInfoTable from "./components/CustomerInfoTable";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
@@ -39,7 +40,7 @@ export default function Page1() {
             </InputGroup>
             <InputGroup label="상담상태">
               <div className="flex gap-2">
-                <Dropdown placeholder="전체" options={[]} width="w-[150px]" />
+                <Dropdown options={["전체"]} width="w-[150px]" />
                 <Button label="변경" onClick={() => {}} />
                 <Input defaultValue="심사중" width="w-[80px]" />
               </div>
@@ -204,36 +205,7 @@ export default function Page1() {
                   <Button label="KCB소유부동산" onClick={() => {}} />
                 </div>
               </div>
-              {/* 테이블 */}
-              <div className="border-t border-t-[#333333]">
-                <table className="w-full break-keep">
-                  <tbody>
-                    <tr>
-                      <td className="px-2 pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg">
-                        고객명
-                      </td>
-                      <td>
-                        <Input defaultValue="김저축" />
-                      </td>
-                      <td className="px-2 pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg">
-                        주민등록번호
-                      </td>
-                      <td>
-                        <Input defaultValue="입력" />
-                      </td>
-                      <td className="px-2 pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg">
-                        휴대폰
-                      </td>
-                      <td>
-                        <Dropdown options={["LG U+ 알뜰폰"]} isRequired />
-                      </td>
-                      <td>
-                        <Input defaultValue="010-1234-5678" isRequired />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <CustomerInfoTable />
             </div>
             {/* 소득정보 */}
             <div className="flex flex-col w-1/2 gap-2">

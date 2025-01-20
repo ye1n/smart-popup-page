@@ -15,7 +15,7 @@ const Input: React.FC<Props> = ({
 }) => (
   <input
     defaultValue={defaultValue}
-    className={`h-[26px] outline-none text-xs text-custom-black ${className} ${width} ${
+    className={`p-2 h-[26px] outline-none text-xs text-custom-black ${className} ${width} ${
       isRequired ? "bg-custom-form-acc" : "bg-custom-white"
     } ${
       align === "left"
