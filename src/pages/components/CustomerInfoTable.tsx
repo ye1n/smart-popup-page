@@ -9,6 +9,7 @@ import Tr from "../../components/table/Tr";
 export default function CustomerInfoTable() {
   return (
     <Table
+      maxHeight="h-[100px]"
       colWidths={[
         "10%",
         "7%",

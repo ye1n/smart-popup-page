@@ -11,6 +11,19 @@
   th {
     padding: 0;
   }
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-[10px] bg-custom-form-bg border-2 border-solid border-transparent bg-clip-padding;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
 }
 
 @font-face {
