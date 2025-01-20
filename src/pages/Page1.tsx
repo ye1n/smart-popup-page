@@ -22,9 +22,9 @@ export default function Page1() {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex justify-between">
       {/* 메인화면 */}
-      <div>
+      <div className="w-full">
         {/* 메인상단 */}
         <div className="flex flex-col gap-4 p-4 bg-custom-bg">
           {/* 메인상단 - 고객정보 */}
@@ -245,102 +245,104 @@ export default function Page1() {
           </div>
         </div>
       </div>
-      {/* 사이드메뉴 */}
-      <div className="shadow-lg w-20 h-fit bg-custom-white py-[10px] rounded-b-lg">
-        <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
-          {SideMenuData.map((item, index) => (
-            <div key={index} className="w-20">
-              <button
-                key={index}
-                className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] transition ${
-                  selectedSideMenu === index
-                    ? "bg-custom-secondary shadow-inner text-custom-white"
-                    : "bg-custom-white text-custom-black"
-                }`}
-                onClick={() => setSelectedSideMenu(index)}
-              >
-                {item.icon && (
-                  <Icon
-                    icon={item.icon}
-                    width="20"
-                    height="20"
-                    className="text-custom-white"
-                  />
-                )}
-                <p className="text-xs whitespace-pre-wrap">{item.label}</p>
-              </button>
+      <div className="flex">
+        {/* 사이드메뉴 */}
+        <div className="shadow-lg w-20 h-fit bg-custom-white py-[10px] rounded-b-lg">
+          <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
+            {SideMenuData.map((item, index) => (
+              <div key={index} className="w-20">
+                <button
+                  key={index}
+                  className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] transition ${
+                    selectedSideMenu === index
+                      ? "bg-custom-secondary shadow-inner text-custom-white"
+                      : "bg-custom-white text-custom-black"
+                  }`}
+                  onClick={() => setSelectedSideMenu(index)}
+                >
+                  {item.icon && (
+                    <Icon
+                      icon={item.icon}
+                      width="20"
+                      height="20"
+                      className="text-custom-white"
+                    />
+                  )}
+                  <p className="text-xs whitespace-pre-wrap">{item.label}</p>
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* 우측메모란 */}
+        <div className="w-[268px] p-4 flex flex-col gap-4">
+          {/* 메모 */}
+          <div className="flex flex-col w-full gap-2">
+            <div className="flex items-start justify-between">
+              <Label label="메모" />
+              <Button label="등록" onClick={() => {}} />
             </div>
-          ))}
-        </div>
-      </div>
-      {/* 우측메모란 */}
-      <div className="w-[268px] m-4 flex flex-col gap-4">
-        {/* 메모 */}
-        <div className="flex flex-col w-full gap-2">
-          <div className="flex items-start justify-between">
-            <Label label="메모" />
-            <Button label="등록" onClick={() => {}} />
+            <div className="flex gap-2">
+              <Button label="심사" variant="white-outline" onClick={() => {}} />
+              <Button
+                label="제휴사통보"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+            </div>
+            <textarea className="w-full h-[250px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
           </div>
-          <div className="flex gap-2">
-            <Button label="심사" variant="white-outline" onClick={() => {}} />
-            <Button
-              label="제휴사통보"
-              variant="white-outline"
-              onClick={() => {}}
-            />
+          {/* 문자발송 및 메모이력확인 */}
+          <div className="flex flex-col w-full gap-2">
+            <div className="flex items-start justify-between">
+              <Label label="문자발송 및 메모이력확인" />
+              <Button label="발송" onClick={() => {}} />
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Button
+                label="자동문자"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="수동문자"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="자동메모"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="수동메모"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="제휴사메모"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="삭제메모"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="전체메모"
+                variant="white-outline"
+                onClick={() => {}}
+              />
+              <Button
+                label="삭제"
+                variant="gray"
+                onClick={() => {}}
+                className=""
+              />
+            </div>
+            <textarea className="w-full h-[542px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
           </div>
-          <textarea className="w-full h-[250px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
-        </div>
-        {/* 문자발송 및 메모이력확인 */}
-        <div className="flex flex-col w-full gap-2">
-          <div className="flex items-start justify-between">
-            <Label label="문자발송 및 메모이력확인" />
-            <Button label="발송" onClick={() => {}} />
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <Button
-              label="자동문자"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="수동문자"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="자동메모"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="수동메모"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="제휴사메모"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="삭제메모"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="전체메모"
-              variant="white-outline"
-              onClick={() => {}}
-            />
-            <Button
-              label="삭제"
-              variant="gray"
-              onClick={() => {}}
-              className=""
-            />
-          </div>
-          <textarea className="w-full h-[542px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
         </div>
       </div>
     </div>

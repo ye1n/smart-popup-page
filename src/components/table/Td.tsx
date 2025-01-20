@@ -21,11 +21,11 @@ const Td: React.FC<Props> = ({
     <td
       rowSpan={rowSpan}
       colSpan={colSpan}
-      className={`border border-custom-form-line ${className} ${
+      className={`border-x border-custom-form-line ${className} ${
         type === "label"
-          ? "px-2 pb-0.5 pt-1 text-xs text-custom-black bg-custom-label-bg"
+          ? "px-2 text-xs text-custom-black bg-custom-label-bg"
           : type === "text"
-          ? "px-2 pb-0.5 pt-1 text-xs text-custom-black"
+          ? "px-2 text-xs text-custom-black"
           : ""
       } ${
         align === "left"

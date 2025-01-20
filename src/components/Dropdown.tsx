@@ -17,7 +17,7 @@ const Dropdown: React.FC<Props> = ({
   placeholder = "",
   value,
   options,
-  width = "",
+  width = "w-full",
   align = "center",
   className = "",
   isRequired = false,
@@ -31,9 +31,7 @@ const Dropdown: React.FC<Props> = ({
     >
       <select
         value={value}
-        className={`pr-5 appearance-none h-full outline-none text-xs text-custom-black ${className} ${width} ${
-          isRequired ? "bg-custom-form-acc" : "bg-custom-white"
-        } ${
+        className={`pr-[24px] pl-2 appearance-none h-full outline-none text-xs text-custom-black bg-transparent ${className} ${width} ${
           align === "left"
             ? "text-left"
             : align === "right"
@@ -53,7 +51,7 @@ const Dropdown: React.FC<Props> = ({
         icon={icons.arrBottom}
         width="20"
         height="20"
-        className="absolute top-0 h-full right-1"
+        className="absolute transform -translate-y-1/2 pointer-events-none right-1 top-1/2"
       />
     </div>
   );
