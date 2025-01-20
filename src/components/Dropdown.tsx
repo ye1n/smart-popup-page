@@ -7,6 +7,7 @@ type Props = {
   value?: string;
   options: string[];
   width?: string;
+  align?: "left" | "center" | "right";
   className?: string;
   isRequired?: boolean;
   onChange?: (value: string) => void;
@@ -17,6 +18,7 @@ const Dropdown: React.FC<Props> = ({
   value,
   options,
   width = "",
+  align = "center",
   className = "",
   isRequired = false,
   onChange,
@@ -29,9 +31,15 @@ const Dropdown: React.FC<Props> = ({
     >
       <select
         value={value}
-        className={`pr-5 appearance-none h-full outline-none text-center text-xs text-custom-black ${
+        className={`pr-5 appearance-none h-full outline-none text-xs text-custom-black ${className} ${width} ${
           isRequired ? "bg-custom-form-acc" : "bg-custom-white"
-        } ${width} ${className}`}
+        } ${
+          align === "left"
+            ? "text-left"
+            : align === "right"
+            ? "text-right"
+            : "text-center"
+        }`}
         onChange={(e) => onChange?.(e.target.value)}
       >
         {placeholder && <option value="">{placeholder}</option>}
