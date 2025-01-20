@@ -1,5 +1,10 @@
 type Props = {
-  variant?: "blue" | "white-outline-shadow" | "white-outline" | "gray";
+  variant?:
+    | "blue"
+    | "white-outline-shadow"
+    | "white-outline"
+    | "gray"
+    | "table-gray";
   label: string;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
@@ -16,17 +21,19 @@ const Button: React.FC<Props> = ({
   onClick,
 }) => {
   const variantClass = {
-    blue: "bg-custom-btn-default text-white font-bold",
+    blue: "bg-custom-btn-default text-white font-bold h-[24px] rounded px-2 pt-0.5",
     "white-outline-shadow":
-      "border border-custom-grey-4 text-custom-grey-1 bg-white shadow font-medium",
+      "border border-custom-gray-4 text-custom-gray-1 bg-white shadow font-medium h-[24px] rounded px-2 pt-0.5",
     "white-outline":
-      "border border-custom-grey-4 text-custom-grey-1 bg-white font-medium",
-    gray: "bg-custom-grey-3 text-white font-bold",
+      "border border-custom-gray-4 text-custom-gray-1 bg-white font-medium h-[24px] rounded px-2 pt-0.5",
+    gray: "bg-custom-gray-3 text-white font-bold h-[24px] rounded px-2 pt-0.5",
+    "table-gray":
+      "bg-custom-btn-inForm h-[18px] text-custom-gray-1 text-[10px] pt-0.5 px-1.5",
   };
 
   return (
     <button
-      className={`flex items-center gap-1 h-[24px] rounded outline-none px-2 pt-0.5 ${variantClass[variant]} ${className}`}
+      className={`flex items-center gap-1 outline-none ${variantClass[variant]} ${className}`}
       onClick={onClick}
     >
       {icon && iconPosition === "left" && icon}

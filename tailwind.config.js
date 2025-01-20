@@ -9,7 +9,7 @@ export default {
           white: "#ffffff",
           primary: "#0f54df",
           secondary: "#ff9015",
-          grey: {
+          gray: {
             1: "#444444",
             3: "#888888",
             4: "#bdbdbd",
