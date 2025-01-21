@@ -36,7 +36,7 @@ const Table: React.FC<Props> = ({ data, colWidths, className = "" }) => {
           {data.rows.map((row, rowIndex) => (
             <tr
               key={rowIndex}
-              className="bg-white divide-x divide-custom-form-line"
+              className="divide-x bg-custom-white divide-custom-form-line"
             >
               {row.map((cell, cellIndex) => (
                 <td
