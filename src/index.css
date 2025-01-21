@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  body,
   html {
     font-family: NotoSansCJKKR;
     white-space: nowrap;
@@ -29,33 +30,18 @@
 
 @font-face {
   font-family: NotoSansCJKKR;
-  src: local(NotoSansCJKKR-Regular),
-    url(/path/to/NotoSansCJKKR-Regular.woff2) format("woff2"),
-    url(/path/to/NotoSansCJKKR-Regular.woff) format("woff"),
-    url(/path/to/NotoSansCJKKR-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+  src: url(assets/fonts/NotoSansKR-Regular.ttf) format("truetype");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: NotoSansCJKKR;
-  src: local(NotoSansCJKKR-Medium),
-    url(/path/to/NotoSansCJKKR-Medium.woff2) format("woff2"),
-    url(/path/to/NotoSansCJKKR-Medium.woff) format("woff"),
-    url(/path/to/NotoSansCJKKR-Medium.ttf) format("truetype");
+  src: url(assets/fonts/NotoSansKR-Medium.ttf) format("truetype");
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
 }
 
 @font-face {
   font-family: NotoSansCJKKR;
-  src: local(NotoSansCJKKR-Bold),
-    url(/path/to/NotoSansCJKKR-Bold.woff2) format("woff2"),
-    url(/path/to/NotoSansCJKKR-Bold.woff) format("woff"),
-    url(/path/to/NotoSansCJKKR-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  src: url(assets/fonts/NotoSansKR-Bold.ttf) format("truetype");
+  font-weight: 700;
 }
