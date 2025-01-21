@@ -29,6 +29,8 @@ import SideMn16 from "../assets/icons/property-1-icon-sidemn-16.svg?react";
 import ArrBottom from "../assets/icons/arr-bottom.svg?react";
 import ArrRight from "../assets/icons/arr-right.svg?react";
 
+import Search from "../assets/icons/search.svg?react";
+
 const pngIcons = {
   sideMn04: SideMn04,
   sideMn05: SideMn05,
@@ -64,6 +66,9 @@ const svgIcons = {
   sideMn14: SideMn14,
   sideMn15: SideMn15,
   sideMn16: SideMn16,
+
+  // other icons
+  search: Search,
 };
 
 export const icons = {
