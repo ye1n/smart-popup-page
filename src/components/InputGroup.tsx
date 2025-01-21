@@ -10,9 +10,7 @@ const InputGroup: React.FC<Props> = ({ label, children, className = "" }) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       {label && (
-        <label className="text-xs font-bold text-custom-black whitespace-nowrap">
-          {label}
-        </label>
+        <label className="text-xs font-bold text-custom-black">{label}</label>
       )}
       {children}
     </div>

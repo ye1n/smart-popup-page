@@ -37,7 +37,7 @@ const Button: React.FC<Props> = ({
       onClick={onClick}
     >
       {icon && iconPosition === "left" && icon}
-      <p className="text-xs whitespace-nowrap">{label}</p>
+      <p className="text-xs">{label}</p>
       {icon && iconPosition === "right" && icon}
     </button>
   );

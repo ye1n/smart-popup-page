@@ -19,7 +19,7 @@ const Table: React.FC<Props> = ({
         maxHeight ? `overflow-y-auto ${maxHeight}` : ""
       }`}
     >
-      <table className="w-full whitespace-nowrap">
+      <table className="w-full">
         {colWidths && (
           <colgroup>
             {colWidths.map((width, index) => (
