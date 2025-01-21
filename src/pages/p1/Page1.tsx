@@ -2,8 +2,7 @@ import Button from "../../components/Button";
 import Dropdown from "../../components/Dropdown";
 import Input from "../../components/Input";
 import InputGroup from "../../components/InputGroup";
-import { SideMenuData, TopBtnData } from "../../data/buttonData";
-import { useState } from "react";
+import { TopBtnData } from "../../data/buttonData";
 import Icon from "../../components/Icon";
 import { icons } from "../../constants/icons";
 import Label from "../../components/Label";
@@ -15,9 +14,9 @@ import Tr from "../../components/table/Tr";
 import Td from "../../components/table/Td";
 import Table from "../../components/table/Table";
 import AgreeInfoTable from "./components/AgreeInfoTable";
+import SideMenu from "../../components/common/SideMenu";
 
 export default function Page1() {
-  const [selectedSideMenu, setSelectedSideMenu] = useState(0);
   const customInfoTabs = [
     { id: "basic", label: "기본정보" },
     { id: "assets", label: "자산정보" },
@@ -267,33 +266,7 @@ export default function Page1() {
       </div>
       <div className="flex">
         {/* 사이드메뉴 */}
-        <div className="shadow-lg w-20 h-fit bg-custom-white py-[10px] rounded-b-lg">
-          <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
-            {SideMenuData.map((item, index) => (
-              <div key={index} className="w-20">
-                <button
-                  key={index}
-                  className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] transition ${
-                    selectedSideMenu === index
-                      ? "bg-custom-secondary shadow-inner text-custom-white"
-                      : "bg-custom-white text-custom-black"
-                  }`}
-                  onClick={() => setSelectedSideMenu(index)}
-                >
-                  {item.icon && (
-                    <Icon
-                      icon={item.icon}
-                      width="20"
-                      height="20"
-                      className="text-custom-white"
-                    />
-                  )}
-                  <p className="text-xs whitespace-pre-wrap">{item.label}</p>
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
+        <SideMenu />
         {/* 우측메모란 */}
         <div className="w-[268px] p-4 flex flex-col gap-4">
           {/* 메모 */}

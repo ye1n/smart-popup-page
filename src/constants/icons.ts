@@ -13,8 +13,8 @@ import SideMn03 from "../assets/icons/property-1-icon-sidemn-03.svg?react";
 
 import SideMn04 from "../assets/icons/property-1-icon-sidemn-04.png";
 import SideMn05 from "../assets/icons/property-1-icon-sidemn-05.png";
-import SideMn06 from "../assets/icons/property-1-icon-sidemn-06.png";
 
+import SideMn06 from "../assets/icons/property-1-icon-sidemn-06.svg?react";
 import SideMn07 from "../assets/icons/property-1-icon-sidemn-07.svg?react";
 import SideMn08 from "../assets/icons/property-1-icon-sidemn-08.svg?react";
 import SideMn09 from "../assets/icons/property-1-icon-sidemn-09.svg?react";
@@ -53,7 +53,6 @@ import Search from "../assets/icons/search.svg?react";
 const pngIcons = {
   sideMn04: SideMn04,
   sideMn05: SideMn05,
-  sideMn06: SideMn06,
 
   sideMnWh04: SideMnWh04,
   sideMnWh05: SideMnWh05,
@@ -78,6 +77,7 @@ const svgIcons = {
   sideMn01: SideMn01,
   sideMn02: SideMn02,
   sideMn03: SideMn03,
+  sideMn06: SideMn06,
   sideMn07: SideMn07,
   sideMn08: SideMn08,
   sideMn09: SideMn09,
