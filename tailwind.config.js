@@ -25,7 +25,7 @@ export default {
           },
           bg: "#e4ecff",
           btn: {
-            default: "#244072",
+            default: "#003A70",
             inForm: "#d8d8d8",
             line: "#f2f2f2",
           },
