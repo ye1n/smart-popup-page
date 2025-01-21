@@ -1,15 +1,16 @@
-import Button from "../components/Button";
-import Dropdown from "../components/Dropdown";
-import Input from "../components/Input";
-import InputGroup from "../components/InputGroup";
-import { SideMenuData, TopBtnData } from "../data/buttonData";
+import Button from "../../components/Button";
+import Dropdown from "../../components/Dropdown";
+import Input from "../../components/Input";
+import InputGroup from "../../components/InputGroup";
+import { SideMenuData, TopBtnData } from "../../data/buttonData";
 import { useState } from "react";
-import Icon from "../components/Icon";
-import { icons } from "../constants/icons";
-import Label from "../components/Label";
-import Tabs from "../components/Tabs";
-import Table from "../components/Table";
+import Icon from "../../components/Icon";
+import { icons } from "../../constants/icons";
+import Label from "../../components/Label";
+import Tabs from "../../components/Tabs";
+import Table from "../../components/Table";
 import CustomerInfoTable from "./components/CustomerInfoTable";
+import IncomeInfoTable from "./components/IncomeInfoTable";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
@@ -213,6 +214,7 @@ export default function Page1() {
               <div>
                 <Button label="건보료계산기" onClick={() => {}} />
               </div>
+              <IncomeInfoTable />
             </div>
           </div>
           {/* 임대아파트정보 */}

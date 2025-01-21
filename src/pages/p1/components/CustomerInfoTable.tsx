@@ -1,27 +1,27 @@
-import Button from "../../components/Button";
-import Dropdown from "../../components/Dropdown";
-import Input from "../../components/Input";
-import Table from "../../components/table/Table";
-import Tbody from "../../components/table/Tbody";
-import Td from "../../components/table/Td";
-import Tr from "../../components/table/Tr";
+import Button from "../../../components/Button";
+import Dropdown from "../../../components/Dropdown";
+import Input from "../../../components/Input";
+import Table from "../../../components/table/Table";
+import Tbody from "../../../components/table/Tbody";
+import Td from "../../../components/table/Td";
+import Tr from "../../../components/table/Tr";
 
 export default function CustomerInfoTable() {
   return (
     <Table
-      maxHeight="h-[100px]"
-      colWidths={[
-        "10%",
-        "7%",
-        "5%",
-        "8%",
-        "10%",
-        "20%",
-        "10%",
-        "7%",
-        "8%",
-        "15%",
-      ]}
+      maxHeight="h-[298px]"
+      // colWidths={[
+      //   "10%",
+      //   "7%",
+      //   "5%",
+      //   "8%",
+      //   "10%",
+      //   "20%",
+      //   "10%",
+      //   "7%",
+      //   "8%",
+      //   "15%",
+      // ]}
     >
       <Tbody>
         <Tr>
