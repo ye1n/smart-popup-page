@@ -25,7 +25,7 @@ const Table: React.FC<Props> = ({ data, colWidths, className = "" }) => {
             {data.headers.map((header, headerIndex) => (
               <th
                 key={headerIndex}
-                className="pb-0.5 pt-1 text-xs text-center text-custom-black bg-custom-label-bg"
+                className="text-xs text-center text-custom-black bg-custom-label-bg"
               >
                 {header}
               </th>
@@ -41,7 +41,7 @@ const Table: React.FC<Props> = ({ data, colWidths, className = "" }) => {
               {row.map((cell, cellIndex) => (
                 <td
                   key={cellIndex}
-                  className="pb-0.5 pt-1 text-xs text-center text-custom-black"
+                  className="text-xs text-center text-custom-black"
                 >
                   {cell}
                 </td>

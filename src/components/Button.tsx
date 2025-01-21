@@ -21,14 +21,14 @@ const Button: React.FC<Props> = ({
   onClick,
 }) => {
   const variantClass = {
-    blue: "bg-custom-btn-default text-custom-white font-bold h-[24px] rounded px-2 pt-0.5",
+    blue: "bg-custom-btn-default text-custom-white font-bold h-[24px] rounded px-2",
     "white-outline-shadow":
-      "border border-custom-gray-4 text-custom-gray-1 bg-custom-white shadow font-medium h-[24px] rounded px-2 pt-0.5",
+      "border border-custom-gray-4 text-custom-gray-1 bg-custom-white shadow font-medium h-[24px] rounded px-2",
     "white-outline":
-      "border border-custom-gray-4 text-custom-gray-1 bg-custom-white font-medium h-[24px] rounded px-2 pt-0.5",
-    gray: "bg-custom-gray-3 text-custom-white font-bold h-[24px] rounded px-2 pt-0.5",
+      "border border-custom-gray-4 text-custom-gray-1 bg-custom-white font-medium h-[24px] rounded px-2",
+    gray: "bg-custom-gray-3 text-custom-white font-bold h-[24px] rounded px-2",
     "table-gray":
-      "bg-custom-btn-inForm h-[18px] text-custom-gray-1 text-[10px] pt-0.5 px-1.5",
+      "bg-custom-btn-inForm h-[18px] text-custom-gray-1 text-[10px] px-1.5",
   };
 
   return (

@@ -21,7 +21,7 @@ const Tabs: React.FC<Props> = ({ tabs, className = "" }) => {
         <button
           key={tab.id}
           onClick={() => setActiveTab(tab.id)}
-          className={`text-xs py-1.5 px-2 text-center transition-colors w-[84px] h-full ${
+          className={`text-xs px-2 text-center transition-colors w-[84px] h-full ${
             activeTab === tab.id
               ? "text-custom-white font-bold bg-custom-primary"
               : "text-custom-black font-normal bg-custom-form-bg shadow-inner"
