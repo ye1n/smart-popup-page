@@ -8,9 +8,13 @@ import Icon from "../../components/Icon";
 import { icons } from "../../constants/icons";
 import Label from "../../components/Label";
 import Tabs from "../../components/Tabs";
-import Table from "../../components/Table";
 import CustomerInfoTable from "./components/CustomerInfoTable";
 import IncomeInfoTable from "./components/IncomeInfoTable";
+import Tbody from "../../components/table/Tbody";
+import Tr from "../../components/table/Tr";
+import Td from "../../components/table/Td";
+import Table from "../../components/table/Table";
+import AgreeInfoTable from "./components/AgreeInfoTable";
 
 export default function Page1() {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
@@ -95,56 +99,57 @@ export default function Page1() {
           </div>
           {/* 판정결과/신청정보 */}
           <div className="flex gap-6">
+            {/* 판정결과 */}
             <div className="w-1/3">
               <Label label="판정결과" className="mb-2" />
-              <Table
-                colWidths={["15%", "25%", "25%", "35%"]}
-                data={{
-                  headers: ["판정", "금리", "한도", "판정일시"],
-                  rows: [
-                    ["승인", "13.36%", "100,000,000", "2024-12-31 23:33:45"],
-                  ],
-                }}
-              />
+              <Table>
+                <Tbody>
+                  <Tr>
+                    <Td type="label">판정</Td>
+                    <Td type="label">금리</Td>
+                    <Td type="label">한도</Td>
+                    <Td type="label">판정일시</Td>
+                  </Tr>
+                  <Tr>
+                    <Td type="text">승인</Td>
+                    <Td type="text" align="right">
+                      13.36%
+                    </Td>
+                    <Td type="text" align="right">
+                      100,000,000
+                    </Td>
+                    <Td type="text">2024-12-31 23:33:45</Td>
+                  </Tr>
+                </Tbody>
+              </Table>
             </div>
+            {/* 신청정보 */}
             <div className="w-2/3">
               <Label label="신청정보" className="mb-2" />
-              <Table
-                colWidths={[
-                  "10%",
-                  "10%",
-                  "10%",
-                  "10%",
-                  "10%",
-                  "10%",
-                  "10%",
-                  "10%",
-                ]}
-                data={{
-                  headers: [
-                    "SEG구분",
-                    "상품유형",
-                    "상품명",
-                    "채널",
-                    "채널상세",
-                    "SP업권 경험",
-                    "DSR대상",
-                    "적합성,적정성",
-                  ],
-                  rows: [
-                    [
-                      "일반-테스트",
-                      "신용-일반",
-                      "애드론-S",
-                      "다이렉트",
-                      "카카오페이",
-                      "Y",
-                      "Y",
-                      "Y",
-                    ],
-                  ],
-                }}
-              />
+              <Table>
+                <Tbody>
+                  <Tr>
+                    <Td type="label">SEG구분</Td>
+                    <Td type="label">상품유형</Td>
+                    <Td type="label">상품명</Td>
+                    <Td type="label">채널</Td>
+                    <Td type="label">채널상세</Td>
+                    <Td type="label">SP업권 경험</Td>
+                    <Td type="label">DSR대상</Td>
+                    <Td type="label">적합성,적정성</Td>
+                  </Tr>
+                  <Tr>
+                    <Td type="text">일반-테스트</Td>
+                    <Td type="text">신용-일반</Td>
+                    <Td type="text">애드론-S</Td>
+                    <Td type="text">다이렉트</Td>
+                    <Td type="text">카카오페이</Td>
+                    <Td type="text">Y</Td>
+                    <Td type="text">Y</Td>
+                    <Td type="text">Y</Td>
+                  </Tr>
+                </Tbody>
+              </Table>
             </div>
           </div>
           {/* 소득정보/차량정보 */}
@@ -152,46 +157,56 @@ export default function Page1() {
             {/* 소득정보 */}
             <div className="w-1/2">
               <Label label="소득정보" className="mb-2" />
-              <Table
-                colWidths={["10%", "10%", "10%", "10%", "10%", "10%"]}
-                data={{
-                  headers: [
-                    "플랫폼 제공소득",
-                    "증빙소득",
-                    "추정소득",
-                    "가처분소득",
-                    "연간원리금 상환금액",
-                    "재직기간",
-                  ],
-                  rows: [
-                    [
-                      "100,000,000",
-                      "100,000,000",
-                      "애드론-S",
-                      "100,000,000",
-                      "100,000,000",
-                      "23년 11개월",
-                    ],
-                  ],
-                }}
-              />
+              <Table>
+                <Tbody>
+                  <Tr>
+                    <Td type="label">플랫폼 제공소득</Td>
+                    <Td type="label">증빙소득</Td>
+                    <Td type="label">추정소득</Td>
+                    <Td type="label">가처분소득</Td>
+                    <Td type="label">연간원리금 상환금액</Td>
+                    <Td type="label">재직기간</Td>
+                  </Tr>
+                  <Tr>
+                    <Td type="text" align="right">
+                      100,000,000
+                    </Td>
+                    <Td type="text" align="right">
+                      100,000,000
+                    </Td>
+                    <Td type="text">애드론-S</Td>
+                    <Td type="text" align="right">
+                      100,000,000
+                    </Td>
+                    <Td type="text" align="right">
+                      100,000,000
+                    </Td>
+                    <Td type="text">23년 11개월</Td>
+                  </Tr>
+                </Tbody>
+              </Table>
             </div>
             {/* 차량정보 */}
             <div className="w-1/2">
               <Label label="차량정보" className="mb-2" />
-              <Table
-                colWidths={["12%", "22%", "22%", "22%", "22%"]}
-                data={{
-                  headers: [
-                    "담보순위",
-                    "차량명칭",
-                    "차량모델",
-                    "판정일시",
-                    "신차가격",
-                  ],
-                  rows: [["선순위", "-", "-", "2024-12-31 23:33:45", "입력"]],
-                }}
-              />
+              <Table>
+                <Tbody>
+                  <Tr>
+                    <Td type="label">담보순위</Td>
+                    <Td type="label">차량명칭</Td>
+                    <Td type="label">차량모델</Td>
+                    <Td type="label">판정일시</Td>
+                    <Td type="label">신차가격</Td>
+                  </Tr>
+                  <Tr>
+                    <Td type="text">선순위</Td>
+                    <Td type="text">-</Td>
+                    <Td type="text">-</Td>
+                    <Td type="text">2024-12-31 23:33:45</Td>
+                    <Td type="text">입력</Td>
+                  </Tr>
+                </Tbody>
+              </Table>
             </div>
           </div>
           {/* 고객정보/소득정보 */}
@@ -237,13 +252,16 @@ export default function Page1() {
           </div>
           {/* 약정정보 */}
           <div className="flex flex-col gap-2">
-            <Label label="약정정보" />
-            <div className="flex gap-2">
-              <Button label="약정정보 저장" onClick={() => {}} />
-              <Button label="알람" onClick={() => {}} />
-              <Button label="상환액계산기" onClick={() => {}} />
-              <Button label="이기종계산기" onClick={() => {}} />
+            <div className="flex items-center justify-between">
+              <Label label="약정정보" />
+              <div className="flex gap-2">
+                <Button label="약정정보 저장" onClick={() => {}} />
+                <Button label="알람" onClick={() => {}} />
+                <Button label="상환액계산기" onClick={() => {}} />
+                <Button label="이기종계산기" onClick={() => {}} />
+              </div>
             </div>
+            <AgreeInfoTable />
           </div>
         </div>
       </div>
