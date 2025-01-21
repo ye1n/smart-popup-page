@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Tr: React.FC<Props> = ({ children, className = "" }) => {
-  return <tr className={`${className}`}>{children && children}</tr>;
+  return <tr className={`h-[26px] ${className}`}>{children && children}</tr>;
 };
 
 export default Tr;
