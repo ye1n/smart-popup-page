@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Icon from "../../../../components/Icon";
-import { SideMenuData } from "../../../../data/buttonData";
+import Icon from "../Icon";
+import { SideMenuData } from "../../data/buttonData";
 
 type Props = {};
 

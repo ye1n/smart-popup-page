@@ -56,33 +56,16 @@ export default function MainPage() {
         <Label label="심사원장" />
         <Button
           className="w-fit"
-          label="smartsb_심사원장_1920_기본정보+개인사업자"
-          onClick={() => openPopup("/s-p1")}
+          label="smartsb_심사원장"
+          onClick={() => openPopup("/s")}
         />
-        <Button
-          className="w-fit"
-          label="smartsb_심사원장_1920_자산정보+직장인"
-          onClick={() => openPopup("/s-p2")}
-        />
-        <Button
-          className="w-fit"
-          label="smartsb_심사원장_1920_DSR산출정보+기타"
-          onClick={() => openPopup("/s-p3")}
-        />
-        <Button
-          className="w-fit"
-          label="smartsb_심사원장_1920_스코어+햇살론"
-          onClick={() => openPopup("/s-p4")}
-        />
-        <Button
-          className="w-fit"
-          label="smartsb_심사원장_1920_송금정보"
-          onClick={() => openPopup("/s-p5")}
-        />
+      </div>
+      <div className="flex flex-col gap-1">
+        <Label label="콜원장" />
         <Button
           className="w-fit"
           label="smartsb_콜원장"
-          onClick={() => openPopup("/s-p6")}
+          onClick={() => openPopup("/c")}
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -90,17 +73,17 @@ export default function MainPage() {
         <Button
           className="w-fit"
           label="smartsb_채권원장_1920"
-          onClick={() => openPopup("/c-p1")}
+          onClick={() => openPopup("/ch1")}
         />
         <Button
           className="w-fit"
           label="smartsb_채권원장_1240_온라인조회_Atype"
-          onClick={() => openPopup("/c-p2")}
+          onClick={() => openPopup("/ch2")}
         />
         <Button
           className="w-fit"
           label="smartsb_채권원장_1240_사고관리"
-          onClick={() => openPopup("/c-p3")}
+          onClick={() => openPopup("/ch3")}
         />
       </div>
     </div>
