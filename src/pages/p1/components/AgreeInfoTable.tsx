@@ -14,13 +14,21 @@ export default function AgreeInfoTable() {
             심사지점
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["리테일금융본부"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "리테일금융본부", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             상환방법
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["원리금균등분할"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "원리금균등분할", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             설정금액
@@ -32,7 +40,11 @@ export default function AgreeInfoTable() {
             설정방법
           </Td>
           <Td>
-            <Dropdown align="left" options={["방문설정"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "방문설정", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             심사자
@@ -76,7 +88,11 @@ export default function AgreeInfoTable() {
             약정인증방법
           </Td>
           <Td colSpan={3}>
-            <Dropdown align="left" options={["완료(인증)"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "완료(인증)", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -111,10 +127,18 @@ export default function AgreeInfoTable() {
             결재상태
           </Td>
           <Td>
-            <Dropdown align="left" options={["보류(연락두절)"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "보류(연락두절)", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["결재상태 상세이유"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "결재상태 상세이유", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -122,7 +146,11 @@ export default function AgreeInfoTable() {
             햇살론구분 정보
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["긴급/생계"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "긴급/생계", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             조기상환수수료율
@@ -140,7 +168,11 @@ export default function AgreeInfoTable() {
             특이사항
           </Td>
           <Td colSpan={3}>
-            <Dropdown align="left" options={["선택없음"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "선택없음", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -148,22 +180,38 @@ export default function AgreeInfoTable() {
             NCCS접수여부 및 청구지선택
           </Td>
           <Td>
-            <Dropdown align="left" options={["NCCS접수"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "NCCS접수", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td>
-            <Dropdown align="left" options={["자택"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "자택", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             약정일
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["31"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "31", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             금리/한도 가감사유
           </Td>
           <Td colSpan={3}>
-            <Dropdown align="left" options={["소득불안정"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "소득불안정", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td colSpan={4}>
             <Input defaultValue="전자서명완료값 표기" isRequired />

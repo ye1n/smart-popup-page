@@ -5,12 +5,12 @@ import Icon from "./Icon";
 type Props = {
   placeholder?: string;
   value?: string;
-  options: string[];
+  options: Array<{ label: string; value: string | number }>;
   width?: string;
   align?: "left" | "center" | "right";
   className?: string;
   isRequired?: boolean;
-  onChange?: (value: string) => void;
+  onChange?: (value: string | number) => void;
 };
 
 const Dropdown: React.FC<Props> = ({
@@ -42,9 +42,7 @@ const Dropdown: React.FC<Props> = ({
       >
         {placeholder && <option value="">{placeholder}</option>}
         {options.map((option, index) => (
-          <option key={index} value={option}>
-            {option}
-          </option>
+          <option key={index} label={option.label} value={option.value} />
         ))}
       </select>
       <Icon

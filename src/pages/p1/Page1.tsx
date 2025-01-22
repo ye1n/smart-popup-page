@@ -44,7 +44,10 @@ export default function Page1() {
             </InputGroup>
             <InputGroup label="상담상태">
               <div className="flex gap-2">
-                <Dropdown options={["전체"]} width="w-[150px]" />
+                <Dropdown
+                  options={[{ label: "전체", value: "" }]}
+                  width="w-[150px]"
+                />
                 <Button label="변경" onClick={() => {}} />
                 <Input defaultValue="심사중" width="w-[80px]" />
               </div>

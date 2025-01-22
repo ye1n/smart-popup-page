@@ -41,7 +41,11 @@ export default function CustomerInfoTable() {
             휴대폰
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["LG U+ 알뜰폰"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "LG U+ 알뜰폰", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td>
             <Input align="left" defaultValue="010-1234-5678" isRequired />
@@ -52,7 +56,11 @@ export default function CustomerInfoTable() {
             자택전화
           </Td>
           <Td>
-            <Dropdown align="left" options={["유"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "유", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td colSpan={2}>
             <Input align="left" defaultValue="031-7009-1234" isRequired />
@@ -67,13 +75,21 @@ export default function CustomerInfoTable() {
             부동산보유
           </Td>
           <Td>
-            <Dropdown align="left" options={["Y"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "Y", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             군필
           </Td>
           <Td>
-            <Dropdown align="left" options={["방위산업체"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "방위산업체", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -87,13 +103,20 @@ export default function CustomerInfoTable() {
             자금용도
           </Td>
           <Td>
-            <Dropdown align="left" options={["자택구입목적"]} />
+            <Dropdown
+              align="left"
+              options={[{ label: "자택구입목적", value: "" }]}
+            />
           </Td>
           <Td type="label" align="left">
             광고유형
           </Td>
           <Td colSpan={3}>
-            <Dropdown align="left" options={["아파트"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "아파트", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -104,10 +127,18 @@ export default function CustomerInfoTable() {
             등본정보
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["자가"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "자가", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td>
-            <Dropdown align="left" options={["아파트"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "아파트", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td colSpan={4}>
             <div className="flex gap-1 p-1">
@@ -153,10 +184,18 @@ export default function CustomerInfoTable() {
             실거주지 정보
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["전세"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "전세", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td>
-            <Dropdown align="left" options={["임대아파트"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "임대아파트", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td colSpan={4}>
             <div className="flex gap-1 p-1">

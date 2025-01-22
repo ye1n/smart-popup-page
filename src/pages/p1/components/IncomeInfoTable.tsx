@@ -19,13 +19,21 @@ export default function IncomeInfoTable() {
             직업
           </Td>
           <Td>
-            <Dropdown align="left" options={["개인사업자"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "개인사업자", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             직업구분(CDD)
           </Td>
           <Td colSpan={5}>
-            <Dropdown align="left" options={["선택"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "선택", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -39,19 +47,31 @@ export default function IncomeInfoTable() {
             직종
           </Td>
           <Td>
-            <Dropdown align="left" options={["외감법인 코스닥"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "외감법인 코스닥", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             직급
           </Td>
           <Td>
-            <Dropdown align="left" options={["파트타이머"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "파트타이머", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             종업원수
           </Td>
           <Td>
-            <Dropdown align="left" options={["1000인 이상"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "1000인 이상", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -59,7 +79,11 @@ export default function IncomeInfoTable() {
             사업장형태
           </Td>
           <Td>
-            <Dropdown align="left" options={["자가"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "자가", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             사업장보증금
@@ -77,7 +101,11 @@ export default function IncomeInfoTable() {
             수입형태
           </Td>
           <Td>
-            <Dropdown align="left" options={["고정+실적급"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "고정+실적급", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
@@ -142,7 +170,11 @@ export default function IncomeInfoTable() {
             수령방법
           </Td>
           <Td>
-            <Dropdown align="left" options={["통장+현금"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "통장+현금", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             급여일
@@ -156,7 +188,11 @@ export default function IncomeInfoTable() {
             4대보험
           </Td>
           <Td>
-            <Dropdown align="left" options={["직장피부양자"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "직장피부양자", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td type="label" align="left">
             스크래핑일시
@@ -165,12 +201,16 @@ export default function IncomeInfoTable() {
             <Input align="right" defaultValue="2024-01-11 23:33:45" />
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["증빙소득"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "증빙소득", value: "" }]}
+              isRequired
+            />
           </Td>
           <Td colSpan={2}>
             <Dropdown
               align="left"
-              options={["근로소득원천징수영수증"]}
+              options={[{ label: "근로소득원천징수영수증", value: "" }]}
               isRequired
             />
           </Td>
@@ -192,7 +232,11 @@ export default function IncomeInfoTable() {
             사업증빙서류
           </Td>
           <Td colSpan={2}>
-            <Dropdown align="left" options={["사업자등록증명원"]} isRequired />
+            <Dropdown
+              align="left"
+              options={[{ label: "사업자등록증명원", value: "" }]}
+              isRequired
+            />
           </Td>
         </Tr>
         <Tr>
