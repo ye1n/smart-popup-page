@@ -100,9 +100,9 @@ export default function Page1() {
             <Button label="안심차단신청조회" onClick={() => {}} />
           </div>
           {/* 판정결과/신청정보 */}
-          <div className="flex gap-6">
+          <div className="grid grid-cols-3 gap-6">
             {/* 판정결과 */}
-            <div className="w-1/3">
+            <div className="col-span-1">
               <Label label="판정결과" className="mb-2" />
               <Table>
                 <Tbody>
@@ -126,7 +126,7 @@ export default function Page1() {
               </Table>
             </div>
             {/* 신청정보 */}
-            <div className="w-2/3">
+            <div className="col-span-2">
               <Label label="신청정보" className="mb-2" />
               <Table>
                 <Tbody>
@@ -155,9 +155,9 @@ export default function Page1() {
             </div>
           </div>
           {/* 소득정보/차량정보 */}
-          <div className="flex gap-6">
+          <div className="grid grid-cols-2 gap-6">
             {/* 소득정보 */}
-            <div className="w-1/2">
+            <div className="col-span-1">
               <Label label="소득정보" className="mb-2" />
               <Table>
                 <Tbody>
@@ -189,7 +189,7 @@ export default function Page1() {
               </Table>
             </div>
             {/* 차량정보 */}
-            <div className="w-1/2">
+            <div className="col-span-1">
               <Label label="차량정보" className="mb-2" />
               <Table>
                 <Tbody>
@@ -212,9 +212,9 @@ export default function Page1() {
             </div>
           </div>
           {/* 고객정보/소득정보 */}
-          <div className="flex gap-6">
+          <div className="grid grid-cols-2 gap-6">
             {/* 고객정보 */}
-            <div className="flex flex-col w-1/2 gap-2">
+            <div className="flex flex-col col-span-1 gap-2">
               <Label label="고객정보" />
               <div className="flex justify-between">
                 <Tabs tabs={customInfoTabs} />
@@ -226,7 +226,7 @@ export default function Page1() {
               <CustomerInfoTable />
             </div>
             {/* 소득정보 */}
-            <div className="flex flex-col w-1/2 gap-2">
+            <div className="flex flex-col col-span-1 gap-2">
               <Label label="소득정보" />
               <div className="h-[26px]">
                 <Button label="건보료계산기" onClick={() => {}} />
