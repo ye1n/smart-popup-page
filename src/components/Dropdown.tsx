@@ -31,7 +31,7 @@ const Dropdown: React.FC<Props> = ({
     >
       <select
         value={value}
-        className={`pr-[24px] pl-2 appearance-none h-full outline-none text-xs text-custom-black bg-transparent ${className} ${width} ${
+        className={`block pr-[24px] pl-2 appearance-none h-full outline-none text-xs text-custom-black bg-transparent ${className} ${width} ${
           align === "left"
             ? "text-left"
             : align === "right"

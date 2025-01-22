@@ -23,9 +23,9 @@ const Td: React.FC<Props> = ({
       colSpan={colSpan}
       className={`border-x border-custom-form-line ${className} ${
         type === "label"
-          ? "px-2 text-xs text-custom-black bg-custom-label-bg"
+          ? "px-2 text-xs text-custom-black bg-custom-label-bg h-[26px]"
           : type === "text"
-          ? "px-2 text-xs text-custom-black"
+          ? "px-2 text-xs text-custom-black h-[26px]"
           : ""
       } ${
         align === "left"
