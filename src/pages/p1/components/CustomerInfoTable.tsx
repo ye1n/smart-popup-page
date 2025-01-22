@@ -1,10 +1,12 @@
 import Button from "../../../components/Button";
 import Dropdown from "../../../components/Dropdown";
+import Icon from "../../../components/Icon";
 import Input from "../../../components/Input";
 import Table from "../../../components/table/Table";
 import Tbody from "../../../components/table/Tbody";
 import Td from "../../../components/table/Td";
 import Tr from "../../../components/table/Tr";
+import { icons } from "../../../constants/icons";
 
 export default function CustomerInfoTable() {
   return (
@@ -29,7 +31,14 @@ export default function CustomerInfoTable() {
             고객명
           </Td>
           <Td colSpan={3}>
-            <Input align="left" defaultValue="김저축" />
+            <div className="flex items-center justify-between">
+              <Input align="left" defaultValue="김저축" className="flex-1" />
+              <div className="flex gap-1 pr-1">
+                <Icon icon={icons.tableIcon01} className="bg-custom-gray-3" />
+                <Icon icon={icons.tableIcon02} className="bg-custom-gray-3" />
+                <Icon icon={icons.tableIcon03} className="bg-custom-gray-3" />
+              </div>
+            </div>
           </Td>
           <Td type="label" align="left">
             주민등록번호

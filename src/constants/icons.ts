@@ -50,6 +50,10 @@ import ArrRight from "../assets/icons/arr-right.svg?react";
 
 import Search from "../assets/icons/search.svg?react";
 
+import TableIcon01 from "../assets/icons/table-icon-01.svg?react";
+import TableIcon02 from "../assets/icons/table-icon-02.svg?react";
+import TableIcon03 from "../assets/icons/table-icon-03.svg?react";
+
 const pngIcons = {
   sideMn04: SideMn04,
   sideMn05: SideMn05,
@@ -107,6 +111,10 @@ const svgIcons = {
 
   // other icons
   search: Search,
+
+  tableIcon01: TableIcon01,
+  tableIcon02: TableIcon02,
+  tableIcon03: TableIcon03,
 };
 
 export const icons = {
