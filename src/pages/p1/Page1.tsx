@@ -14,7 +14,7 @@ import Tr from "../../components/table/Tr";
 import Td from "../../components/table/Td";
 import Table from "../../components/table/Table";
 import AgreeInfoTable from "./components/AgreeInfoTable";
-import SideMenu from "../../components/common/SideMenu";
+import SideMenu from "./components/SideMenu";
 
 export default function Page1() {
   const customInfoTabs = [

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Icon from "../Icon";
-import { SideMenuData } from "../../data/buttonData";
+import Icon from "../../../components/Icon";
+import { SideMenuData } from "../../../data/buttonData";
 
 type Props = {};
 
@@ -28,7 +28,7 @@ const SideMenu: React.FC<Props> = ({}) => {
                       ? item.activeIcon
                       : item.inactiveIcon
                   }
-                  width="20"
+                  width={item.width}
                   height="20"
                   className="text-custom-white"
                 />
