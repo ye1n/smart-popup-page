@@ -6,7 +6,7 @@ import { TopBtnData } from "../../data/buttonData";
 import Icon from "../../components/Icon";
 import { icons } from "../../constants/icons";
 import Label from "../../components/Label";
-import Tabs from "../../components/Tabs";
+import Tabs, { Tab } from "../../components/Tabs";
 import CustomerInfoTable from "./components/CustomerInfoTable";
 import IncomeInfoTable from "./components/IncomeInfoTable";
 import Tbody from "../../components/table/Tbody";
@@ -15,6 +15,7 @@ import Td from "../../components/table/Td";
 import Table from "../../components/table/Table";
 import AgreeInfoTable from "./components/AgreeInfoTable";
 import SideMenu from "../../components/common/SideMenu";
+import { useState } from "react";
 
 export default function Page1() {
   const customInfoTabs = [
@@ -24,6 +25,8 @@ export default function Page1() {
     { id: "score", label: "스코어" },
     { id: "transfer", label: "송금정보" },
   ];
+
+  const [activeTab, setActiveTab] = useState<Tab>(customInfoTabs[0]);
 
   return (
     <div className="flex justify-between">
@@ -217,12 +220,17 @@ export default function Page1() {
             <div className="flex flex-col col-span-1 gap-2">
               <Label label="고객정보" />
               <div className="flex justify-between">
-                <Tabs tabs={customInfoTabs} />
+                <Tabs
+                  tabs={customInfoTabs}
+                  activeTab={activeTab}
+                  setActiveTab={setActiveTab}
+                />
                 <div className="flex gap-2">
                   <Button label="신분증 진위확인" onClick={() => {}} />
                   <Button label="KCB소유부동산" onClick={() => {}} />
                 </div>
               </div>
+              {}
               <CustomerInfoTable />
             </div>
             {/* 소득정보 */}

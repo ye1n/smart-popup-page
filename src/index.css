@@ -7,7 +7,7 @@
   html {
     font-family: NotoSansCJKKR;
     white-space: nowrap;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   td,
