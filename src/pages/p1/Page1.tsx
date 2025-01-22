@@ -155,7 +155,7 @@ export default function Page1() {
             </div>
           </div>
           {/* 소득정보/차량정보 */}
-          <div className="flex gap-2">
+          <div className="flex gap-6">
             {/* 소득정보 */}
             <div className="w-1/2">
               <Label label="소득정보" className="mb-2" />
@@ -212,11 +212,11 @@ export default function Page1() {
             </div>
           </div>
           {/* 고객정보/소득정보 */}
-          <div className="flex gap-2">
+          <div className="flex gap-6">
             {/* 고객정보 */}
             <div className="flex flex-col w-1/2 gap-2">
               <Label label="고객정보" />
-              <div className="flex items-center justify-between">
+              <div className="flex justify-between">
                 <Tabs tabs={customInfoTabs} />
                 <div className="flex gap-2">
                   <Button label="신분증 진위확인" onClick={() => {}} />
@@ -228,7 +228,7 @@ export default function Page1() {
             {/* 소득정보 */}
             <div className="flex flex-col w-1/2 gap-2">
               <Label label="소득정보" />
-              <div>
+              <div className="h-[26px]">
                 <Button label="건보료계산기" onClick={() => {}} />
               </div>
               <IncomeInfoTable />

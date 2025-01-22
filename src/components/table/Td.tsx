@@ -25,7 +25,7 @@ const Td: React.FC<Props> = ({
         type === "label"
           ? "px-2 text-xs text-custom-black bg-custom-label-bg h-[26px]"
           : type === "text"
-          ? "px-2 text-xs text-custom-black h-[26px]"
+          ? "px-2 text-xs text-custom-black h-[26px] bg-custom-white"
           : ""
       } ${
         align === "left"

@@ -15,7 +15,7 @@ const Table: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`border-t border-t-[#333333] ${className} ${
+      className={`border-t border-t-[#333333] overflow-x-auto ${className} ${
         maxHeight ? `overflow-y-auto ${maxHeight}` : ""
       }`}
     >
