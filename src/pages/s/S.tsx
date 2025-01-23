@@ -16,16 +16,12 @@ import SideMenu from "../../components/common/SideMenu";
 import { useState } from "react";
 import BasicInfoTable from "./components/customInfo/basicInfo/BasicInfoTable";
 import AssetsInfoTable from "./components/customInfo/assetsInfo/AssetsInfoTable";
-import ScoreTable from "./components/customInfo/score/ScoreTable";
-import TransferInfoTable01 from "./components/customInfo/transferInfo/TransferInfoTable01";
-import TransferInfoTable02 from "./components/customInfo/transferInfo/TransferInfoTable02";
 import Table from "../../components/table/Table";
-import Checkbox from "../../components/Checkbox";
 import DsrInfo from "./components/customInfo/dsrInfo/DsrInfo";
 import Score from "./components/customInfo/score/Score";
 import TransferInfo from "./components/customInfo/transferInfo/TransferInfo";
 
-export default function Page1() {
+export default function S() {
   const customInfoTabs = [
     { id: "basicInfo", label: "기본정보" },
     { id: "assetsInfo", label: "자산정보" },
