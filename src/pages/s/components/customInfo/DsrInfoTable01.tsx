@@ -72,7 +72,7 @@ export default function DsrInfoTable01() {
           <Td type="label">연계대출 및 집단대출 구분</Td>
         </Tr>
         {DsrInfoTableData.map((item, index) => (
-          <Tr>
+          <Tr key={index}>
             <Td type="text">
               <Icon icon={icons.chk} />
             </Td>
