@@ -37,11 +37,10 @@ export default function Page1() {
 
   return (
     <div className="flex justify-between">
-      {/* 메인화면 */}
+      {/* 메인 */}
       <div className="w-full">
         {/* 메인상단 */}
         <div className="flex flex-col gap-4 p-4 bg-custom-bg">
-          {/* 메인상단 - 고객정보 */}
           <div className="flex gap-6">
             <InputGroup label="고객명">
               <Input defaultValue="김저축" width="w-[150px]" />
@@ -68,7 +67,6 @@ export default function Page1() {
               <Button label="식별정보 확인" onClick={() => {}} />
             </InputGroup>
           </div>
-          {/* 메인하단 - 버튼목록 */}
           <div className="grid grid-cols-8 gap-2 w-fit grid-rows-auto">
             {TopBtnData.map((item, index) => (
               <button
@@ -85,23 +83,28 @@ export default function Page1() {
         </div>
         {/* 메인하단 */}
         <div className="flex flex-col gap-4 p-4">
-          <div className="flex gap-2">
-            <div className="flex border divide-x border-custom-form-line divide-custom-form-line">
-              <div className="flex items-center justify-between bg-custom-form-bg w-[122px] h-[26px] p-2">
-                <p className="text-xs text-black">진행상태</p>
-                <Icon icon={icons.arrRight} />
-              </div>
-              <div className="flex items-center bg-custom-white w-[122px] h-[26px] p-2">
-                <p className="text-xs text-black">진행</p>
-              </div>
-              <div className="flex items-center justify-between bg-custom-form-bg w-[122px] h-[26px] p-2">
-                <p className="text-xs text-black">경과시간</p>
-                <Icon icon={icons.arrRight} />
-              </div>
-              <div className="flex items-center bg-custom-white w-[122px] h-[26px] p-2">
-                <p className="text-xs text-black">33일 23시간 58분</p>
-              </div>
-            </div>
+          <div className="flex items-center gap-2">
+            <Table width={488} borderTop={false}>
+              <Tbody>
+                <Tr>
+                  <Td type="gray-label" align="left">
+                    <div className="flex items-center justify-between">
+                      진행상태
+                      <Icon icon={icons.arrRight} />
+                    </div>
+                  </Td>
+                  <Td type="text" align="left">
+                    진행
+                  </Td>
+                  <Td type="gray-label" align="left">
+                    경과시간
+                  </Td>
+                  <Td type="text" align="left">
+                    33일 23시간 58분
+                  </Td>
+                </Tr>
+              </Tbody>
+            </Table>
             <Button label="대출정보가져오기" onClick={() => {}} />
             <Button label="안심차단신청조회" onClick={() => {}} />
           </div>
@@ -110,7 +113,7 @@ export default function Page1() {
             {/* 판정결과 */}
             <div className="col-span-1">
               <Label label="판정결과" className="mb-2" />
-              <Table>
+              <Table minWidth={488}>
                 <Tbody>
                   <Tr>
                     <Td type="label">판정</Td>
@@ -134,7 +137,7 @@ export default function Page1() {
             {/* 신청정보 */}
             <div className="col-span-2">
               <Label label="신청정보" className="mb-2" />
-              <Table>
+              <Table minWidth={976}>
                 <Tbody>
                   <Tr>
                     <Td type="label">SEG구분</Td>
@@ -165,7 +168,7 @@ export default function Page1() {
             {/* 소득정보 */}
             <div className="col-span-1">
               <Label label="소득정보" className="mb-2" />
-              <Table>
+              <Table minWidth={734}>
                 <Tbody>
                   <Tr>
                     <Td type="label">플랫폼 제공소득</Td>
@@ -197,7 +200,7 @@ export default function Page1() {
             {/* 차량정보 */}
             <div className="col-span-1">
               <Label label="차량정보" className="mb-2" />
-              <Table>
+              <Table minWidth={734}>
                 <Tbody>
                   <Tr>
                     <Td type="label">담보순위</Td>
@@ -572,78 +575,76 @@ export default function Page1() {
           </div>
         </div>
       </div>
-      <div className="flex">
-        {/* 사이드메뉴 */}
-        <SideMenu />
-        {/* 우측메모란 */}
-        <div className="w-[268px] p-4 flex flex-col gap-4">
-          {/* 메모 */}
-          <div className="flex flex-col w-full gap-2">
-            <div className="flex items-start justify-between">
-              <Label label="메모" />
-              <Button label="등록" onClick={() => {}} />
-            </div>
-            <div className="flex gap-2">
-              <Button label="심사" variant="white-outline" onClick={() => {}} />
-              <Button
-                label="제휴사통보"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-            </div>
-            <textarea className="w-full h-[250px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+      {/* 사이드메뉴 */}
+      <SideMenu />
+      {/* 우측메모란 */}
+      <div className="w-[268px] flex flex-col gap-4 m-4">
+        {/* 메모 */}
+        <div className="flex flex-col gap-2">
+          <div className="flex items-start justify-between">
+            <Label label="메모" />
+            <Button label="등록" onClick={() => {}} />
           </div>
-          {/* 문자발송 및 메모이력확인 */}
-          <div className="flex flex-col w-full gap-2">
-            <div className="flex items-start justify-between">
-              <Label label="문자발송 및 메모이력확인" />
-              <Button label="발송" onClick={() => {}} />
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <Button
-                label="자동문자"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="수동문자"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="자동메모"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="수동메모"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="제휴사메모"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="삭제메모"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="전체메모"
-                variant="white-outline"
-                onClick={() => {}}
-              />
-              <Button
-                label="삭제"
-                variant="gray"
-                onClick={() => {}}
-                className=""
-              />
-            </div>
-            <textarea className="w-full h-[542px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+          <div className="flex gap-2">
+            <Button label="심사" variant="white-outline" onClick={() => {}} />
+            <Button
+              label="제휴사통보"
+              variant="white-outline"
+              onClick={() => {}}
+            />
           </div>
+          <textarea className="w-[268px] h-[250px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+        </div>
+        {/* 문자발송 및 메모이력확인 */}
+        <div className="flex flex-col h-full gap-2">
+          <div className="flex items-start justify-between">
+            <Label label="문자발송 및 메모이력확인" />
+            <Button label="발송" onClick={() => {}} />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              label="자동문자"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="수동문자"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="자동메모"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="수동메모"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="제휴사메모"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="삭제메모"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="전체메모"
+              variant="white-outline"
+              onClick={() => {}}
+            />
+            <Button
+              label="삭제"
+              variant="gray"
+              onClick={() => {}}
+              className=""
+            />
+          </div>
+          <textarea className="w-[268px] h-full border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
         </div>
       </div>
     </div>
