@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  type?: "label" | "contents" | "text";
+  type?: "label" | "gray-label" | "contents" | "text";
   align?: "left" | "center" | "right";
   className?: string;
   children?: React.ReactNode;
@@ -24,6 +24,8 @@ const Td: React.FC<Props> = ({
       className={`border-x border-custom-form-line ${className} ${
         type === "label"
           ? "px-2 text-xs text-custom-black bg-custom-label-bg h-[26px]"
+          : type === "gray-label"
+          ? "px-2 text-xs text-custom-black bg-custom-form-bg h-[26px]"
           : type === "text"
           ? "px-2 text-xs text-custom-black h-[26px] bg-custom-white"
           : ""
