@@ -32,7 +32,7 @@ export default function Ch01() {
   return (
     <div className="flex pr-4">
       {/* 메인 */}
-      <div className="w-full">
+      <div>
         {/* 메인상단 */}
         <div className="grid grid-cols-3 gap-6 p-4 bg-custom-bg">
           <div className="flex items-center col-span-2 gap-6">

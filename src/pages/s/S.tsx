@@ -35,7 +35,7 @@ export default function S() {
   return (
     <div className="flex">
       {/* 메인 */}
-      <div className="w-full">
+      <div className="grid grid-cols-1">
         {/* 메인상단 */}
         <div className="flex flex-col gap-4 p-4 bg-custom-bg">
           <div className="flex gap-6">
