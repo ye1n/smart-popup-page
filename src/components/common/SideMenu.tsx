@@ -1,16 +1,22 @@
 import { useState } from "react";
 import Icon from "../Icon";
-import { SideMenuData } from "../../data/buttonData";
 
-type Props = {};
+type Props = {
+  data: Array<{
+    activeIcon: any;
+    inactiveIcon: any;
+    label: string;
+    width: string;
+  }>;
+};
 
-const SideMenu: React.FC<Props> = ({}) => {
+const SideMenu: React.FC<Props> = ({ data }) => {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
 
   return (
     <div className="shadow-lg w-20 h-fit bg-custom-white py-[10px] rounded-b-lg">
       <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
-        {SideMenuData.map((item, index) => (
+        {data.map((item, index) => (
           <div key={index} className="w-20">
             <button
               key={index}

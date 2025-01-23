@@ -19,7 +19,7 @@ export const TopBtnData = [
   { icon: null, label: "국세 과세증명" },
 ];
 
-export const SideMenuData = [
+export const SSideMenuData = [
   {
     activeIcon: icons.sideMnWh01,
     inactiveIcon: icons.sideMn01,
@@ -110,6 +110,51 @@ export const SideMenuData = [
     activeIcon: null,
     inactiveIcon: null,
     label: "수동송금\n으로변경",
+    width: "20",
+  },
+];
+
+export const ChSideMenuData = [
+  {
+    activeIcon: icons.sideMnWh11,
+    inactiveIcon: icons.sideMn11,
+    label: "대출계산기",
+    width: "20",
+  },
+  {
+    activeIcon: icons.sideMnWh02,
+    inactiveIcon: icons.sideMn02,
+    label: "CB조회",
+    width: "20",
+  },
+  {
+    activeIcon: icons.sideMnWh12,
+    inactiveIcon: icons.sideMn12,
+    label: "첨부서류",
+    width: "20",
+  },
+  {
+    activeIcon: icons.sideMnWh13,
+    inactiveIcon: icons.sideMn13,
+    label: "SMS이력",
+    width: "20",
+  },
+  {
+    activeIcon: icons.sideMnWh14,
+    inactiveIcon: icons.sideMn14,
+    label: "통화이력",
+    width: "20",
+  },
+  {
+    activeIcon: icons.sideMnWh15,
+    inactiveIcon: icons.sideMn15,
+    label: "방문신청",
+    width: "20",
+  },
+  {
+    activeIcon: null,
+    inactiveIcon: null,
+    label: "추가대출\n접수",
     width: "20",
   },
 ];

@@ -2,7 +2,7 @@ import Button from "../../components/Button";
 import Dropdown from "../../components/Dropdown";
 import Input from "../../components/Input";
 import InputGroup from "../../components/InputGroup";
-import { TopBtnData } from "../../data/buttonData";
+import { SSideMenuData, TopBtnData } from "../../data/Data";
 import Icon from "../../components/Icon";
 import { icons } from "../../constants/icons";
 import Label from "../../components/Label";
@@ -33,7 +33,7 @@ export default function S() {
   const [activeTab, setActiveTab] = useState<Tab>(customInfoTabs[0]);
 
   return (
-    <div className="flex justify-between">
+    <div className="flex">
       {/* 메인 */}
       <div className="w-full">
         {/* 메인상단 */}
@@ -288,7 +288,7 @@ export default function S() {
         </div>
       </div>
       {/* 사이드메뉴 */}
-      <SideMenu />
+      <SideMenu data={SSideMenuData} />
       {/* 우측메모란 */}
       <div className="w-[268px] flex flex-col gap-4 m-4">
         {/* 메모 */}
