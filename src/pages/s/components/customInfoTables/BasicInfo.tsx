@@ -1,14 +1,14 @@
-import Button from "../../../components/Button";
-import Dropdown from "../../../components/Dropdown";
-import Icon from "../../../components/Icon";
-import Input from "../../../components/Input";
-import Table from "../../../components/table/Table";
-import Tbody from "../../../components/table/Tbody";
-import Td from "../../../components/table/Td";
-import Tr from "../../../components/table/Tr";
-import { icons } from "../../../constants/icons";
+import Button from "../../../../components/Button";
+import Dropdown from "../../../../components/Dropdown";
+import Icon from "../../../../components/Icon";
+import Input from "../../../../components/Input";
+import Table from "../../../../components/table/Table";
+import Tbody from "../../../../components/table/Tbody";
+import Td from "../../../../components/table/Td";
+import Tr from "../../../../components/table/Tr";
+import { icons } from "../../../../constants/icons";
 
-export default function CustomerInfoTable() {
+export default function BasicInfo() {
   return (
     <Table
       maxHeight="h-[298px]"

@@ -7,7 +7,6 @@ import Icon from "../../components/Icon";
 import { icons } from "../../constants/icons";
 import Label from "../../components/Label";
 import Tabs, { Tab } from "../../components/Tabs";
-import CustomerInfoTable from "./components/CustomerInfoTable";
 import IncomeInfoTable from "./components/IncomeInfoTable";
 import Tbody from "../../components/table/Tbody";
 import Tr from "../../components/table/Tr";
@@ -16,14 +15,15 @@ import Table from "../../components/table/Table";
 import AgreeInfoTable from "./components/AgreeInfoTable";
 import SideMenu from "../../components/common/SideMenu";
 import { useState } from "react";
+import BasicInfo from "./components/customInfoTables/BasicInfo";
 
 export default function Page1() {
   const customInfoTabs = [
-    { id: "basic", label: "기본정보" },
-    { id: "assets", label: "자산정보" },
-    { id: "dsr", label: "DSR산출정보" },
+    { id: "basicInfo", label: "기본정보" },
+    { id: "assetsInfo", label: "자산정보" },
+    { id: "dsrInfo", label: "DSR산출정보" },
     { id: "score", label: "스코어" },
-    { id: "transfer", label: "송금정보" },
+    { id: "transferInfo", label: "송금정보" },
   ];
 
   const [activeTab, setActiveTab] = useState<Tab>(customInfoTabs[0]);
@@ -230,8 +230,17 @@ export default function Page1() {
                   <Button label="KCB소유부동산" onClick={() => {}} />
                 </div>
               </div>
-              {}
-              <CustomerInfoTable />
+              {activeTab.id === "basicInfo" ? (
+                <BasicInfo />
+              ) : activeTab.id === "assetsInfo" ? (
+                <></>
+              ) : activeTab.id === "dsrInfo" ? (
+                <></>
+              ) : activeTab.id === "score" ? (
+                <></>
+              ) : (
+                <></>
+              )}
             </div>
             {/* 소득정보 */}
             <div className="flex flex-col col-span-1 gap-2">
