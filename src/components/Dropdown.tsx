@@ -7,6 +7,7 @@ type Props = {
   value?: string;
   options: Array<{ label: string; value: string | number }>;
   width?: string;
+  height?: string;
   align?: "left" | "center" | "right";
   className?: string;
   isRequired?: boolean;
@@ -18,6 +19,7 @@ const Dropdown: React.FC<Props> = ({
   value,
   options,
   width = "w-full",
+  height = "h-[26px]",
   align = "center",
   className = "",
   isRequired = false,
@@ -25,13 +27,13 @@ const Dropdown: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`relative h-[26px] ${
+      className={`relative ${width} ${height} ${
         isRequired ? "bg-custom-form-acc" : "bg-custom-white"
       }`}
     >
       <select
         value={value}
-        className={`block pr-[24px] pl-2 appearance-none h-full outline-none text-xs text-custom-black bg-transparent ${className} ${width} ${
+        className={`block pr-[24px] pl-2 appearance-none w-full h-full outline-none text-xs text-custom-black bg-transparent ${className} ${
           align === "left"
             ? "text-left"
             : align === "right"
