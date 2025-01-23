@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../../components/Button";
 import Checkbox from "../../components/Checkbox";
 import SideMenu from "../../components/common/SideMenu";
@@ -10,6 +11,7 @@ import Table from "../../components/table/Table";
 import Tbody from "../../components/table/Tbody";
 import Td from "../../components/table/Td";
 import Tr from "../../components/table/Tr";
+import Tabs, { Tab } from "../../components/Tabs";
 import { icons } from "../../constants/icons";
 import { ChSideMenuData } from "../../data/Data";
 import AccountListTable from "./components/AccountListTable";
@@ -20,6 +22,13 @@ import CustomerInfoTable04 from "./components/CustomerInfoTable04";
 import CustomerInfoTable05 from "./components/CustomerInfoTable05";
 
 export default function Ch01() {
+  const counselTabs = [
+    { id: "tab01", label: "업무요청" },
+    { id: "tab02", label: "SMS발송" },
+  ];
+
+  const [activeTab, setActiveTab] = useState<Tab>(counselTabs[0]);
+
   return (
     <div className="flex pr-4">
       {/* 메인 */}
@@ -209,7 +218,7 @@ export default function Ch01() {
               <Button label="마케팅동의이력" onClick={() => {}} />
               <Button label="약관동의이력" onClick={() => {}} />
             </div>
-            <Table borderTop={false}>
+            <Table minWidth={522} borderTop={false}>
               <Tbody>
                 <Tr>
                   <Td type="label">부재</Td>
@@ -225,7 +234,7 @@ export default function Ch01() {
                   <Td type="text">0</Td>
                   <Td type="text">103</Td>
                   <Td type="text">0</Td>
-                  <Td type="text" className="text-[#fb5a28]">
+                  <Td type="text" className="text-[#fb5a28] font-bold">
                     9
                   </Td>
                 </Tr>
@@ -241,11 +250,27 @@ export default function Ch01() {
                 <Checkbox buttonStyle label="문자포함" onClick={() => {}} />
                 <Checkbox buttonStyle label="자동포함" onClick={() => {}} />
               </div>
-              <div className="flex items-center gap-2">
-                <Button label="엑셀" onClick={() => {}} />
-                <Button label="조회" onClick={() => {}} />
+              <div className="flex items-center justify-between">
+                <div className="flex gap-2">
+                  <Input
+                    defaultValue=""
+                    width="w-[122px]"
+                    className="border"
+                    placeholder="검색"
+                  />
+                  <Input
+                    defaultValue=""
+                    width="w-[122px]"
+                    className="border"
+                    placeholder="상담구분검색"
+                  />
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button label="엑셀" onClick={() => {}} />
+                  <Button label="조회" onClick={() => {}} />
+                </div>
               </div>
-              <Table borderTop={false}>
+              <Table minWidth={522} borderTop={false}>
                 <Tbody>
                   <Tr>
                     <Td type="label">등록일시</Td>
@@ -309,11 +334,16 @@ export default function Ch01() {
             </div>
             {/* 상담등록 */}
             <div className="flex flex-col gap-2">
-              <div className="flex items-start justify-between">
-                <Label label="상담등록" />
+              <Label label="상담등록" />
+              <div className="flex justify-between">
+                <Tabs
+                  tabs={counselTabs}
+                  activeTab={activeTab}
+                  setActiveTab={setActiveTab}
+                />
                 <Button label="등록" onClick={() => {}} />
               </div>
-              <Table borderTop={false}>
+              <Table minWidth={522} borderTop={false}>
                 <Tbody>
                   <Tr>
                     <Td type="label" align="left">
