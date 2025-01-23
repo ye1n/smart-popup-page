@@ -5,7 +5,7 @@ type Props = {
   align?: "left" | "center" | "right";
   className?: string;
   isRequired?: boolean;
-};
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
 const Input: React.FC<Props> = ({
   defaultValue = "",
@@ -14,6 +14,7 @@ const Input: React.FC<Props> = ({
   align = "center",
   className = "",
   isRequired = false,
+  ...props
 }) => (
   <input
     defaultValue={defaultValue}
@@ -26,6 +27,7 @@ const Input: React.FC<Props> = ({
         ? "text-right"
         : "text-center"
     }`}
+    {...props}
   />
 );
 
