@@ -11,7 +11,7 @@ import { icons } from "../../../../constants/icons";
 export default function BasicInfoTable() {
   return (
     <Table
-      maxHeight="h-[298px]"
+      height="h-[298px]"
       // colWidths={[
       //   "10%",
       //   "7%",

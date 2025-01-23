@@ -10,7 +10,7 @@ import { icons } from "../../../constants/icons";
 export default function IncomeInfoTable() {
   return (
     <Table
-      maxHeight="h-[298px]"
+      height="h-[298px]"
       // colWidths={["10%", "10%", "10%", "20%", "10%", "10%", "10%", "20%"]}
     >
       <Tbody>

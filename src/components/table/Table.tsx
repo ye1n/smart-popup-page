@@ -1,25 +1,25 @@
 import React from "react";
 
 type Props = {
-  maxHeight?: string; //테이블 최대 높이, 초과시 스크롤 적용
+  width?: number;
+  height?: string;
   className?: string;
   colWidths?: string[];
   children?: React.ReactNode;
 };
 
 const Table: React.FC<Props> = ({
-  maxHeight,
+  width = "w-full",
+  height = "",
   className = "",
   colWidths,
   children,
 }) => {
   return (
     <div
-      className={`border-t border-t-[#333333] overflow-x-auto ${className} ${
-        maxHeight ? `overflow-y-auto ${maxHeight}` : ""
-      }`}
+      className={`border-t border-t-[#333333] overflow-auto ${className} ${height}`}
     >
-      <table className="w-full">
+      <table className={`${width}`}>
         {colWidths && (
           <colgroup>
             {colWidths.map((width, index) => (
