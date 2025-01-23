@@ -23,7 +23,7 @@ const Button: React.FC<Props> = ({
   const variantClass = {
     blue: "bg-custom-btn-default text-custom-white font-bold h-[24px] rounded px-2",
     "white-outline-shadow":
-      "border border-custom-gray-4 text-custom-gray-1 bg-custom-white shadow font-medium h-[24px] rounded px-2",
+      "border border-custom-btn-line text-custom-gray-1 bg-custom-white shadow font-medium h-[24px] rounded px-2",
     "white-outline":
       "border border-custom-gray-4 text-custom-gray-1 bg-custom-white font-medium h-[24px] rounded px-2",
     gray: "bg-custom-gray-3 text-custom-white font-bold h-[24px] rounded px-2",
