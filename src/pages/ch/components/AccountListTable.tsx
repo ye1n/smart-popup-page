@@ -42,7 +42,7 @@ export default function AccountListTable() {
   ];
 
   return (
-    <Table minWidth={1192}>
+    <Table minWidth={1214}>
       <Tbody>
         <Tr>
           <Td type="label">상품명</Td>
