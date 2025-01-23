@@ -15,7 +15,8 @@ import Table from "../../components/table/Table";
 import AgreeInfoTable from "./components/AgreeInfoTable";
 import SideMenu from "../../components/common/SideMenu";
 import { useState } from "react";
-import BasicInfo from "./components/customInfoTables/BasicInfo";
+import BasicInfoTable from "./components/customInfo/BasicInfoTable";
+import AssetsInfoTable from "./components/customInfo/AssetsInfoTable";
 
 export default function Page1() {
   const customInfoTabs = [
@@ -231,9 +232,9 @@ export default function Page1() {
                 </div>
               </div>
               {activeTab.id === "basicInfo" ? (
-                <BasicInfo />
+                <BasicInfoTable />
               ) : activeTab.id === "assetsInfo" ? (
-                <></>
+                <AssetsInfoTable />
               ) : activeTab.id === "dsrInfo" ? (
                 <></>
               ) : activeTab.id === "score" ? (

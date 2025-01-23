@@ -8,7 +8,7 @@ import Td from "../../../../components/table/Td";
 import Tr from "../../../../components/table/Tr";
 import { icons } from "../../../../constants/icons";
 
-export default function BasicInfo() {
+export default function BasicInfoTable() {
   return (
     <Table
       maxHeight="h-[298px]"
