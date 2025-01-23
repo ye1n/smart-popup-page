@@ -50,23 +50,19 @@ export default function Page1() {
               </div>
             </InputGroup>
             <InputGroup label="상담상태">
-              <div className="flex gap-2">
-                <Dropdown
-                  options={[{ label: "전체", value: "" }]}
-                  width="w-[150px]"
-                />
-                <Button label="변경" onClick={() => {}} />
-                <Input defaultValue="심사중" width="w-[80px]" />
-              </div>
+              <Dropdown
+                options={[{ label: "전체", value: "" }]}
+                width="w-[150px]"
+              />
+              <Button label="변경" onClick={() => {}} />
+              <Input defaultValue="심사중" width="w-[80px]" />
             </InputGroup>
             <InputGroup label="접수번호">
-              <div className="flex gap-2">
-                <div className="flex gap-0.5">
-                  <Input defaultValue="202411210000251" width="w-[150px]" />
-                  <Input defaultValue="신규" width="w-[80px]" />
-                </div>
-                <Button label="식별정보 확인" onClick={() => {}} />
+              <div className="flex gap-0.5">
+                <Input defaultValue="202411210000251" width="w-[150px]" />
+                <Input defaultValue="신규" width="w-[80px]" />
               </div>
+              <Button label="식별정보 확인" onClick={() => {}} />
             </InputGroup>
           </div>
           {/* 메인하단 - 버튼목록 */}
