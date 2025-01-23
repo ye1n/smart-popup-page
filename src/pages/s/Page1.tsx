@@ -19,6 +19,7 @@ import BasicInfoTable from "./components/customInfo/BasicInfoTable";
 import AssetsInfoTable from "./components/customInfo/AssetsInfoTable";
 import DsrInfoTable02 from "./components/customInfo/DsrInfoTable02";
 import DsrInfoTable01 from "./components/customInfo/DsrInfoTable01";
+import ScoreTable from "./components/customInfo/ScoreTable";
 
 export default function Page1() {
   const customInfoTabs = [
@@ -271,7 +272,19 @@ export default function Page1() {
                   </div>
                 </div>
               ) : activeTab.id === "score" ? (
-                <></>
+                <div>
+                  <div className="flex items-end justify-between mb-2">
+                    <p className="text-xs font-bold text-custom-black">
+                      내/외부 평점
+                    </p>
+                    <Button
+                      variant="white-outline-shadow"
+                      label="TOSS스코어"
+                      onClick={() => {}}
+                    />
+                  </div>
+                  <ScoreTable />
+                </div>
               ) : (
                 <></>
               )}
