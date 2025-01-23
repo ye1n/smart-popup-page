@@ -1,9 +1,8 @@
-import Icon from "../../../../components/Icon";
+import Checkbox from "../../../../components/Checkbox";
 import Table from "../../../../components/table/Table";
 import Tbody from "../../../../components/table/Tbody";
 import Td from "../../../../components/table/Td";
 import Tr from "../../../../components/table/Tr";
-import { icons } from "../../../../constants/icons";
 
 export default function TransferInfoTable02() {
   const TransferInfoTableData = [
@@ -28,7 +27,7 @@ export default function TransferInfoTable02() {
   ];
 
   return (
-    <Table width="min-w-[1751px]">
+    <Table minWidth={1817}>
       <Tbody>
         <Tr>
           <Td type="label" colSpan={2} rowSpan={2}>
@@ -83,12 +82,12 @@ export default function TransferInfoTable02() {
         </Tr>
         {TransferInfoTableData.map((item, index) => (
           <Tr key={index}>
-            <Td type="text">
-              <Icon icon={icons.chk} />
+            <Td>
+              <div className="flex items-center justify-center">
+                <Checkbox isChecked onClick={() => {}} />
+              </div>
             </Td>
-            <Td type="text" align="left">
-              {index + 1}
-            </Td>
+            <Td type="text">{index + 1}</Td>
             <Td type="text">{item.realNumber}</Td>
             <Td type="text">{item.senderName}</Td>
             <Td type="text">{item.senderAlias}</Td>
@@ -96,10 +95,14 @@ export default function TransferInfoTable02() {
             <Td type="text">{item.changeDate}</Td>
             <Td type="text">{item.bank}</Td>
             <Td type="text">{item.account}</Td>
-            <Td type="text">{item.amount}</Td>
+            <Td type="text" align="right">
+              {item.amount}
+            </Td>
             <Td type="text">{item.calcType}</Td>
             <Td type="text">{item.cashType}</Td>
-            <Td type="text">{item.fee}</Td>
+            <Td type="text" align="right">
+              {item.fee}
+            </Td>
             <Td type="text">{item.recipient}</Td>
             <Td type="text">{item.examiner}</Td>
             <Td type="text">{item.transferMgmt}</Td>

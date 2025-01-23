@@ -9,7 +9,7 @@ import { icons } from "../../../../constants/icons";
 
 export default function AssetsInfoTable() {
   return (
-    <Table height="h-[298px]">
+    <Table minWidth={734} height={298}>
       <Tbody>
         <Tr>
           <Td type="label" align="left" rowSpan={8}>

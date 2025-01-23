@@ -1,9 +1,8 @@
-import Icon from "../../../../components/Icon";
+import Checkbox from "../../../../components/Checkbox";
 import Table from "../../../../components/table/Table";
 import Tbody from "../../../../components/table/Tbody";
 import Td from "../../../../components/table/Td";
 import Tr from "../../../../components/table/Tr";
-import { icons } from "../../../../constants/icons";
 
 export default function DsrInfoTable01() {
   const DsrInfoTableData = [
@@ -52,7 +51,7 @@ export default function DsrInfoTable01() {
   ];
 
   return (
-    <Table width="w-[1443px]" height="h-[163px]">
+    <Table minWidth={1449} height={158}>
       <Tbody>
         <Tr>
           <Td type="label" colSpan={2}>
@@ -73,19 +72,21 @@ export default function DsrInfoTable01() {
         </Tr>
         {DsrInfoTableData.map((item, index) => (
           <Tr key={index}>
-            <Td type="text">
-              <Icon icon={icons.chk} />
+            <Td>
+              <div className="flex items-center justify-center">
+                <Checkbox isChecked onClick={() => {}} />
+              </div>
             </Td>
-            <Td type="text" align="left">
-              {index + 1}
-            </Td>
+            <Td type="text">{index + 1}</Td>
             <Td type="text" align="left">
               {item.financialInstitution}
             </Td>
-            <Td type="text" align="right">
+            <Td type="text" align="left">
               {item.branchName}
             </Td>
-            <Td type="text">{item.balance}</Td>
+            <Td type="text" align="right">
+              {item.balance}
+            </Td>
             <Td type="text">{item.occurrenceDate}</Td>
             <Td type="text">{item.changeDate}</Td>
             <Td type="text">{item.dsrChangeDate}</Td>

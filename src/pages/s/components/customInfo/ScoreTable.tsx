@@ -5,7 +5,7 @@ import Tr from "../../../../components/table/Tr";
 
 export default function ScoreTable() {
   return (
-    <Table width="min-w-[734px] w-full" height="h-[266px]">
+    <Table minWidth={734} height={266}>
       <Tbody>
         <Tr>
           <Td type="label" colSpan={2}>

@@ -1,25 +1,29 @@
 import React from "react";
 
 type Props = {
-  width?: string;
-  height?: string;
+  minWidth?: number;
+  height?: number;
   className?: string;
   colWidths?: string[];
   children?: React.ReactNode;
 };
 
 const Table: React.FC<Props> = ({
-  width = "w-full",
-  height = "",
+  minWidth,
+  height,
   className = "",
   colWidths,
   children,
 }) => {
   return (
     <div
-      className={`border-t border-t-[#333333] overflow-auto ${className} ${height}`}
+      className={`w-full border-t border-t-[#333333] overflow-auto ${className}`}
+      style={{ height: height ? `${height}px` : "auto" }}
     >
-      <table className={`${width}`}>
+      <table
+        className="w-full"
+        style={{ minWidth: minWidth ? `${minWidth}px` : "auto" }}
+      >
         {colWidths && (
           <colgroup>
             {colWidths.map((width, index) => (

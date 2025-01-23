@@ -10,21 +10,7 @@ import { icons } from "../../../../constants/icons";
 
 export default function BasicInfoTable() {
   return (
-    <Table
-      height="h-[298px]"
-      // colWidths={[
-      //   "10%",
-      //   "7%",
-      //   "5%",
-      //   "8%",
-      //   "10%",
-      //   "20%",
-      //   "10%",
-      //   "7%",
-      //   "8%",
-      //   "15%",
-      // ]}
-    >
+    <Table minWidth={734} height={298}>
       <Tbody>
         <Tr>
           <Td type="label" align="left">

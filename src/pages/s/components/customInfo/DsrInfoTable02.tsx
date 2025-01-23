@@ -5,7 +5,7 @@ import Tr from "../../../../components/table/Tr";
 
 export default function DsrInfoTable02() {
   return (
-    <Table width="w-[1076px]" height="h-[75px]">
+    <Table minWidth={1076} height={75}>
       <Tbody>
         <Tr>
           <Td type="label">DSR 기준일자</Td>
@@ -21,15 +21,31 @@ export default function DsrInfoTable02() {
         </Tr>
         <Tr>
           <Td type="text">2024-12-31</Td>
-          <Td type="text">33.59295 %</Td>
-          <Td type="text">11.84136 %</Td>
-          <Td type="text">100,000,000</Td>
-          <Td type="text">33.59296 %</Td>
-          <Td type="text">100,000,000</Td>
-          <Td type="text">100,000,000</Td>
-          <Td type="text">100,000,000</Td>
+          <Td type="text" align="right">
+            33.59295 %
+          </Td>
+          <Td type="text" align="right">
+            11.84136 %
+          </Td>
+          <Td type="text" align="right">
+            100,000,000
+          </Td>
+          <Td type="text" align="right">
+            33.59296 %
+          </Td>
+          <Td type="text" align="right">
+            100,000,000
+          </Td>
+          <Td type="text" align="right">
+            100,000,000
+          </Td>
+          <Td type="text" align="right">
+            100,000,000
+          </Td>
           <Td type="text">해당없음</Td>
-          <Td type="text">100,000,000</Td>
+          <Td type="text" align="right">
+            100,000,000
+          </Td>
         </Tr>
       </Tbody>
     </Table>
