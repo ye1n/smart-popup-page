@@ -49,6 +49,7 @@ import ArrBottom from "../assets/icons/arr-bottom.svg?react";
 import ArrRight from "../assets/icons/arr-right.svg?react";
 
 import Search from "../assets/icons/search.svg?react";
+import RoundPlus from "../assets/icons/round-plus.svg?react";
 
 import TableIcon01 from "../assets/icons/table-icon-01.svg?react";
 import TableIcon02 from "../assets/icons/table-icon-02.svg?react";
@@ -111,6 +112,7 @@ const svgIcons = {
 
   // other icons
   search: Search,
+  roundPlus: RoundPlus,
 
   tableIcon01: TableIcon01,
   tableIcon02: TableIcon02,
