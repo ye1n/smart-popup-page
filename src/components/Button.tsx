@@ -28,7 +28,7 @@ const Button: React.FC<Props> = ({
     "white-outline":
       "border border-custom-gray-4 text-custom-gray-1 bg-custom-white font-medium h-[24px] rounded px-2",
     "icon-white-outline":
-      "border border-custom-gray-4 bg-custom-white w-[24px] h-[24px] flex items-center justify-center rounded",
+      "border border-custom-form-line bg-custom-white w-[24px] h-[24px] flex items-center justify-center rounded",
     gray: "bg-custom-gray-3 text-custom-white font-bold h-[24px] rounded px-2",
     "table-gray":
       "bg-custom-btn-inForm h-[18px] text-custom-gray-1 text-[10px] px-1.5",
