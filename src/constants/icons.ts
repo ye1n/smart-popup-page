@@ -51,6 +51,11 @@ import ArrRight from "../assets/icons/arr-right.svg?react";
 import Search from "../assets/icons/search.svg?react";
 import RoundPlus from "../assets/icons/round-plus.svg?react";
 import Chk from "../assets/icons/chk.svg?react";
+import View from "../assets/icons/view.svg?react";
+import Lock from "../assets/icons/lock.svg?react";
+import Unlock from "../assets/icons/unlock.svg?react";
+import Edit from "../assets/icons/edit.svg?react";
+import Remove from "../assets/icons/remove.svg?react";
 
 import TableIcon01 from "../assets/icons/table-icon-01.svg?react";
 import TableIcon02 from "../assets/icons/table-icon-02.svg?react";
@@ -115,6 +120,11 @@ const svgIcons = {
   search: Search,
   roundPlus: RoundPlus,
   chk: Chk,
+  view: View,
+  lock: Lock,
+  unlock: Unlock,
+  edit: Edit,
+  remove: Remove,
 
   tableIcon01: TableIcon01,
   tableIcon02: TableIcon02,
