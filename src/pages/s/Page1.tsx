@@ -22,6 +22,7 @@ import ScoreTable from "./components/customInfo/ScoreTable";
 import TransferInfoTable01 from "./components/customInfo/TransferInfoTable01";
 import TransferInfoTable02 from "./components/customInfo/TransferInfoTable02";
 import Table from "../../components/table/Table";
+import Checkbox from "../../components/Checkbox";
 
 export default function Page1() {
   const customInfoTabs = [
@@ -252,16 +253,16 @@ export default function Page1() {
                         DSR 조회내역
                       </p>
                       <div className="flex gap-2">
-                        <Button
-                          variant="white-outline-shadow"
+                        <Checkbox
+                          buttonStyle
                           label="DSR 조회"
-                          icon={<Icon icon={icons.chk} />}
                           onClick={() => {}}
                         />
-                        <Button
-                          variant="white-outline-shadow"
+                        <Checkbox
+                          isChecked
+                          buttonStyle
+                          checkedColor="#ff9015"
                           label="예상 DSR 조회"
-                          icon={<Icon icon={icons.chk} />}
                           onClick={() => {}}
                         />
                       </div>
@@ -337,22 +338,23 @@ export default function Page1() {
                         계좌내역 (B)
                       </p>
                       <div className="flex gap-1">
-                        <Button
-                          variant="white-outline-shadow"
+                        <Checkbox
+                          isChecked
+                          buttonStyle
+                          checkedColor="#ff9015"
                           label="당행자체대환"
-                          icon={<Icon icon={icons.chk} />}
                           onClick={() => {}}
                         />
-                        <Button
-                          variant="white-outline-shadow"
+                        <Checkbox
+                          buttonStyle
+                          checkedColor="#ff9015"
                           label="권리침해대환"
-                          icon={<Icon icon={icons.chk} />}
                           onClick={() => {}}
                         />
-                        <Button
-                          variant="white-outline-shadow"
+                        <Checkbox
+                          buttonStyle
+                          checkedColor="#ff9015"
                           label="대환"
-                          icon={<Icon icon={icons.chk} />}
                           onClick={() => {}}
                         />
                         <Button
@@ -477,14 +479,32 @@ export default function Page1() {
                           <Td type="label" align="left">
                             공증/인감
                           </Td>
-                          <Td type="text" colSpan={3}></Td>
+                          <Td type="text" colSpan={3}>
+                            <div className="flex items-center gap-4">
+                              <Checkbox
+                                isChecked
+                                label="공증인증대상"
+                                onClick={() => {}}
+                              />
+                              <Checkbox label="공증대상" onClick={() => {}} />
+                              <Checkbox label="인감대상" onClick={() => {}} />
+                              <Checkbox
+                                label="소득증빙대상"
+                                onClick={() => {}}
+                              />
+                              <Checkbox label="CMS대상" onClick={() => {}} />
+                            </div>
+                          </Td>
                         </Tr>
                         <Tr>
                           <Td type="label" align="left">
                             수령지주소
                           </Td>
                           <Td type="text" align="left" colSpan={3}>
-                            경기도 성남시 중원구 갈마치로 288 14 A-730
+                            <Input
+                              align="left"
+                              defaultValue="경기도 성남시 중원구 갈마치로 288 14 A-730"
+                            />
                           </Td>
                         </Tr>
                         <Tr>
@@ -492,13 +512,16 @@ export default function Page1() {
                             CMS은행
                           </Td>
                           <Td type="text" align="left">
-                            스마트저축은행
+                            <Input align="left" defaultValue="스마트저축은행" />
                           </Td>
                           <Td type="label" align="left">
                             CMS계좌
                           </Td>
                           <Td type="text" align="left">
-                            123456-789-00-45613
+                            <Input
+                              align="left"
+                              defaultValue=" 123456-789-00-45613"
+                            />
                           </Td>
                         </Tr>
                       </Tbody>
