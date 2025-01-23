@@ -17,6 +17,8 @@ import SideMenu from "../../components/common/SideMenu";
 import { useState } from "react";
 import BasicInfoTable from "./components/customInfo/BasicInfoTable";
 import AssetsInfoTable from "./components/customInfo/AssetsInfoTable";
+import DsrInfoTable02 from "./components/customInfo/DsrInfoTable02";
+import DsrInfoTable01 from "./components/customInfo/DsrInfoTable01";
 
 export default function Page1() {
   const customInfoTabs = [
@@ -236,7 +238,38 @@ export default function Page1() {
               ) : activeTab.id === "assetsInfo" ? (
                 <AssetsInfoTable />
               ) : activeTab.id === "dsrInfo" ? (
-                <></>
+                <div className="flex flex-col gap-2">
+                  <div>
+                    <div className="mb-2">
+                      <p className="text-xs font-bold text-custom-black">
+                        대출 현금서비스 실질 DSR 상세정보 조회
+                      </p>
+                    </div>
+                    <DsrInfoTable01 />
+                  </div>
+                  <div>
+                    <div className="flex items-end justify-between mb-2">
+                      <p className="text-xs font-bold text-custom-black">
+                        DSR 조회내역
+                      </p>
+                      <div className="flex gap-2">
+                        <Button
+                          variant="white-outline-shadow"
+                          label="DSR 조회"
+                          icon={<Icon icon={icons.chk} />}
+                          onClick={() => {}}
+                        />
+                        <Button
+                          variant="white-outline-shadow"
+                          label="예상 DSR 조회"
+                          icon={<Icon icon={icons.chk} />}
+                          onClick={() => {}}
+                        />
+                      </div>
+                    </div>
+                    <DsrInfoTable02 />
+                  </div>
+                </div>
               ) : activeTab.id === "score" ? (
                 <></>
               ) : (
