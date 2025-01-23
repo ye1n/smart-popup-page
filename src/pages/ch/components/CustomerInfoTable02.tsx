@@ -20,7 +20,7 @@ export default function CustomerInfoTable02() {
             사업자번호
           </Td>
           <Td colSpan={2}>
-            <div className="flex items-center mr-1 justify-betwee">
+            <div className="flex items-center mr-1">
               <Input align="left" defaultValue="입력" />
               <Button label="조회" variant="table-gray" onClick={() => {}} />
             </div>

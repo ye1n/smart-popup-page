@@ -21,7 +21,7 @@ export default function CustomerInfoTable03() {
             담당자
           </Td>
           <Td colSpan={2}>
-            <div className="flex items-center mr-1 justify-betwee">
+            <div className="flex items-center mr-1">
               <Input align="left" defaultValue="관리담당자" />
               <Button label="조회" variant="table-gray" onClick={() => {}} />
             </div>
@@ -72,7 +72,7 @@ export default function CustomerInfoTable03() {
             약속금액
           </Td>
           <Td colSpan={2}>
-            <div className="flex items-center mr-1 justify-betwee">
+            <div className="flex items-center mr-1">
               <Input align="left" defaultValue="100,000,000" />
               <Button label="취소" variant="table-gray" onClick={() => {}} />
             </div>
