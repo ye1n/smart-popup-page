@@ -224,7 +224,3 @@ export default function ChTable03() {
     </Table>
   );
 }
-
-// 100,000,000
-
-// 0

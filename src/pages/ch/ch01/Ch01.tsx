@@ -1,26 +1,26 @@
 import { useState } from "react";
-import Button from "../../components/Button";
-import Checkbox from "../../components/Checkbox";
-import SideMenu from "../../components/common/SideMenu";
-import Dropdown from "../../components/Dropdown";
-import Icon from "../../components/Icon";
-import Input from "../../components/Input";
-import InputGroup from "../../components/InputGroup";
-import Label from "../../components/Label";
-import Table from "../../components/table/Table";
-import Tbody from "../../components/table/Tbody";
-import Td from "../../components/table/Td";
-import Tr from "../../components/table/Tr";
-import Tabs, { Tab } from "../../components/Tabs";
-import { icons } from "../../constants/icons";
-import { ChSideMenuData } from "../../data/Data";
 import AccountListTable from "./components/AccountListTable";
 import CustomerInfoTable01 from "./components/CustomerInfoTable01";
 import CustomerInfoTable02 from "./components/CustomerInfoTable02";
 import CustomerInfoTable03 from "./components/CustomerInfoTable03";
 import CustomerInfoTable04 from "./components/CustomerInfoTable04";
 import CustomerInfoTable05 from "./components/CustomerInfoTable05";
-import Radio from "../../components/Radio";
+import InputGroup from "../../../components/InputGroup";
+import Input from "../../../components/Input";
+import Td from "../../../components/table/Td";
+import Tbody from "../../../components/table/Tbody";
+import Table from "../../../components/table/Table";
+import Tr from "../../../components/table/Tr";
+import Icon from "../../../components/Icon";
+import { icons } from "../../../constants/icons";
+import Button from "../../../components/Button";
+import Checkbox from "../../../components/Checkbox";
+import Label from "../../../components/Label";
+import Dropdown from "../../../components/Dropdown";
+import SideMenu from "../../../components/common/SideMenu";
+import { ChSideMenuData } from "../../../data/Data";
+import Tabs, { Tab } from "../../../components/Tabs";
+import Radio from "../../../components/Radio";
 
 export default function Ch01() {
   const counselTabs = [

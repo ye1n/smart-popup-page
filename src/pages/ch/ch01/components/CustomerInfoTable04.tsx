@@ -1,8 +1,8 @@
-import Input from "../../../components/Input";
-import Table from "../../../components/table/Table";
-import Tbody from "../../../components/table/Tbody";
-import Td from "../../../components/table/Td";
-import Tr from "../../../components/table/Tr";
+import Input from "../../../../components/Input";
+import Table from "../../../../components/table/Table";
+import Tbody from "../../../../components/table/Tbody";
+import Td from "../../../../components/table/Td";
+import Tr from "../../../../components/table/Tr";
 
 export default function CustomerInfoTable04() {
   return (

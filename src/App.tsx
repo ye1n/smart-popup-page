@@ -4,9 +4,9 @@ import Layout from "./layouts/Layout";
 import MainPage from "./pages/MainPage";
 import S from "./pages/s/S";
 import C from "./pages/c/C";
-import Ch01 from "./pages/ch/Ch01";
 import Ch02 from "./pages/ch/ch02/Ch02";
-import Ch03 from "./pages/ch/Ch03";
+import Ch03 from "./pages/ch/ch03/Ch03";
+import Ch01 from "./pages/ch/ch01/Ch01";
 
 function App() {
   return (
