@@ -6,8 +6,8 @@ type Props = {
   placeholder?: string;
   value?: string;
   options: Array<{ label: string; value: string | number }>;
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
   align?: "left" | "center" | "right";
   className?: string;
   isRequired?: boolean;
@@ -18,8 +18,8 @@ const Dropdown: React.FC<Props> = ({
   placeholder = "",
   value,
   options,
-  width = "w-full",
-  height = "h-[26px]",
+  width,
+  height,
   align = "center",
   className = "",
   isRequired = false,
@@ -27,9 +27,13 @@ const Dropdown: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`relative ${width} ${height} ${
+      className={`relative ${
         isRequired ? "bg-custom-form-acc" : "bg-custom-white"
       }`}
+      style={{
+        width: width ? `${width}px` : "100%",
+        height: height ? `${height}px` : "26px",
+      }}
     >
       <select
         value={value}
@@ -49,8 +53,8 @@ const Dropdown: React.FC<Props> = ({
       </select>
       <Icon
         icon={icons.arrBottom}
-        width="20"
-        height="20"
+        width={20}
+        height={20}
         className="absolute transform -translate-y-1/2 pointer-events-none right-1 top-1/2"
       />
     </div>

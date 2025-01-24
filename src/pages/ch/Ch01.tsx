@@ -39,15 +39,15 @@ export default function Ch01() {
           <div className="flex items-center col-span-2 gap-6">
             <InputGroup>
               <div className="flex gap-0.5">
-                <Input defaultValue="김저축" width="w-[150px]" />
-                <Input defaultValue="900101-1234567" width="w-[150px]" />
-                <Input defaultValue="남 만 30세 (호랑이)" width="w-[150px]" />
+                <Input defaultValue="김저축" width={150} />
+                <Input defaultValue="900101-1234567" width={150} />
+                <Input defaultValue="남 만 30세 (호랑이)" width={150} />
               </div>
             </InputGroup>
             <InputGroup label="고객번호">
               <div className="flex gap-0.5">
-                <Input defaultValue="202411210000251" width="w-[150px]" />
-                <Input defaultValue="개인" width="w-[80px]" />
+                <Input defaultValue="202411210000251" width={150} />
+                <Input defaultValue="개인" width={80} />
               </div>
               <Button label="고객통합뷰" onClick={() => {}} />
               <Button label="채권관리히스토리" onClick={() => {}} />
@@ -55,10 +55,10 @@ export default function Ch01() {
           </div>
           <div className="flex items-center col-span-1 gap-6">
             <InputGroup label="채널상세">
-              <Input defaultValue="채널명" width="w-[150px]" />
+              <Input defaultValue="채널명" width={150} />
             </InputGroup>
             <InputGroup label="IVR">
-              <Input defaultValue="IVR연결종류" width="w-[150px]" />
+              <Input defaultValue="IVR연결종류" width={150} />
             </InputGroup>
           </div>
         </div>
@@ -137,10 +137,10 @@ export default function Ch01() {
                 <div className="flex items-center gap-4">
                   <div className="flex gap-8">
                     <InputGroup label="회수등급">
-                      <Input defaultValue="2" width="w-[33px]" />
+                      <Input defaultValue="2" width={33} />
                     </InputGroup>
                     <InputGroup label="회수난이도">
-                      <Input defaultValue="5" width="w-[33px]" />
+                      <Input defaultValue="5" width={33} />
                     </InputGroup>
                   </div>
                   <Button label="IFIS사후관리상태" onClick={() => {}} />
@@ -253,7 +253,7 @@ export default function Ch01() {
                   <Input
                     defaultValue=""
                     align="left"
-                    width="w-[122px]"
+                    width={122}
                     className="border"
                     placeholder="검색"
                     icon={<Icon icon={icons.search} />}
@@ -262,7 +262,7 @@ export default function Ch01() {
                   <Input
                     defaultValue=""
                     align="left"
-                    width="w-[122px]"
+                    width={122}
                     className="border"
                     placeholder="상담구분검색"
                     icon={<Icon icon={icons.search} />}

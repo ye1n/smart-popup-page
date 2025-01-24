@@ -1,7 +1,7 @@
 type Props = {
   defaultValue?: string;
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
   align?: "left" | "center" | "right";
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
@@ -11,8 +11,8 @@ type Props = {
 
 const Input: React.FC<Props> = ({
   defaultValue = "",
-  width = "w-full",
-  height = "h-[26px]",
+  width,
+  height,
   align = "center",
   icon,
   iconPosition = "left",
@@ -21,14 +21,18 @@ const Input: React.FC<Props> = ({
   ...props
 }) => (
   <div
-    className={`flex items-center px-1 ${className} ${width} ${height} ${
+    className={`flex items-center px-1 ${className} ${
       isRequired ? "bg-custom-form-acc" : "bg-custom-white"
     }`}
+    style={{
+      width: width ? `${width}px` : "100%",
+      height: height ? `${height}px` : "26px",
+    }}
   >
     {icon && iconPosition === "left" && icon}
     <input
       defaultValue={defaultValue}
-      className={`placeholder:text-custom-gray-4 block px-1 outline-none text-xs text-custom-black w-full h-full ${
+      className={`bg-transparent placeholder:text-custom-gray-4 block px-1 outline-none text-xs text-custom-black w-full h-full ${
         align === "left"
           ? "text-left"
           : align === "right"

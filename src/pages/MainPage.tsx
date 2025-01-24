@@ -27,8 +27,7 @@ export default function MainPage() {
       <div className="flex items-center gap-2">
         <p className="text-xs font-medium">해상도</p>
         <Dropdown
-          width="w-fit"
-          align="center"
+          width={100}
           className="border"
           options={[
             {

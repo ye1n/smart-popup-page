@@ -44,7 +44,7 @@ export const SSideMenuData = [
     label: "사기방지",
     width: 20,
   },
-  { activeIcon: null, inactiveIcon: null, label: "Rclips 조회", width: "20" },
+  { activeIcon: null, inactiveIcon: null, label: "Rclips 조회", width: 20 },
   {
     activeIcon: icons.sideMnWh04,
     inactiveIcon: icons.sideMn04,
@@ -69,7 +69,7 @@ export const SSideMenuData = [
     label: "KCB부동산",
     width: 40,
   },
-  { activeIcon: null, inactiveIcon: null, label: "고객등록", width: "20" },
+  { activeIcon: null, inactiveIcon: null, label: "고객등록", width: 20 },
   {
     activeIcon: null,
     inactiveIcon: null,

@@ -40,26 +40,23 @@ export default function S() {
         <div className="flex flex-col gap-4 p-4 bg-custom-bg">
           <div className="flex gap-6">
             <InputGroup label="고객명">
-              <Input defaultValue="김저축" width="w-[150px]" />
+              <Input defaultValue="김저축" width={150} />
             </InputGroup>
             <InputGroup label="주민등록번호">
               <div className="flex gap-0.5">
-                <Input defaultValue="900101-1234567" width="w-[150px]" />
-                <Input defaultValue="남 만 30세 (호랑이)" width="w-[150px]" />
+                <Input defaultValue="900101-1234567" width={150} />
+                <Input defaultValue="남 만 30세 (호랑이)" width={150} />
               </div>
             </InputGroup>
             <InputGroup label="상담상태">
-              <Dropdown
-                options={[{ label: "전체", value: "" }]}
-                width="w-[150px]"
-              />
+              <Dropdown options={[{ label: "전체", value: "" }]} width={150} />
               <Button label="변경" onClick={() => {}} />
-              <Input defaultValue="심사중" width="w-[80px]" />
+              <Input defaultValue="심사중" width={80} />
             </InputGroup>
             <InputGroup label="접수번호">
               <div className="flex gap-0.5">
-                <Input defaultValue="202411210000251" width="w-[150px]" />
-                <Input defaultValue="신규" width="w-[80px]" />
+                <Input defaultValue="202411210000251" width={150} />
+                <Input defaultValue="신규" width={80} />
               </div>
               <Button label="식별정보 확인" onClick={() => {}} />
             </InputGroup>
