@@ -74,7 +74,7 @@ export default function DsrInfoTable01() {
           <Tr key={index}>
             <Td>
               <div className="flex items-center justify-center">
-                <Checkbox isChecked onClick={() => {}} />
+                <Checkbox isChecked />
               </div>
             </Td>
             <Td type="text">{index + 1}</Td>

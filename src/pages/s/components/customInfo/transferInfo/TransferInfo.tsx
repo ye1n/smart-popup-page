@@ -66,20 +66,9 @@ export default function TransferInfo() {
               buttonStyle
               checkedColor="#ff9015"
               label="당행자체대환"
-              onClick={() => {}}
             />
-            <Checkbox
-              buttonStyle
-              checkedColor="#ff9015"
-              label="권리침해대환"
-              onClick={() => {}}
-            />
-            <Checkbox
-              buttonStyle
-              checkedColor="#ff9015"
-              label="대환"
-              onClick={() => {}}
-            />
+            <Checkbox buttonStyle checkedColor="#ff9015" label="권리침해대환" />
+            <Checkbox buttonStyle checkedColor="#ff9015" label="대환" />
             <Button
               variant="icon-white-outline"
               label=""
@@ -190,11 +179,11 @@ export default function TransferInfo() {
               </Td>
               <Td type="text" colSpan={3}>
                 <div className="flex items-center gap-4">
-                  <Checkbox isChecked label="공증인증대상" onClick={() => {}} />
-                  <Checkbox label="공증대상" onClick={() => {}} />
-                  <Checkbox label="인감대상" onClick={() => {}} />
-                  <Checkbox label="소득증빙대상" onClick={() => {}} />
-                  <Checkbox label="CMS대상" onClick={() => {}} />
+                  <Checkbox isChecked label="공증인증대상" />
+                  <Checkbox label="공증대상" />
+                  <Checkbox label="인감대상" />
+                  <Checkbox label="소득증빙대상" />
+                  <Checkbox label="CMS대상" />
                 </div>
               </Td>
             </Tr>

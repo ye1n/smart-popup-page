@@ -20,6 +20,7 @@ import CustomerInfoTable02 from "./components/CustomerInfoTable02";
 import CustomerInfoTable03 from "./components/CustomerInfoTable03";
 import CustomerInfoTable04 from "./components/CustomerInfoTable04";
 import CustomerInfoTable05 from "./components/CustomerInfoTable05";
+import Radio from "../../components/Radio";
 
 export default function Ch01() {
   const counselTabs = [
@@ -143,30 +144,27 @@ export default function Ch01() {
                 <div className="flex gap-2">
                   <Button label="SMS금지" onClick={() => {}} />
                   <Button label="DM금지" onClick={() => {}} />
+                  <Radio buttonStyle label="특수채권" />
                   <Checkbox
                     buttonStyle
                     isChecked
                     checkedColor="#ff9015"
                     label="안내전화금지"
-                    onClick={() => {}}
                   />
                   <Checkbox
                     buttonStyle
                     checkedColor="#ff9015"
                     label="만기연장1차상담완료"
-                    onClick={() => {}}
                   />
                   <Checkbox
                     buttonStyle
                     checkedColor="#ff9015"
                     label="권리침해안내제외"
-                    onClick={() => {}}
                   />
                   <Checkbox
                     buttonStyle
                     checkedColor="#ff9015"
                     label="가상계좌자동중지"
-                    onClick={() => {}}
                   />
                 </div>
               </div>
@@ -190,11 +188,7 @@ export default function Ch01() {
               <div className="flex items-center justify-between">
                 <Label label="계좌목록" />
                 <div className="flex items-center gap-2">
-                  <Checkbox
-                    buttonStyle
-                    label="해지포함 (해지건수: 10)"
-                    onClick={() => {}}
-                  />
+                  <Checkbox buttonStyle label="해지포함 (해지건수: 10)" />
                   <Table width={244} borderTop={false}>
                     <Tbody>
                       <Tr>
@@ -244,11 +238,11 @@ export default function Ch01() {
             <div className="flex flex-col gap-2">
               <Label label="상담이력" />
               <div className="flex items-center gap-2">
-                <Checkbox buttonStyle label="전체" onClick={() => {}} />
-                <Checkbox buttonStyle label="최근 6개월" onClick={() => {}} />
-                <Checkbox buttonStyle label="고객기준" onClick={() => {}} />
-                <Checkbox buttonStyle label="문자포함" onClick={() => {}} />
-                <Checkbox buttonStyle label="자동포함" onClick={() => {}} />
+                <Checkbox buttonStyle label="전체" />
+                <Checkbox buttonStyle label="최근 6개월" />
+                <Checkbox buttonStyle label="고객기준" />
+                <Checkbox buttonStyle label="문자포함" />
+                <Checkbox buttonStyle label="자동포함" />
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex gap-2">

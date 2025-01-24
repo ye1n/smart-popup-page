@@ -57,7 +57,7 @@ export default function CustomerInfoTable03() {
           <Td colSpan={2}>
             <div className="flex items-center justify-center mr-1">
               <Input align="left" defaultValue="추가담당자" />
-              <Checkbox label="자동배정중지" onClick={() => {}} />
+              <Checkbox label="자동배정중지" />
             </div>
           </Td>
         </Tr>

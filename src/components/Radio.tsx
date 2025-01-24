@@ -8,8 +8,8 @@ type Props = {
   buttonStyle?: boolean;
 };
 
-const Checkbox: React.FC<Props> = ({
-  checkedColor = "#222",
+const Radio: React.FC<Props> = ({
+  checkedColor = "#0f54df",
   isChecked = false,
   label = "",
   className = "",
@@ -30,22 +30,24 @@ const Checkbox: React.FC<Props> = ({
     >
       <svg
         width="16"
-        height="16"
-        viewBox="0 0 16 16"
+        height="17"
+        viewBox="0 0 16 17"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle
-          cx="8"
-          cy="8"
-          r="6.5"
-          fill={checked ? checkedColor : "#BDBDBD"}
+        <path
+          d="m6 7.834 2 2 6.667-6.667"
+          stroke={checked ? checkedColor : "#BDBDBD"}
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         />
         <path
-          d="m5 8 2.778 2.5 2.722-5"
-          stroke="#fff"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          d="M14 8.5v4.667a1.334 1.334 0 0 1-1.333 1.333H3.333A1.334 1.334 0 0 1 2 13.167V3.833A1.333 1.333 0 0 1 3.333 2.5h7.334"
+          stroke={checked ? checkedColor : "#BDBDBD"}
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         />
       </svg>
       {label && <p className="text-xs text-custom-black">{label}</p>}
@@ -53,4 +55,4 @@ const Checkbox: React.FC<Props> = ({
   );
 };
 
-export default Checkbox;
+export default Radio;
