@@ -45,7 +45,7 @@ export default function Ch01() {
               </div>
             </InputGroup>
             <InputGroup label="고객번호">
-              <div className="flex gap-0.5">
+              <div className="flex items-center gap-0.5">
                 <Input defaultValue="202411210000251" width={150} />
                 <Button
                   label="?"
