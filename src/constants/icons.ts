@@ -49,6 +49,7 @@ import ArrBottom from "../assets/icons/arr-bottom.svg?react";
 import ArrRight from "../assets/icons/arr-right.svg?react";
 
 import Search from "../assets/icons/search.svg?react";
+import SearchBorder from "../assets/icons/search-border.svg?react";
 import RoundPlus from "../assets/icons/round-plus.svg?react";
 import Chk from "../assets/icons/chk.svg?react";
 import View from "../assets/icons/view.svg?react";
@@ -118,6 +119,7 @@ const svgIcons = {
 
   // other icons
   search: Search,
+  searchBorder: SearchBorder,
   roundPlus: RoundPlus,
   chk: Chk,
   view: View,

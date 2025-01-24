@@ -142,7 +142,7 @@ export default function IncomeInfoTable() {
                 onClick={() => {}}
                 className="p-[1px] bg-white rounded-sm"
               >
-                <Icon icon={icons.search} />
+                <Icon icon={icons.searchBorder} />
               </button>
             </div>
           </Td>
