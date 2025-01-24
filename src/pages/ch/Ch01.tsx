@@ -30,6 +30,15 @@ export default function Ch01() {
 
   const [activeTab, setActiveTab] = useState<Tab>(counselTabs[0]);
 
+  const openPopup = (route: string) => {
+    const width = 1280;
+    const height = 720;
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2;
+    const windowFeatures = `width=${width},height=${height},left=${left},top=${top},scrollbars=no,resizable=no`;
+    window.open(route, "_blank", windowFeatures);
+  };
+
   return (
     <div className="flex pr-4">
       {/* 메인 */}
@@ -122,7 +131,7 @@ export default function Ch01() {
             <div className="flex justify-between">
               <div className="flex gap-2">
                 <Button label="증명서" onClick={() => {}} />
-                <Button label="사고관리" onClick={() => {}} />
+                <Button label="사고관리" onClick={() => openPopup("/ch3")} />
                 <Button label="송무관리" onClick={() => {}} />
               </div>
               <div className="flex gap-2">
@@ -179,7 +188,7 @@ export default function Ch01() {
               </div>
               <CustomerInfoTable05 />
               <div className="flex gap-2">
-                <Button label="온라인" onClick={() => {}} />
+                <Button label="온라인" onClick={() => openPopup("/ch2")} />
                 <Button label="거래내역" onClick={() => {}} />
                 <Button label="심사원장" onClick={() => {}} />
                 <Button label="부동산담보" onClick={() => {}} />

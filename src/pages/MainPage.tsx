@@ -6,14 +6,14 @@ import Label from "../components/Label";
 export default function MainPage() {
   const [windowSize, setWindowSize] = useState<number>(0);
 
-  const windowSizeList = [
-    { width: 1280, height: 720 },
-    { width: 1366, height: 768 },
-    { width: 1600, height: 900 },
-    { width: 1920, height: 1080 },
-  ];
-
   const openPopup = (route: string) => {
+    const windowSizeList = [
+      { width: 1280, height: 720 },
+      { width: 1366, height: 768 },
+      { width: 1600, height: 900 },
+      { width: 1920, height: 1080 },
+    ];
+
     const width = windowSizeList[windowSize].width;
     const height = windowSizeList[windowSize].height;
     const left = window.screenX + (window.outerWidth - width) / 2;
