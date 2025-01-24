@@ -20,7 +20,7 @@ const SideMenu: React.FC<Props> = ({ data }) => {
           <div key={index} className="w-20">
             <button
               key={index}
-              className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] transition ${
+              className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] ${
                 selectedSideMenu === index
                   ? "bg-custom-secondary shadow-inner text-custom-white"
                   : "bg-custom-white text-custom-black"

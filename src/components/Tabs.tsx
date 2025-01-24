@@ -31,7 +31,7 @@ const Tabs: React.FC<Props> = ({
             setActiveTab(tab);
             onClick && onClick();
           }}
-          className={`text-xs px-2 text-center transition-colors w-[84px] h-full ${
+          className={`text-xs px-2 text-center w-[84px] h-full ${
             activeTab.id === tab.id
               ? "text-custom-white font-bold bg-custom-primary"
               : "text-custom-black font-normal bg-custom-form-bg shadow-inner"
