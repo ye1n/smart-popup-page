@@ -6,7 +6,7 @@ type Props = {
     activeIcon: any;
     inactiveIcon: any;
     label: string;
-    width: string;
+    width: number;
   }>;
 };
 
@@ -35,7 +35,7 @@ const SideMenu: React.FC<Props> = ({ data }) => {
                       : item.inactiveIcon
                   }
                   width={item.width}
-                  height="20"
+                  height={20}
                   className="text-custom-white"
                 />
               )}

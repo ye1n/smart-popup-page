@@ -1,14 +1,14 @@
 type Props = {
   icon: any;
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
   className?: string;
 };
 
 const Icon: React.FC<Props> = ({
   icon,
-  width = "16",
-  height = "16",
+  width = 16,
+  height = 16,
   className = "",
   ...props
 }) => {
