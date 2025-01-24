@@ -18,7 +18,15 @@ export default function CustomerInfoTable03() {
             <Input align="left" defaultValue="리테일금융" />
           </Td>
           <Td align="left" type="label">
-            담당자
+            <div className="flex items-center justify-between">
+              담당자
+              <button
+                className="bg-custom-white w-[17px] h-[18px]"
+                onClick={() => {}}
+              >
+                ?
+              </button>
+            </div>
           </Td>
           <Td colSpan={2}>
             <div className="flex items-center mr-1">
@@ -52,7 +60,15 @@ export default function CustomerInfoTable03() {
             <Input align="left" defaultValue="홍길동" />
           </Td>
           <Td align="left" type="label">
-            마케팅
+            <div className="flex items-center justify-between">
+              마케팅
+              <button
+                className="bg-custom-white w-[17px] h-[18px]"
+                onClick={() => {}}
+              >
+                ?
+              </button>
+            </div>
           </Td>
           <Td colSpan={2}>
             <div className="flex items-center justify-center mr-1">

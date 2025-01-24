@@ -170,7 +170,7 @@ export default function IncomeInfoTable() {
                   사업자번호
                   <button
                     onClick={() => {}}
-                    className="p-[1px] bg-white rounded-sm"
+                    className="p-[1px] bg-custom-white rounded-sm"
                   >
                     <Icon icon={icons.searchBorder} />
                   </button>

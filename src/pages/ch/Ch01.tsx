@@ -47,6 +47,11 @@ export default function Ch01() {
             <InputGroup label="고객번호">
               <div className="flex gap-0.5">
                 <Input defaultValue="202411210000251" width={150} />
+                <Button
+                  label="?"
+                  variant="white-outline-shadow"
+                  onClick={() => {}}
+                />
                 <Input defaultValue="개인" width={80} />
               </div>
               <Button label="고객통합뷰" onClick={() => {}} />
@@ -148,7 +153,7 @@ export default function Ch01() {
                 <div className="flex gap-2">
                   <Button label="SMS금지" onClick={() => {}} />
                   <Button label="DM금지" onClick={() => {}} />
-                  <Radio buttonStyle label="특수채권" />
+                  <Radio buttonStyle label="특수채권" isChecked />
                   <Checkbox
                     buttonStyle
                     isChecked
@@ -232,8 +237,8 @@ export default function Ch01() {
                   <Td type="text">0</Td>
                   <Td type="text">103</Td>
                   <Td type="text">0</Td>
-                  <Td type="text" className="text-[#fb5a28] font-bold">
-                    9
+                  <Td type="text">
+                    <p className="text-[#fb5a28] font-bold">9</p>
                   </Td>
                 </Tr>
               </Tbody>
