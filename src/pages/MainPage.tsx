@@ -32,19 +32,19 @@ export default function MainPage() {
           options={[
             {
               label: "1280 X 720",
-              value: 0,
+              value: "0",
             },
             {
               label: "1366 X 768",
-              value: 1,
+              value: "1",
             },
             {
               label: "1600 X 900",
-              value: 2,
+              value: "2",
             },
             {
               label: "1920 X 1080",
-              value: 3,
+              value: "3",
             },
           ]}
           onChange={(value) => {

@@ -177,8 +177,8 @@ export default function TransferInfo() {
               <Td type="label" align="left">
                 공증/인감
               </Td>
-              <Td type="text" colSpan={3}>
-                <div className="flex items-center gap-4">
+              <Td colSpan={3}>
+                <div className="flex items-center gap-4 px-2">
                   <Checkbox isChecked label="공증인증대상" />
                   <Checkbox label="공증대상" />
                   <Checkbox label="인감대상" />
@@ -191,7 +191,7 @@ export default function TransferInfo() {
               <Td type="label" align="left">
                 수령지주소
               </Td>
-              <Td type="text" align="left" colSpan={3}>
+              <Td align="left" colSpan={3}>
                 <Input
                   align="left"
                   defaultValue="경기도 성남시 중원구 갈마치로 288 14 A-730"
@@ -202,13 +202,13 @@ export default function TransferInfo() {
               <Td type="label" align="left">
                 CMS은행
               </Td>
-              <Td type="text" align="left">
+              <Td align="left">
                 <Input align="left" defaultValue="스마트저축은행" />
               </Td>
               <Td type="label" align="left">
                 CMS계좌
               </Td>
-              <Td type="text" align="left">
+              <Td align="left">
                 <Input align="left" defaultValue=" 123456-789-00-45613" />
               </Td>
             </Tr>

@@ -5,13 +5,13 @@ import Icon from "./Icon";
 type Props = {
   placeholder?: string;
   value?: string;
-  options: Array<{ label: string; value: string | number }>;
+  options: Array<{ label: string; value: string }>;
   width?: number;
   height?: number;
   align?: "left" | "center" | "right";
   className?: string;
   isRequired?: boolean;
-  onChange?: (value: string | number) => void;
+  onChange?: (value: string) => void;
 };
 
 const Dropdown: React.FC<Props> = ({
