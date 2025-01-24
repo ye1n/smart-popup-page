@@ -36,13 +36,13 @@ export default function MainPage() {
         />
         <Button
           className="w-fit"
-          label="smartsb_채권원장_1280*720_온라인조회_Atype"
-          onClick={() => openPopup(1280, 720, "/ch2")}
+          label="smartsb_채권원장_1280*860_온라인조회_Atype"
+          onClick={() => openPopup(1280, 860, "/ch2")}
         />
         <Button
           className="w-fit"
-          label="smartsb_채권원장_1280*720_사고관리 (미완료)"
-          onClick={() => openPopup(1280, 720, "/ch3")}
+          label="smartsb_채권원장_1280*860_사고관리 (미완료)"
+          onClick={() => openPopup(1280, 860, "/ch3")}
         />
       </div>
     </div>
