@@ -252,15 +252,21 @@ export default function Ch01() {
                 <div className="flex gap-2">
                   <Input
                     defaultValue=""
+                    align="left"
                     width="w-[122px]"
                     className="border"
                     placeholder="검색"
+                    icon={<Icon icon={icons.search} />}
+                    iconPosition="right"
                   />
                   <Input
                     defaultValue=""
+                    align="left"
                     width="w-[122px]"
                     className="border"
                     placeholder="상담구분검색"
+                    icon={<Icon icon={icons.search} />}
+                    iconPosition="right"
                   />
                 </div>
                 <div className="flex items-center gap-2">
