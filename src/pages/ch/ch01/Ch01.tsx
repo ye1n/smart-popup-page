@@ -21,6 +21,7 @@ import SideMenu from "../../../components/common/SideMenu";
 import { ChSideMenuData } from "../../../data/Data";
 import Tabs, { Tab } from "../../../components/Tabs";
 import Radio from "../../../components/Radio";
+import Badge from "../../../components/Badge";
 
 export default function Ch01() {
   const counselTabs = [
@@ -82,12 +83,8 @@ export default function Ch01() {
           <div className="flex flex-col col-span-2 gap-4">
             <div className="grid grid-cols-2 gap-7">
               <div className="flex items-center gap-2 border-t bg-custom-form-bg border-[#333333] py-2 px-4">
-                <div className="bg-[#d92222] h-[24px] text-custom-white text-xs px-2 py-1 cursor-default">
-                  경매
-                </div>
-                <div className="bg-[#d92222] h-[24px] text-custom-white text-xs px-2 py-1 cursor-default">
-                  개인희생
-                </div>
+                <Badge text="경매" />
+                <Badge text="개인희생" />
               </div>
               <Table>
                 <Tbody>
