@@ -14,6 +14,7 @@ import Table from "../../../components/table/Table";
 import Tbody from "../../../components/table/Tbody";
 import Tr from "../../../components/table/Tr";
 import Td from "../../../components/table/Td";
+import InfoBadge from "../../../components/InfoBadge";
 
 export default function Ch02() {
   const topTabs = [
@@ -281,16 +282,13 @@ export default function Ch02() {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <div className="inline-block bg-[#d9222219] rounded-[10px] py-0.5 px-2">
-                    <p className="text-[10px] text-[#d92222]">
-                      {`※ 부족금이 0보다 작거나 같은 경우 상환처리가 가능합니다. (단, 가수금 > 가지급금)`}
-                    </p>
-                  </div>
-                  <div className="inline-block bg-custom-gray-1 bg-opacity-10 rounded-[10px] py-0.5 px-2">
-                    <p className="text-[10px] text-custom-gray-1">
-                      {`※ 상환총합계 (원금+이자+미징수-과잉-환출이자)`}
-                    </p>
-                  </div>
+                  <InfoBadge
+                    variant="red"
+                    text={`※ 부족금이 0보다 작거나 같은 경우 상환처리가 가능합니다. (단, 가수금 > 가지급금)`}
+                  />
+                  <InfoBadge
+                    text={`※ 상환총합계 (원금+이자+미징수-과잉-환출이자)`}
+                  />
                 </div>
               </div>
             </div>

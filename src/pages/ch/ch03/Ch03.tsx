@@ -15,6 +15,7 @@ import ChTable01 from "./components/ChTable01";
 import Checkbox from "../../../components/Checkbox";
 import ChTable02 from "./components/ChTable02";
 import ChTable03 from "./components/ChTable03";
+import InfoBadge from "../../../components/InfoBadge";
 
 export default function Ch03() {
   const topTabs = [
@@ -293,11 +294,7 @@ export default function Ch03() {
                   변제계획 및 변제거래내역
                 </p>
                 <div className="flex items-center gap-2">
-                  <div className="inline-block bg-custom-gray-1 bg-opacity-10 rounded-[10px] py-0.5 px-2">
-                    <p className="text-[10px] text-custom-gray-1">
-                      {`업데이트 일시 : 2024-01-01-23:23:23`}
-                    </p>
-                  </div>
+                  <InfoBadge text={`업데이트 일시 : 2024-01-01-23:23:23`} />
                   <Button label="변제스케줄" onClick={() => {}} />
                 </div>
               </div>
