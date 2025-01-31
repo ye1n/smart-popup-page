@@ -10,14 +10,11 @@ const Icon: React.FC<Props> = ({
   width = 16,
   height = 16,
   className = "",
-  ...props
 }) => {
   // svg
   if (typeof icon === "function") {
     const SVGIcon = icon;
-    return (
-      <SVGIcon width={width} height={height} className={className} {...props} />
-    );
+    return <SVGIcon width={width} height={height} className={className} />;
   }
 
   // png
@@ -29,7 +26,6 @@ const Icon: React.FC<Props> = ({
         height={height}
         alt=""
         className={className}
-        {...props}
       />
     );
   }
