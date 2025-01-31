@@ -23,7 +23,7 @@ export default function MainPage() {
         <Label label="콜원장" />
         <Button
           className="w-fit"
-          label="smartsb_콜원장 (미완료)"
+          label="smartsb_콜원장_1920*1080 (미완료)"
           onClick={() => openPopup(1920, 1080, "/c")}
         />
       </div>
