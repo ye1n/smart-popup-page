@@ -5,7 +5,7 @@ import Td from "../../../../../components/table/Td";
 import Tr from "../../../../../components/table/Tr";
 
 export default function DsrInfoTable01() {
-  const DsrInfoTableData = [
+  const TableData = [
     {
       financialInstitution: "스마트저축은행",
       branchName: "엔투소프트",
@@ -70,7 +70,7 @@ export default function DsrInfoTable01() {
           <Td type="label">규제대상 대출구분</Td>
           <Td type="label">연계대출 및 집단대출 구분</Td>
         </Tr>
-        {DsrInfoTableData.map((item, index) => (
+        {TableData.map((item, index) => (
           <Tr key={index}>
             <Td>
               <div className="flex items-center justify-center">

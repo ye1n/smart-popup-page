@@ -4,7 +4,7 @@ import Td from "../../../../components/table/Td";
 import Tr from "../../../../components/table/Tr";
 
 export default function ChTable02() {
-  const TableTestData = [
+  const TableData = [
     {
       round: "3",
       calculationType: "입력",
@@ -71,7 +71,7 @@ export default function ChTable02() {
           <Td type="label">이자율초과감면이자</Td>
           <Td type="label">수납금액</Td>
         </Tr>
-        {TableTestData.map((item, index) => (
+        {TableData.map((item, index) => (
           <Tr key={index}>
             <Td type="text">{index + 1}</Td>
             <Td type="text">{item.round}</Td>

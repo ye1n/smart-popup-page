@@ -5,7 +5,7 @@ import Td from "../../../../../components/table/Td";
 import Tr from "../../../../../components/table/Tr";
 
 export default function TransferInfoTable02() {
-  const TransferInfoTableData = [
+  const TableData = [
     {
       realNumber: "1234567",
       senderName: "홍길동",
@@ -80,7 +80,7 @@ export default function TransferInfoTable02() {
           <Td type="label">심사원장</Td>
           <Td type="label">통합이체관리</Td>
         </Tr>
-        {TransferInfoTableData.map((item, index) => (
+        {TableData.map((item, index) => (
           <Tr key={index}>
             <Td>
               <div className="flex items-center justify-center">

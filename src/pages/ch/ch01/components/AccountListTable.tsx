@@ -4,7 +4,7 @@ import Td from "../../../../components/table/Td";
 import Tr from "../../../../components/table/Tr";
 
 export default function AccountListTable() {
-  const AccountListTableData = [
+  const TableData = [
     {
       productName: "애드론",
       flag01: "-",
@@ -61,7 +61,7 @@ export default function AccountListTable() {
           <Td type="label">연체일수</Td>
           <Td type="label">계좌번호</Td>
         </Tr>
-        {AccountListTableData.map((item, index) => (
+        {TableData.map((item, index) => (
           <Tr key={index}>
             <Td type="text">{item.productName}</Td>
             <Td type="text">{item.flag01}</Td>
