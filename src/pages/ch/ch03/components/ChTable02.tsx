@@ -5,6 +5,25 @@ import Td from "../../../../components/table/Td";
 import Tr from "../../../../components/table/Tr";
 
 export default function ChTable02() {
+  const TableData = [
+    {
+      accountNumber: "123-12-12345678",
+      productName: "입력",
+      accountStatus: "입력",
+      progressStatus: "입력",
+      courtName: "입력",
+      caseNumber: "입력",
+    },
+    {
+      accountNumber: "123-12-12345678",
+      productName: "입력",
+      accountStatus: "입력",
+      progressStatus: "입력",
+      courtName: "입력",
+      caseNumber: "입력",
+    },
+  ];
+
   return (
     <Table minWidth={468} height={158} borderTop={false}>
       <Tbody>
@@ -17,19 +36,21 @@ export default function ChTable02() {
           <Td type="label">법원명</Td>
           <Td type="label">사건번호</Td>
         </Tr>
-        <Tr>
-          <Td>
-            <div className="flex items-center justify-center">
-              <Checkbox isChecked />
-            </div>
-          </Td>
-          <Td type="text">123-12-12345678</Td>
-          <Td type="text">입력</Td>
-          <Td type="text">입력</Td>
-          <Td type="text">입력</Td>
-          <Td type="text">입력</Td>
-          <Td type="text">입력</Td>
-        </Tr>
+        {TableData.map((item, index) => (
+          <Tr key={index}>
+            <Td>
+              <div className="flex items-center justify-center">
+                <Checkbox isChecked />
+              </div>
+            </Td>
+            <Td type="text">{item.accountNumber}</Td>
+            <Td type="text">{item.productName}</Td>
+            <Td type="text">{item.accountStatus}</Td>
+            <Td type="text">{item.progressStatus}</Td>
+            <Td type="text">{item.courtName}</Td>
+            <Td type="text">{item.caseNumber}</Td>
+          </Tr>
+        ))}
       </Tbody>
     </Table>
   );

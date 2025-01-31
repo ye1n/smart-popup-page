@@ -41,7 +41,7 @@ export default function MainPage() {
         />
         <Button
           className="w-fit"
-          label="smartsb_채권원장_1280*860_사고관리 (미완료)"
+          label="smartsb_채권원장_1280*860_사고관리"
           onClick={() => openPopup(1280, 860, "/ch3")}
         />
       </div>
