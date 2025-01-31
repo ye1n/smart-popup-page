@@ -38,7 +38,7 @@ export default function ChTable03() {
   ];
 
   return (
-    <Table minWidth={717} height={286} borderTop={false}>
+    <Table minWidth={717} height={286} borderTop>
       <Tbody>
         <Tr>
           <Td type="label" rowSpan={2}></Td>

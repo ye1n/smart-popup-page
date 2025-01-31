@@ -136,7 +136,7 @@ export default function ReviewHistoryTable() {
   ];
 
   return (
-    <Table minWidth={1251} height={234}>
+    <Table minWidth={1251} height={234} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">No.</Td>

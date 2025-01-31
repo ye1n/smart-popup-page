@@ -5,7 +5,7 @@ import Tr from "../../../../components/table/Tr";
 
 export default function ChTable03() {
   return (
-    <Table minWidth={468}>
+    <Table minWidth={468} borderTop>
       <Tbody>
         <Tr>
           <Td align="left" type="label">

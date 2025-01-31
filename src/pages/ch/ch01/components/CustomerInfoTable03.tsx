@@ -8,7 +8,7 @@ import Tr from "../../../../components/table/Tr";
 
 export default function CustomerInfoTable03() {
   return (
-    <Table minWidth={554}>
+    <Table minWidth={554} borderTop>
       <Tbody>
         <Tr>
           <Td align="left" type="label">

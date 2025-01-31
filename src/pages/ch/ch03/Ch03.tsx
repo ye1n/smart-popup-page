@@ -80,7 +80,7 @@ export default function Ch03() {
                 setActiveTab={setActiveTab}
                 width={105}
               />
-              <Table minWidth={1033} borderTop={false}>
+              <Table minWidth={1033} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label" align="left">
@@ -154,7 +154,7 @@ export default function Ch03() {
                   </Tr>
                 </Tbody>
               </Table>
-              <Table minWidth={1033} borderTop={false}>
+              <Table minWidth={1033}>
                 <Tbody>
                   <Tr>
                     <Td type="label" align="left">
@@ -300,7 +300,7 @@ export default function Ch03() {
               </div>
               <div>
                 <ChTable03 />
-                <Table width={252} borderTop={false}>
+                <Table width={252}>
                   <Tbody>
                     <Tr>
                       <Td type="label" align="left">
@@ -319,7 +319,7 @@ export default function Ch03() {
               <div className="h-6">
                 <p className="text-xs font-bold text-custom-black">변제요약</p>
               </div>
-              <Table minWidth={276} borderTop={false}>
+              <Table minWidth={276} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label" align="left">

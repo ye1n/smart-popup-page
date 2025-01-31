@@ -109,29 +109,31 @@ export default function TransferInfo() {
         </div>
         <TransferInfoTable02 />
       </div>
-      <table className="mb-4 border-t border-custom-form-line">
-        <Tbody>
-          <Tr>
-            <Td type="label" align="left">
-              보증보험 보증료(분할납부예상액)
-            </Td>
-            <Td>
-              <Input align="right" defaultValue="5,730" isRequired readOnly />
-            </Td>
-            <Td type="label" align="left">
-              보증실행 전문 결과 보증료
-            </Td>
-            <Td>
-              <Input align="right" defaultValue="5,730" isRequired readOnly />
-            </Td>
-          </Tr>
-        </Tbody>
-      </table>
+      <div className="mb-4">
+        <Table borderTop>
+          <Tbody>
+            <Tr>
+              <Td type="label" align="left">
+                보증보험 보증료(분할납부예상액)
+              </Td>
+              <Td>
+                <Input align="right" defaultValue="5,730" isRequired readOnly />
+              </Td>
+              <Td type="label" align="left">
+                보증실행 전문 결과 보증료
+              </Td>
+              <Td>
+                <Input align="right" defaultValue="5,730" isRequired readOnly />
+              </Td>
+            </Tr>
+          </Tbody>
+        </Table>
+      </div>
       <div className="mb-4">
         <div className="mb-2">
           <p className="text-xs font-bold text-custom-black">인지세 설정 (C)</p>
         </div>
-        <Table>
+        <Table borderTop>
           <Tbody>
             <Tr>
               <Td type="label" align="left">
@@ -171,7 +173,7 @@ export default function TransferInfo() {
             onClick={() => {}}
           />
         </div>
-        <Table>
+        <Table borderTop>
           <Tbody>
             <Tr>
               <Td type="label" align="left">

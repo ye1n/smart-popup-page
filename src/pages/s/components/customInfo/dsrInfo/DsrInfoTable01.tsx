@@ -51,7 +51,7 @@ export default function DsrInfoTable01() {
   ];
 
   return (
-    <Table minWidth={1449} height={158}>
+    <Table minWidth={1449} height={158} borderTop>
       <Tbody>
         <Tr>
           <Td type="label" colSpan={2}>

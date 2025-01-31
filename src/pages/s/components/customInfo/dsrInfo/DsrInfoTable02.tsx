@@ -5,7 +5,7 @@ import Tr from "../../../../../components/table/Tr";
 
 export default function DsrInfoTable02() {
   return (
-    <Table minWidth={1076} height={75}>
+    <Table minWidth={1076} height={75} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">DSR 기준일자</Td>

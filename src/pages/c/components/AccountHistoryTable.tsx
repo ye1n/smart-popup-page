@@ -80,7 +80,7 @@ export default function AccountHistoryTable() {
   ];
 
   return (
-    <Table minWidth={1425} height={234}>
+    <Table minWidth={1425} height={234} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">No.</Td>

@@ -136,7 +136,7 @@ export default function Ch02() {
               <div>
                 <Label label="가수금" className="mb-2" />
                 <div className="flex items-center gap-2">
-                  <Table width={546} borderTop={false}>
+                  <Table width={546}>
                     <Tbody>
                       <Tr>
                         <Td type="label" align="left">
@@ -166,7 +166,7 @@ export default function Ch02() {
               {/* 가지급금 */}
               <div>
                 <Label label="가지급금" className="mb-2" />
-                <Table width={273} borderTop={false}>
+                <Table width={273}>
                   <Tbody>
                     <Tr>
                       <Td type="label" align="left">
@@ -185,7 +185,7 @@ export default function Ch02() {
               {/* 요구불예금 */}
               <div>
                 <Label label="요구불예금" className="mb-2" />
-                <Table width={453} borderTop={false}>
+                <Table width={453}>
                   <Tbody>
                     <Tr>
                       <Td type="label" align="left">
@@ -214,7 +214,7 @@ export default function Ch02() {
               <div className="flex flex-col gap-2 ">
                 <Label label="상환처리" />
                 <div className="flex items-center gap-2">
-                  <Table width={445} borderTop={false}>
+                  <Table width={445}>
                     <Tbody>
                       <Tr>
                         <Td type="label" align="left">
@@ -245,7 +245,7 @@ export default function Ch02() {
                   <Button label="CMS즉시출금" onClick={() => {}} />
                 </div>
                 <div className="flex items-end gap-2">
-                  <Table width={180} borderTop={false}>
+                  <Table width={180}>
                     <Tbody>
                       <Tr>
                         <Td type="label" align="left">
@@ -266,7 +266,7 @@ export default function Ch02() {
                     </Tbody>
                   </Table>
                   <div className="flex items-center gap-2">
-                    <Table width={180} borderTop={false}>
+                    <Table width={180}>
                       <Tbody>
                         <Tr>
                           <Td type="label" align="left">

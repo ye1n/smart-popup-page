@@ -78,7 +78,7 @@ export default function S() {
         {/* 메인하단 */}
         <div className="flex flex-col gap-4 p-4">
           <div className="flex items-center gap-2">
-            <Table width={488} borderTop={false}>
+            <Table width={488}>
               <Tbody>
                 <Tr>
                   <Td type="gray-label" align="left">
@@ -107,7 +107,7 @@ export default function S() {
             {/* 판정결과 */}
             <div className="col-span-1">
               <Label label="판정결과" className="mb-2" />
-              <Table minWidth={488}>
+              <Table minWidth={488} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label">판정</Td>
@@ -131,7 +131,7 @@ export default function S() {
             {/* 신청정보 */}
             <div className="col-span-2">
               <Label label="신청정보" className="mb-2" />
-              <Table minWidth={976}>
+              <Table minWidth={976} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label">SEG구분</Td>
@@ -162,7 +162,7 @@ export default function S() {
             {/* 소득정보 */}
             <div className="col-span-1">
               <Label label="소득정보" className="mb-2" />
-              <Table minWidth={734}>
+              <Table minWidth={734} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label">플랫폼 제공소득</Td>
@@ -194,7 +194,7 @@ export default function S() {
             {/* 차량정보 */}
             <div className="col-span-1">
               <Label label="차량정보" className="mb-2" />
-              <Table minWidth={734}>
+              <Table minWidth={734} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label">담보순위</Td>

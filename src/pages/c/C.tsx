@@ -64,7 +64,7 @@ export default function C() {
             <div className="flex flex-col col-span-1 gap-2">
               <Label label="심사이력" />
               <ReviewHistoryTable />
-              <Table minWidth={734} borderTop={false}>
+              <Table minWidth={734}>
                 <Tbody>
                   <Tr>
                     <Td type="label">고객명</Td>
@@ -119,7 +119,7 @@ export default function C() {
             <div className="flex flex-col col-span-1 gap-2">
               <Label label="계좌이력" />
               <AccountHistoryTable />
-              <Table minWidth={734} borderTop={false}>
+              <Table minWidth={734}>
                 <Tbody>
                   <Tr>
                     <Td type="label">고객명</Td>
@@ -194,7 +194,12 @@ export default function C() {
             </div>
           </div>
           <div className="flex gap-6">
-            <Table minWidth={1131} height={404} className="col-span-2">
+            <Table
+              minWidth={1131}
+              height={404}
+              className="col-span-2"
+              borderTop
+            >
               <Tbody>
                 <Tr>
                   <Td type="label">No.</Td>
@@ -211,7 +216,7 @@ export default function C() {
               </Tbody>
             </Table>
             <div className="flex flex-col col-span-1 gap-2 w-[334px]">
-              <Table width={334} height={150}>
+              <Table width={334} height={150} borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="label">No.</Td>
@@ -219,7 +224,7 @@ export default function C() {
                   </Tr>
                 </Tbody>
               </Table>
-              <Table width={334} borderTop={false}>
+              <Table width={334}>
                 <Tbody>
                   <Tr>
                     <Td type="label">인/아웃바운드</Td>
@@ -232,7 +237,7 @@ export default function C() {
                   </Tr>
                 </Tbody>
               </Table>
-              <Table width={334} borderTop={false}>
+              <Table width={334}>
                 <Tbody>
                   <Tr>
                     <Td type="label" align="left">
@@ -295,7 +300,7 @@ export default function C() {
       </div>
       {/* 우측 테이블 */}
       <div className="flex flex-col gap-4 m-4">
-        <Table width={374} height={485}>
+        <Table width={374} height={485} borderTop>
           <Tbody>
             <Tr>
               <Td type="label">No.</Td>
@@ -306,7 +311,7 @@ export default function C() {
             </Tr>
           </Tbody>
         </Table>
-        <Table width={374} height={485}>
+        <Table width={374} height={485} borderTop>
           <Tbody>
             <Tr>
               <Td type="label">No.</Td>

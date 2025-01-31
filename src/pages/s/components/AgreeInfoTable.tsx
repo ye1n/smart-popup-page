@@ -7,7 +7,7 @@ import Tr from "../../../components/table/Tr";
 
 export default function AgreeInfoTable() {
   return (
-    <Table minWidth={1492}>
+    <Table minWidth={1492} borderTop>
       <Tbody>
         <Tr>
           <Td type="label" align="left">

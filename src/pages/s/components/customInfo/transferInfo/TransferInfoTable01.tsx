@@ -26,7 +26,7 @@ export default function TransferInfoTable01() {
   ];
 
   return (
-    <Table minWidth={1751}>
+    <Table minWidth={1751} borderTop>
       <Tbody>
         <Tr>
           <Td type="label" colSpan={2} rowSpan={2}>

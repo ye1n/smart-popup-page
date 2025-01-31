@@ -86,7 +86,7 @@ export default function Ch01() {
                 <Badge text="경매" />
                 <Badge text="개인희생" />
               </div>
-              <Table>
+              <Table borderTop>
                 <Tbody>
                   <Tr>
                     <Td type="gray-label" align="left">
@@ -204,7 +204,7 @@ export default function Ch01() {
                 <Label label="계좌목록" />
                 <div className="flex items-center gap-2">
                   <Checkbox buttonStyle label="해지포함 (해지건수: 10)" />
-                  <Table width={244} borderTop={false}>
+                  <Table width={244}>
                     <Tbody>
                       <Tr>
                         <Td type="gray-label" align="left">
@@ -227,7 +227,7 @@ export default function Ch01() {
               <Button label="마케팅동의이력" onClick={() => {}} />
               <Button label="약관동의이력" onClick={() => {}} />
             </div>
-            <Table minWidth={522} borderTop={false}>
+            <Table minWidth={522}>
               <Tbody>
                 <Tr>
                   <Td type="label">부재</Td>
@@ -285,7 +285,7 @@ export default function Ch01() {
                   <Button label="조회" onClick={() => {}} />
                 </div>
               </div>
-              <Table minWidth={522} borderTop={false}>
+              <Table minWidth={522}>
                 <Tbody>
                   <Tr>
                     <Td type="label">등록일시</Td>
@@ -358,7 +358,7 @@ export default function Ch01() {
                 />
                 <Button label="등록" onClick={() => {}} />
               </div>
-              <Table minWidth={522} borderTop={false}>
+              <Table minWidth={522}>
                 <Tbody>
                   <Tr>
                     <Td type="label" align="left">

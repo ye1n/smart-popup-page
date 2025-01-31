@@ -6,7 +6,7 @@ import Tr from "../../../../components/table/Tr";
 
 export default function CustomerInfoTable01() {
   return (
-    <Table minWidth={636}>
+    <Table minWidth={636} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">전화구분</Td>

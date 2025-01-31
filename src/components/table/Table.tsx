@@ -14,7 +14,7 @@ const Table: React.FC<Props> = ({
   width,
   height,
   className = "",
-  borderTop = true,
+  borderTop = false,
   children,
 }) => {
   return (

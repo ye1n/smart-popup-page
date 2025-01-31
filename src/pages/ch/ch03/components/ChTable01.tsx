@@ -5,7 +5,7 @@ import Tr from "../../../../components/table/Tr";
 
 export default function ChTable01() {
   return (
-    <Table minWidth={468} height={158} borderTop={false}>
+    <Table minWidth={468} height={158} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">사고구분</Td>

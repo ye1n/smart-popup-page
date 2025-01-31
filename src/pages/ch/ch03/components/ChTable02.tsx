@@ -25,7 +25,7 @@ export default function ChTable02() {
   ];
 
   return (
-    <Table minWidth={468} height={158} borderTop={false}>
+    <Table minWidth={468} height={158} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">-</Td>

@@ -53,7 +53,7 @@ export default function ChTable02() {
   ];
 
   return (
-    <Table minWidth={1205}>
+    <Table minWidth={1205} borderTop>
       <Tbody>
         <Tr>
           <Td type="label">No.</Td>
