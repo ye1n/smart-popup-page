@@ -62,7 +62,7 @@ export default function AssetsInfoTable() {
           </Td>
           <Td rowSpan={2}>
             <Dropdown
-              height="h-[52px]"
+              height={52}
               options={[{ label: "실거주주소", value: "" }]}
             />
           </Td>
@@ -118,7 +118,7 @@ export default function AssetsInfoTable() {
           </Td>
           <Td rowSpan={2}>
             <Dropdown
-              height="h-[52px]"
+              height={52}
               options={[{ label: "신규주소", value: "" }]}
             />
           </Td>
