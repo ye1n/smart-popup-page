@@ -1,8 +1,8 @@
 import PBCheckbox from "../../../../../components/PBCheckbox";
-import Table from "../../../../../components/table/Table";
-import Tbody from "../../../../../components/table/Tbody";
-import Td from "../../../../../components/table/Td";
-import Tr from "../../../../../components/table/Tr";
+import PBTable from "../../../../../components/table/PBTable";
+import PBTbody from "../../../../../components/table/PBTbody";
+import PBTd from "../../../../../components/table/PBTd";
+import PBTr from "../../../../../components/table/PBTr";
 
 export default function DsrInfoTable01() {
   const TableData = [
@@ -51,56 +51,56 @@ export default function DsrInfoTable01() {
   ];
 
   return (
-    <Table minWidth={1449} height={158} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label" colSpan={2}>
+    <PBTable minWidth={1449} height={158} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label" colSpan={2}>
             No.
-          </Td>
-          <Td type="label">금융기관</Td>
-          <Td type="label">점포명</Td>
-          <Td type="label">잔액</Td>
-          <Td type="label">발생일</Td>
-          <Td type="label">변동일</Td>
-          <Td type="label">DSR변동일</Td>
-          <Td type="label">DSR추정액</Td>
-          <Td type="label">계좌번호</Td>
-          <Td type="label">대출구분</Td>
-          <Td type="label">DSR산정구분</Td>
-          <Td type="label">규제대상 대출구분</Td>
-          <Td type="label">연계대출 및 집단대출 구분</Td>
-        </Tr>
+          </PBTd>
+          <PBTd type="label">금융기관</PBTd>
+          <PBTd type="label">점포명</PBTd>
+          <PBTd type="label">잔액</PBTd>
+          <PBTd type="label">발생일</PBTd>
+          <PBTd type="label">변동일</PBTd>
+          <PBTd type="label">DSR변동일</PBTd>
+          <PBTd type="label">DSR추정액</PBTd>
+          <PBTd type="label">계좌번호</PBTd>
+          <PBTd type="label">대출구분</PBTd>
+          <PBTd type="label">DSR산정구분</PBTd>
+          <PBTd type="label">규제대상 대출구분</PBTd>
+          <PBTd type="label">연계대출 및 집단대출 구분</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td>
+          <PBTr key={index}>
+            <PBTd>
               <div className="flex items-center justify-center">
                 <PBCheckbox isChecked />
               </div>
-            </Td>
-            <Td type="text">{index + 1}</Td>
-            <Td type="text" align="left">
+            </PBTd>
+            <PBTd type="text">{index + 1}</PBTd>
+            <PBTd type="text" align="left">
               {item.financialInstitution}
-            </Td>
-            <Td type="text" align="left">
+            </PBTd>
+            <PBTd type="text" align="left">
               {item.branchName}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.balance}
-            </Td>
-            <Td type="text">{item.occurrenceDate}</Td>
-            <Td type="text">{item.changeDate}</Td>
-            <Td type="text">{item.dsrChangeDate}</Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text">{item.occurrenceDate}</PBTd>
+            <PBTd type="text">{item.changeDate}</PBTd>
+            <PBTd type="text">{item.dsrChangeDate}</PBTd>
+            <PBTd type="text" align="right">
               {item.estimatedDSR}
-            </Td>
-            <Td type="text">{item.accountNumber}</Td>
-            <Td type="text">{item.loanType}</Td>
-            <Td type="text">{item.dsrCalculationType}</Td>
-            <Td type="text">{item.regulationLoanType}</Td>
-            <Td type="text">{item.linkedOrGroupLoanType}</Td>
-          </Tr>
+            </PBTd>
+            <PBTd type="text">{item.accountNumber}</PBTd>
+            <PBTd type="text">{item.loanType}</PBTd>
+            <PBTd type="text">{item.dsrCalculationType}</PBTd>
+            <PBTd type="text">{item.regulationLoanType}</PBTd>
+            <PBTd type="text">{item.linkedOrGroupLoanType}</PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

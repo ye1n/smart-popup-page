@@ -1,7 +1,7 @@
-import Table from "../../../components/table/Table";
-import Tbody from "../../../components/table/Tbody";
-import Td from "../../../components/table/Td";
-import Tr from "../../../components/table/Tr";
+import PBTable from "../../../components/table/PBTable";
+import PBTbody from "../../../components/table/PBTbody";
+import PBTd from "../../../components/table/PBTd";
+import PBTr from "../../../components/table/PBTr";
 
 export default function AccountHistoryTable() {
   const TableData = [
@@ -80,61 +80,61 @@ export default function AccountHistoryTable() {
   ];
 
   return (
-    <Table minWidth={1425} height={234} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label">No.</Td>
-          <Td type="label">고객명</Td>
-          <Td type="label">생년월일</Td>
-          <Td type="label">지점</Td>
-          <Td type="label">담당자</Td>
-          <Td type="label">상품명</Td>
-          <Td type="label">대출일</Td>
-          <Td type="label">대출잔액</Td>
-          <Td type="label">최종거래일</Td>
-          <Td type="label">차기이수일</Td>
-          <Td type="label">연체일수</Td>
-          <Td type="label">상환원금</Td>
-          <Td type="label">이자</Td>
-          <Td type="label">연체료</Td>
-          <Td type="label">연체이자</Td>
-          <Td type="label">가수금</Td>
-          <Td type="label">부족금액</Td>
-        </Tr>
+    <PBTable minWidth={1425} height={234} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label">No.</PBTd>
+          <PBTd type="label">고객명</PBTd>
+          <PBTd type="label">생년월일</PBTd>
+          <PBTd type="label">지점</PBTd>
+          <PBTd type="label">담당자</PBTd>
+          <PBTd type="label">상품명</PBTd>
+          <PBTd type="label">대출일</PBTd>
+          <PBTd type="label">대출잔액</PBTd>
+          <PBTd type="label">최종거래일</PBTd>
+          <PBTd type="label">차기이수일</PBTd>
+          <PBTd type="label">연체일수</PBTd>
+          <PBTd type="label">상환원금</PBTd>
+          <PBTd type="label">이자</PBTd>
+          <PBTd type="label">연체료</PBTd>
+          <PBTd type="label">연체이자</PBTd>
+          <PBTd type="label">가수금</PBTd>
+          <PBTd type="label">부족금액</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td type="text">{index + 1}</Td>
-            <Td type="text">{item.customerName}</Td>
-            <Td type="text">{item.dateOfBirth}</Td>
-            <Td type="text">{item.branch}</Td>
-            <Td type="text">{item.manager}</Td>
-            <Td type="text">{item.productName}</Td>
-            <Td type="text">{item.loanDate}</Td>
-            <Td type="text">{item.loanBalance}</Td>
-            <Td type="text">{item.lastTransactionDate}</Td>
-            <Td type="text">{item.nextPaymentDueDate}</Td>
-            <Td type="text">{item.overdueDays}</Td>
-            <Td type="text" align="right">
+          <PBTr key={index}>
+            <PBTd type="text">{index + 1}</PBTd>
+            <PBTd type="text">{item.customerName}</PBTd>
+            <PBTd type="text">{item.dateOfBirth}</PBTd>
+            <PBTd type="text">{item.branch}</PBTd>
+            <PBTd type="text">{item.manager}</PBTd>
+            <PBTd type="text">{item.productName}</PBTd>
+            <PBTd type="text">{item.loanDate}</PBTd>
+            <PBTd type="text">{item.loanBalance}</PBTd>
+            <PBTd type="text">{item.lastTransactionDate}</PBTd>
+            <PBTd type="text">{item.nextPaymentDueDate}</PBTd>
+            <PBTd type="text">{item.overdueDays}</PBTd>
+            <PBTd type="text" align="right">
               {item.principalRepayment}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.interest}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.overdueFee}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.overdueInterest}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.advancePayment}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.shortfallAmount}
-            </Td>
-          </Tr>
+            </PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

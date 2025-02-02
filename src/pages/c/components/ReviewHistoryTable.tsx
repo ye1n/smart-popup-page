@@ -1,7 +1,7 @@
-import Table from "../../../components/table/Table";
-import Tbody from "../../../components/table/Tbody";
-import Td from "../../../components/table/Td";
-import Tr from "../../../components/table/Tr";
+import PBTable from "../../../components/table/PBTable";
+import PBTbody from "../../../components/table/PBTbody";
+import PBTd from "../../../components/table/PBTd";
+import PBTr from "../../../components/table/PBTr";
 
 export default function ReviewHistoryTable() {
   const TableData = [
@@ -136,49 +136,49 @@ export default function ReviewHistoryTable() {
   ];
 
   return (
-    <Table minWidth={1251} height={234} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label">No.</Td>
-          <Td type="label">고객명</Td>
-          <Td type="label">생년월일</Td>
-          <Td type="label">지점</Td>
-          <Td type="label">담당자</Td>
-          <Td type="label">상품명</Td>
-          <Td type="label">신청일</Td>
-          <Td type="label">심사상태</Td>
-          <Td type="label">대출일</Td>
-          <Td type="label">대출금액</Td>
-          <Td type="label">금리</Td>
-          <Td type="label">기간</Td>
-          <Td type="label">접수경로</Td>
-          <Td type="label">거절사유</Td>
-          <Td type="label">심사메모</Td>
-        </Tr>
+    <PBTable minWidth={1251} height={234} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label">No.</PBTd>
+          <PBTd type="label">고객명</PBTd>
+          <PBTd type="label">생년월일</PBTd>
+          <PBTd type="label">지점</PBTd>
+          <PBTd type="label">담당자</PBTd>
+          <PBTd type="label">상품명</PBTd>
+          <PBTd type="label">신청일</PBTd>
+          <PBTd type="label">심사상태</PBTd>
+          <PBTd type="label">대출일</PBTd>
+          <PBTd type="label">대출금액</PBTd>
+          <PBTd type="label">금리</PBTd>
+          <PBTd type="label">기간</PBTd>
+          <PBTd type="label">접수경로</PBTd>
+          <PBTd type="label">거절사유</PBTd>
+          <PBTd type="label">심사메모</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td type="text">{index + 1}</Td>
-            <Td type="text">{item.customerName}</Td>
-            <Td type="text">{item.dateOfBirth}</Td>
-            <Td type="text">{item.branch}</Td>
-            <Td type="text">{item.manager}</Td>
-            <Td type="text">{item.productName}</Td>
-            <Td type="text">{item.applicationDate}</Td>
-            <Td type="text">{item.reviewStatus}</Td>
-            <Td type="text">{item.loanDate}</Td>
-            <Td type="text" align="right">
+          <PBTr key={index}>
+            <PBTd type="text">{index + 1}</PBTd>
+            <PBTd type="text">{item.customerName}</PBTd>
+            <PBTd type="text">{item.dateOfBirth}</PBTd>
+            <PBTd type="text">{item.branch}</PBTd>
+            <PBTd type="text">{item.manager}</PBTd>
+            <PBTd type="text">{item.productName}</PBTd>
+            <PBTd type="text">{item.applicationDate}</PBTd>
+            <PBTd type="text">{item.reviewStatus}</PBTd>
+            <PBTd type="text">{item.loanDate}</PBTd>
+            <PBTd type="text" align="right">
               {item.loanAmount}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.interestRate}
-            </Td>
-            <Td type="text">{item.loanTerm}</Td>
-            <Td type="text">{item.applicationChannel}</Td>
-            <Td type="text">{item.rejectionReason}</Td>
-            <Td type="text">{item.reviewMemo}</Td>
-          </Tr>
+            </PBTd>
+            <PBTd type="text">{item.loanTerm}</PBTd>
+            <PBTd type="text">{item.applicationChannel}</PBTd>
+            <PBTd type="text">{item.rejectionReason}</PBTd>
+            <PBTd type="text">{item.reviewMemo}</PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

@@ -1,14 +1,14 @@
-import Button from "../../../../../components/Button";
+import PBButton from "../../../../../components/PBButton";
 import PBCheckbox from "../../../../../components/PBCheckbox";
-import Icon from "../../../../../components/Icon";
-import Input from "../../../../../components/Input";
-import Table from "../../../../../components/table/Table";
-import Tbody from "../../../../../components/table/Tbody";
-import Td from "../../../../../components/table/Td";
-import Tr from "../../../../../components/table/Tr";
+import PBIcon from "../../../../../components/PBIcon";
+import PBInput from "../../../../../components/PBInput";
+import PBTable from "../../../../../components/table/PBTable";
+import PBTbody from "../../../../../components/table/PBTbody";
+import PBTd from "../../../../../components/table/PBTd";
+import PBTr from "../../../../../components/table/PBTr";
 import { icons } from "../../../../../constants/icons";
-import TransferInfoTable01 from "./TransferInfoTable01";
-import TransferInfoTable02 from "./TransferInfoTable02";
+import PBTransferInfoTable01 from "./TransferInfoTable01";
+import PBTransferInfoTable02 from "./TransferInfoTable02";
 
 export default function TransferInfo() {
   return (
@@ -17,45 +17,45 @@ export default function TransferInfo() {
         <div className="flex items-end justify-between mb-2">
           <p className="text-xs font-bold text-custom-black">CMS내역 (A)</p>
           <div className="flex gap-1">
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.roundPlus} />}
+              icon={<PBIcon icon={icons.roundPlus} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.view} />}
+              icon={<PBIcon icon={icons.view} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.lock} />}
+              icon={<PBIcon icon={icons.lock} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.unlock} />}
+              icon={<PBIcon icon={icons.unlock} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.edit} />}
+              icon={<PBIcon icon={icons.edit} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.remove} />}
+              icon={<PBIcon icon={icons.remove} />}
               onClick={() => {}}
             />
           </div>
         </div>
-        <TransferInfoTable01 />
+        <PBTransferInfoTable01 />
       </div>
       <div className="mb-[26px]">
         <div className="flex items-end justify-between mb-2">
@@ -73,117 +73,127 @@ export default function TransferInfo() {
               label="권리침해대환"
             />
             <PBCheckbox buttonStyle checkedColor="#ff9015" label="대환" />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.roundPlus} />}
+              icon={<PBIcon icon={icons.roundPlus} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.view} />}
+              icon={<PBIcon icon={icons.view} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.lock} />}
+              icon={<PBIcon icon={icons.lock} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.unlock} />}
+              icon={<PBIcon icon={icons.unlock} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.edit} />}
+              icon={<PBIcon icon={icons.edit} />}
               onClick={() => {}}
             />
-            <Button
+            <PBButton
               variant="icon-white-outline"
               label=""
-              icon={<Icon icon={icons.remove} />}
+              icon={<PBIcon icon={icons.remove} />}
               onClick={() => {}}
             />
           </div>
         </div>
-        <TransferInfoTable02 />
+        <PBTransferInfoTable02 />
       </div>
       <div className="mb-4">
-        <Table borderTop>
-          <Tbody>
-            <Tr>
-              <Td type="label" align="left">
+        <PBTable borderTop>
+          <PBTbody>
+            <PBTr>
+              <PBTd type="label" align="left">
                 보증보험 보증료(분할납부예상액)
-              </Td>
-              <Td>
-                <Input align="right" defaultValue="5,730" isRequired readOnly />
-              </Td>
-              <Td type="label" align="left">
+              </PBTd>
+              <PBTd>
+                <PBInput
+                  align="right"
+                  defaultValue="5,730"
+                  isRequired
+                  readOnly
+                />
+              </PBTd>
+              <PBTd type="label" align="left">
                 보증실행 전문 결과 보증료
-              </Td>
-              <Td>
-                <Input align="right" defaultValue="5,730" isRequired readOnly />
-              </Td>
-            </Tr>
-          </Tbody>
-        </Table>
+              </PBTd>
+              <PBTd>
+                <PBInput
+                  align="right"
+                  defaultValue="5,730"
+                  isRequired
+                  readOnly
+                />
+              </PBTd>
+            </PBTr>
+          </PBTbody>
+        </PBTable>
       </div>
       <div className="mb-4">
         <div className="mb-2">
           <p className="text-xs font-bold text-custom-black">인지세 설정 (C)</p>
         </div>
-        <Table borderTop>
-          <Tbody>
-            <Tr>
-              <Td type="label" align="left">
+        <PBTable borderTop>
+          <PBTbody>
+            <PBTr>
+              <PBTd type="label" align="left">
                 인지세
-              </Td>
-              <Td type="text" align="right">
+              </PBTd>
+              <PBTd type="text" align="right">
                 100,000,000
-              </Td>
-              <Td type="label" align="left">
+              </PBTd>
+              <PBTd type="label" align="left">
                 총 이체금액(A+B+C)
-              </Td>
-              <Td type="text" align="right">
+              </PBTd>
+              <PBTd type="text" align="right">
                 100,000,000
-              </Td>
-              <Td type="label" align="left">
+              </PBTd>
+              <PBTd type="label" align="left">
                 대출액
-              </Td>
-              <Td type="text" align="right">
+              </PBTd>
+              <PBTd type="text" align="right">
                 100,000,000
-              </Td>
-              <Td type="label" align="left">
+              </PBTd>
+              <PBTd type="label" align="left">
                 결과
-              </Td>
-              <Td type="text" align="left">
+              </PBTd>
+              <PBTd type="text" align="left">
                 완료
-              </Td>
-            </Tr>
-          </Tbody>
-        </Table>
+              </PBTd>
+            </PBTr>
+          </PBTbody>
+        </PBTable>
       </div>
       <div>
         <div className="flex items-end justify-between mb-2">
           <p className="text-xs font-bold text-custom-black">기타정보</p>
-          <Button
+          <PBButton
             variant="white-outline-shadow"
             label="NCCS자서대행"
             onClick={() => {}}
           />
         </div>
-        <Table borderTop>
-          <Tbody>
-            <Tr>
-              <Td type="label" align="left">
+        <PBTable borderTop>
+          <PBTbody>
+            <PBTr>
+              <PBTd type="label" align="left">
                 공증/인감
-              </Td>
-              <Td colSpan={3}>
+              </PBTd>
+              <PBTd colSpan={3}>
                 <div className="flex items-center gap-4 px-2">
                   <PBCheckbox isChecked label="공증인증대상" />
                   <PBCheckbox label="공증대상" />
@@ -191,35 +201,35 @@ export default function TransferInfo() {
                   <PBCheckbox label="소득증빙대상" />
                   <PBCheckbox label="CMS대상" />
                 </div>
-              </Td>
-            </Tr>
-            <Tr>
-              <Td type="label" align="left">
+              </PBTd>
+            </PBTr>
+            <PBTr>
+              <PBTd type="label" align="left">
                 수령지주소
-              </Td>
-              <Td align="left" colSpan={3}>
-                <Input
+              </PBTd>
+              <PBTd align="left" colSpan={3}>
+                <PBInput
                   align="left"
                   defaultValue="경기도 성남시 중원구 갈마치로 288 14 A-730"
                 />
-              </Td>
-            </Tr>
-            <Tr>
-              <Td type="label" align="left">
+              </PBTd>
+            </PBTr>
+            <PBTr>
+              <PBTd type="label" align="left">
                 CMS은행
-              </Td>
-              <Td align="left">
-                <Input align="left" defaultValue="스마트저축은행" />
-              </Td>
-              <Td type="label" align="left">
+              </PBTd>
+              <PBTd align="left">
+                <PBInput align="left" defaultValue="스마트저축은행" />
+              </PBTd>
+              <PBTd type="label" align="left">
                 CMS계좌
-              </Td>
-              <Td align="left">
-                <Input align="left" defaultValue=" 123456-789-00-45613" />
-              </Td>
-            </Tr>
-          </Tbody>
-        </Table>
+              </PBTd>
+              <PBTd align="left">
+                <PBInput align="left" defaultValue=" 123456-789-00-45613" />
+              </PBTd>
+            </PBTr>
+          </PBTbody>
+        </PBTable>
       </div>
     </div>
   );

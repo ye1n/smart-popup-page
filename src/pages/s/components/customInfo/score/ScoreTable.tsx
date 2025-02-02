@@ -1,228 +1,228 @@
-import Table from "../../../../../components/table/Table";
-import Tbody from "../../../../../components/table/Tbody";
-import Td from "../../../../../components/table/Td";
-import Tr from "../../../../../components/table/Tr";
+import PBTable from "../../../../../components/table/PBTable";
+import PBTbody from "../../../../../components/table/PBTbody";
+import PBTd from "../../../../../components/table/PBTd";
+import PBTr from "../../../../../components/table/PBTr";
 
 export default function ScoreTable() {
   return (
-    <Table minWidth={734} height={266} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label" colSpan={2}>
+    <PBTable minWidth={734} height={266} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label" colSpan={2}>
             내부평점
-          </Td>
-          <Td type="label"></Td>
-          <Td type="label">AS등급</Td>
-          <Td type="label"></Td>
-          <Td type="label">AS등급</Td>
-          <Td type="label"></Td>
-          <Td type="label">AS결합등급</Td>
-          <Td type="label"></Td>
-          <Td type="label">금리등급</Td>
-          <Td type="label"></Td>
-        </Tr>
-        <Tr>
-          <Td type="label" align="left" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label"></PBTd>
+          <PBTd type="label">AS등급</PBTd>
+          <PBTd type="label"></PBTd>
+          <PBTd type="label">AS등급</PBTd>
+          <PBTd type="label"></PBTd>
+          <PBTd type="label">AS결합등급</PBTd>
+          <PBTd type="label"></PBTd>
+          <PBTd type="label">금리등급</PBTd>
+          <PBTd type="label"></PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label" align="left" rowSpan={2}>
             NICE
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label" align="left">
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label" align="left" rowSpan={2}>
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label" align="left" rowSpan={2}>
             KCB
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label" align="left">
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label" align="left" rowSpan={2}>
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label" align="left" rowSpan={2}>
             TOSS
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label" align="left">
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-          <Td type="label" align="left">
+          </PBTd>
+          <PBTd type="label" align="left">
             스코어명
-          </Td>
-          <Td type="text" align="left">
+          </PBTd>
+          <PBTd type="text" align="left">
             -
-          </Td>
-        </Tr>
-      </Tbody>
-    </Table>
+          </PBTd>
+        </PBTr>
+      </PBTbody>
+    </PBTable>
   );
 }

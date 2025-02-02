@@ -1,19 +1,19 @@
 import { useState } from "react";
-import Input from "../../../components/Input";
-import InputGroup from "../../../components/InputGroup";
+import PBInput from "../../../components/PBInput";
+import PBInputGroup from "../../../components/PBInputGroup";
 import PBTabs, { Tab } from "../../../components/PBTabs";
-import Button from "../../../components/Button";
-import Icon from "../../../components/Icon";
+import PBButton from "../../../components/PBButton";
+import PBIcon from "../../../components/PBIcon";
 import { icons } from "../../../constants/icons";
 import ChTable01 from "./components/ChTable01";
 import ChTable02 from "./components/ChTable02";
-import Dropdown from "../../../components/Dropdown";
+import PBDropdown from "../../../components/PBDropdown";
 import ChTable03 from "./components/ChTable03";
 import PBLabel from "../../../components/PBLabel";
-import Table from "../../../components/table/Table";
-import Tbody from "../../../components/table/Tbody";
-import Tr from "../../../components/table/Tr";
-import Td from "../../../components/table/Td";
+import PBTable from "../../../components/table/PBTable";
+import PBTbody from "../../../components/table/PBTbody";
+import PBTr from "../../../components/table/PBTr";
+import PBTd from "../../../components/table/PBTd";
 import PBInfoBadge from "../../../components/PBInfoBadge";
 
 export default function Ch02() {
@@ -34,18 +34,18 @@ export default function Ch02() {
     <div>
       {/* 메인상단 */}
       <div className="flex items-center gap-6 p-4 bg-custom-bg">
-        <InputGroup label="고객명">
-          <Input defaultValue="김저축" width={150} />
-        </InputGroup>
-        <InputGroup label="고객번호">
-          <Input defaultValue="999011123456" width={150} />
-        </InputGroup>
-        <InputGroup label="대출번호">
-          <Input defaultValue="9961760000005" width={150} />
-        </InputGroup>
-        <InputGroup label="가상계좌번호">
-          <Input defaultValue="123-12-1234567-1234" width={150} />
-        </InputGroup>
+        <PBInputGroup label="고객명">
+          <PBInput defaultValue="김저축" width={150} />
+        </PBInputGroup>
+        <PBInputGroup label="고객번호">
+          <PBInput defaultValue="999011123456" width={150} />
+        </PBInputGroup>
+        <PBInputGroup label="대출번호">
+          <PBInput defaultValue="9961760000005" width={150} />
+        </PBInputGroup>
+        <PBInputGroup label="가상계좌번호">
+          <PBInput defaultValue="123-12-1234567-1234" width={150} />
+        </PBInputGroup>
       </div>
       {/* 메인하단 */}
       <div className="flex flex-col gap-4 p-4">
@@ -60,38 +60,42 @@ export default function Ch02() {
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between border-t bg-custom-form-bg border-[#333333] py-2 px-4">
             <div className="flex gap-8">
-              <InputGroup label="상환구분">
-                <Input align="left" defaultValue="10-원리금수납" width={128} />
-              </InputGroup>
-              <InputGroup label="상환금액">
-                <Input align="right" defaultValue="100,000,000" width={100} />
-              </InputGroup>
-              <InputGroup label="상환원금">
-                <Input align="right" defaultValue="100,000,000" width={100} />
-              </InputGroup>
-              <InputGroup label="회차">
-                <Input align="left" defaultValue="30" width={44} />
-              </InputGroup>
-              <InputGroup label="기산일자">
-                <Input
+              <PBInputGroup label="상환구분">
+                <PBInput
+                  align="left"
+                  defaultValue="10-원리금수납"
+                  width={128}
+                />
+              </PBInputGroup>
+              <PBInputGroup label="상환금액">
+                <PBInput align="right" defaultValue="100,000,000" width={100} />
+              </PBInputGroup>
+              <PBInputGroup label="상환원금">
+                <PBInput align="right" defaultValue="100,000,000" width={100} />
+              </PBInputGroup>
+              <PBInputGroup label="회차">
+                <PBInput align="left" defaultValue="30" width={44} />
+              </PBInputGroup>
+              <PBInputGroup label="기산일자">
+                <PBInput
                   align="left"
                   defaultValue="2024-01-01"
                   width={128}
-                  icon={<Icon icon={icons.calendar} />}
+                  icon={<PBIcon icon={icons.calendar} />}
                   iconPosition="right"
                 />
-              </InputGroup>
-              <InputGroup label="계산종료일">
-                <Input
+              </PBInputGroup>
+              <PBInputGroup label="계산종료일">
+                <PBInput
                   align="left"
                   defaultValue="2024-12-31"
                   width={128}
-                  icon={<Icon icon={icons.calendar} />}
+                  icon={<PBIcon icon={icons.calendar} />}
                   iconPosition="right"
                 />
-              </InputGroup>
+              </PBInputGroup>
             </div>
-            <Button label="조회" onClick={() => {}} />
+            <PBButton label="조회" onClick={() => {}} />
           </div>
           <ChTable01 />
         </div>
@@ -100,14 +104,14 @@ export default function Ch02() {
         {/* section4 */}
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-8 px-4 py-2 bg-custom-form-bg">
-            <InputGroup label="약정일">
+            <PBInputGroup label="약정일">
               <div className="flex items-center pr-1 bg-custom-white">
-                <Dropdown
+                <PBDropdown
                   align="left"
                   options={[{ label: "31", value: "" }]}
                   width={66}
                 />
-                <Button
+                <PBButton
                   variant="table-gray"
                   label="약정일변경"
                   onClick={() => {}}
@@ -116,18 +120,18 @@ export default function Ch02() {
               <p className="font-bold text-[#d92222] text-[11px]">
                 ※ 연계계좌처리금지
               </p>
-            </InputGroup>
-            <InputGroup label="연락처">
+            </PBInputGroup>
+            <PBInputGroup label="연락처">
               <div className="flex gap-0.5">
-                <Input defaultValue="010-1234-5678" width={100} />
-                <Dropdown
+                <PBInput defaultValue="010-1234-5678" width={100} />
+                <PBDropdown
                   align="left"
                   options={[{ label: "선택", value: "" }]}
                   width={150}
                 />
               </div>
-              <Button label="SMS발송" onClick={() => {}} />
-            </InputGroup>
+              <PBButton label="SMS발송" onClick={() => {}} />
+            </PBInputGroup>
           </div>
           <div className="grid grid-cols-2 gap-6">
             <ChTable03 />
@@ -136,149 +140,149 @@ export default function Ch02() {
               <div>
                 <PBLabel label="가수금" className="mb-2" />
                 <div className="flex items-center gap-2">
-                  <Table width={546}>
-                    <Tbody>
-                      <Tr>
-                        <Td type="label" align="left">
+                  <PBTable width={546}>
+                    <PBTbody>
+                      <PBTr>
+                        <PBTd type="label" align="left">
                           가수금
-                        </Td>
-                        <Td>
-                          <Input align="right" defaultValue="100,000,000" />
-                        </Td>
-                        <Td>
-                          <Dropdown
+                        </PBTd>
+                        <PBTd>
+                          <PBInput align="right" defaultValue="100,000,000" />
+                        </PBTd>
+                        <PBTd>
+                          <PBDropdown
                             align="left"
                             options={[{ label: "선택", value: "" }]}
                           />
-                        </Td>
-                        <Td type="label" align="left">
+                        </PBTd>
+                        <PBTd type="label" align="left">
                           이동금액
-                        </Td>
-                        <Td>
-                          <Input align="right" defaultValue="100,000,000" />
-                        </Td>
-                      </Tr>
-                    </Tbody>
-                  </Table>
-                  <Button label="가수금 이동" onClick={() => {}} />
+                        </PBTd>
+                        <PBTd>
+                          <PBInput align="right" defaultValue="100,000,000" />
+                        </PBTd>
+                      </PBTr>
+                    </PBTbody>
+                  </PBTable>
+                  <PBButton label="가수금 이동" onClick={() => {}} />
                 </div>
               </div>
               {/* 가지급금 */}
               <div>
                 <PBLabel label="가지급금" className="mb-2" />
-                <Table width={273}>
-                  <Tbody>
-                    <Tr>
-                      <Td type="label" align="left">
+                <PBTable width={273}>
+                  <PBTbody>
+                    <PBTr>
+                      <PBTd type="label" align="left">
                         가지급금
-                      </Td>
-                      <Td>
-                        <Input align="right" defaultValue="100,000,000" />
-                      </Td>
-                      <Td>
-                        <Input align="right" defaultValue="100,000,000" />
-                      </Td>
-                    </Tr>
-                  </Tbody>
-                </Table>
+                      </PBTd>
+                      <PBTd>
+                        <PBInput align="right" defaultValue="100,000,000" />
+                      </PBTd>
+                      <PBTd>
+                        <PBInput align="right" defaultValue="100,000,000" />
+                      </PBTd>
+                    </PBTr>
+                  </PBTbody>
+                </PBTable>
               </div>
               {/* 요구불예금 */}
               <div>
                 <PBLabel label="요구불예금" className="mb-2" />
-                <Table width={453}>
-                  <Tbody>
-                    <Tr>
-                      <Td type="label" align="left">
+                <PBTable width={453}>
+                  <PBTbody>
+                    <PBTr>
+                      <PBTd type="label" align="left">
                         거래구분
-                      </Td>
-                      <Td>
-                        <Dropdown
+                      </PBTd>
+                      <PBTd>
+                        <PBDropdown
                           align="left"
                           options={[{ label: "선택", value: "" }]}
                         />
-                      </Td>
-                      <Td type="label" align="left">
+                      </PBTd>
+                      <PBTd type="label" align="left">
                         연동/대체계좌
-                      </Td>
-                      <Td>
-                        <Dropdown
+                      </PBTd>
+                      <PBTd>
+                        <PBDropdown
                           align="left"
                           options={[{ label: "선택", value: "" }]}
                         />
-                      </Td>
-                    </Tr>
-                  </Tbody>
-                </Table>
+                      </PBTd>
+                    </PBTr>
+                  </PBTbody>
+                </PBTable>
               </div>
               {/* 상환처리 */}
               <div className="flex flex-col gap-2 ">
                 <PBLabel label="상환처리" />
                 <div className="flex items-center gap-2">
-                  <Table width={445}>
-                    <Tbody>
-                      <Tr>
-                        <Td type="label" align="left">
+                  <PBTable width={445}>
+                    <PBTbody>
+                      <PBTr>
+                        <PBTd type="label" align="left">
                           상환재원
-                        </Td>
-                        <Td>
-                          <Dropdown
+                        </PBTd>
+                        <PBTd>
+                          <PBDropdown
                             align="left"
                             options={[
                               { label: "채무자(관련인변제포함)", value: "" },
                             ]}
                           />
-                        </Td>
-                        <Td type="label" align="left">
+                        </PBTd>
+                        <PBTd type="label" align="left">
                           부족금
-                        </Td>
-                        <Td>
-                          <Input align="right" defaultValue="100,000,000" />
-                        </Td>
-                      </Tr>
-                    </Tbody>
-                  </Table>
-                  <Button
+                        </PBTd>
+                        <PBTd>
+                          <PBInput align="right" defaultValue="100,000,000" />
+                        </PBTd>
+                      </PBTr>
+                    </PBTbody>
+                  </PBTable>
+                  <PBButton
                     variant="white-outline-shadow"
                     label="상환처리"
                     onClick={() => {}}
                   />
-                  <Button label="CMS즉시출금" onClick={() => {}} />
+                  <PBButton label="CMS즉시출금" onClick={() => {}} />
                 </div>
                 <div className="flex items-end gap-2">
-                  <Table width={180}>
-                    <Tbody>
-                      <Tr>
-                        <Td type="label" align="left">
+                  <PBTable width={180}>
+                    <PBTbody>
+                      <PBTr>
+                        <PBTd type="label" align="left">
                           상환적요
-                        </Td>
-                        <Td>
-                          <Input align="left" defaultValue="입력" />
-                        </Td>
-                      </Tr>
-                      <Tr>
-                        <Td type="label" align="left">
+                        </PBTd>
+                        <PBTd>
+                          <PBInput align="left" defaultValue="입력" />
+                        </PBTd>
+                      </PBTr>
+                      <PBTr>
+                        <PBTd type="label" align="left">
                           미징수적요
-                        </Td>
-                        <Td>
-                          <Input align="left" defaultValue="입력" />
-                        </Td>
-                      </Tr>
-                    </Tbody>
-                  </Table>
+                        </PBTd>
+                        <PBTd>
+                          <PBInput align="left" defaultValue="입력" />
+                        </PBTd>
+                      </PBTr>
+                    </PBTbody>
+                  </PBTable>
                   <div className="flex items-center gap-2">
-                    <Table width={180}>
-                      <Tbody>
-                        <Tr>
-                          <Td type="label" align="left">
+                    <PBTable width={180}>
+                      <PBTbody>
+                        <PBTr>
+                          <PBTd type="label" align="left">
                             입금예약금액
-                          </Td>
-                          <Td>
-                            <Input align="right" defaultValue="100,000,000" />
-                          </Td>
-                        </Tr>
-                      </Tbody>
-                    </Table>
-                    <Button label="상환처리 예약" onClick={() => {}} />
+                          </PBTd>
+                          <PBTd>
+                            <PBInput align="right" defaultValue="100,000,000" />
+                          </PBTd>
+                        </PBTr>
+                      </PBTbody>
+                    </PBTable>
+                    <PBButton label="상환처리 예약" onClick={() => {}} />
                   </div>
                 </div>
                 <div className="flex gap-2">

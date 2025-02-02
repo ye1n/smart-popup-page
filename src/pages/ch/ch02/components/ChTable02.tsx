@@ -1,7 +1,7 @@
-import Table from "../../../../components/table/Table";
-import Tbody from "../../../../components/table/Tbody";
-import Td from "../../../../components/table/Td";
-import Tr from "../../../../components/table/Tr";
+import PBTable from "../../../../components/table/PBTable";
+import PBTbody from "../../../../components/table/PBTbody";
+import PBTd from "../../../../components/table/PBTd";
+import PBTr from "../../../../components/table/PBTr";
 
 export default function ChTable02() {
   const TableData = [
@@ -53,55 +53,55 @@ export default function ChTable02() {
   ];
 
   return (
-    <Table minWidth={1205} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label">No.</Td>
-          <Td type="label">회차</Td>
-          <Td type="label">계산구분</Td>
-          <Td type="label">기준금액</Td>
-          <Td type="label">계산시작일</Td>
-          <Td type="label">계산종료일</Td>
-          <Td type="label">계산일수</Td>
-          <Td type="label">적용이율</Td>
-          <Td type="label">상환원금</Td>
-          <Td type="label">계산금액</Td>
-          <Td type="label">분모일수</Td>
-          <Td type="label">감면이자</Td>
-          <Td type="label">이자율초과감면이자</Td>
-          <Td type="label">수납금액</Td>
-        </Tr>
+    <PBTable minWidth={1205} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label">No.</PBTd>
+          <PBTd type="label">회차</PBTd>
+          <PBTd type="label">계산구분</PBTd>
+          <PBTd type="label">기준금액</PBTd>
+          <PBTd type="label">계산시작일</PBTd>
+          <PBTd type="label">계산종료일</PBTd>
+          <PBTd type="label">계산일수</PBTd>
+          <PBTd type="label">적용이율</PBTd>
+          <PBTd type="label">상환원금</PBTd>
+          <PBTd type="label">계산금액</PBTd>
+          <PBTd type="label">분모일수</PBTd>
+          <PBTd type="label">감면이자</PBTd>
+          <PBTd type="label">이자율초과감면이자</PBTd>
+          <PBTd type="label">수납금액</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td type="text">{index + 1}</Td>
-            <Td type="text">{item.round}</Td>
-            <Td type="text">{item.calculationType}</Td>
-            <Td type="text" align="right">
+          <PBTr key={index}>
+            <PBTd type="text">{index + 1}</PBTd>
+            <PBTd type="text">{item.round}</PBTd>
+            <PBTd type="text">{item.calculationType}</PBTd>
+            <PBTd type="text" align="right">
               {item.baseAmount}
-            </Td>
-            <Td type="text">{item.calculationStartDate}</Td>
-            <Td type="text">{item.calculationEndDate}</Td>
-            <Td type="text">{item.calculationDays}</Td>
-            <Td type="text">{item.appliedRate}</Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text">{item.calculationStartDate}</PBTd>
+            <PBTd type="text">{item.calculationEndDate}</PBTd>
+            <PBTd type="text">{item.calculationDays}</PBTd>
+            <PBTd type="text">{item.appliedRate}</PBTd>
+            <PBTd type="text" align="right">
               {item.principalRepayment}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.calculatedAmount}
-            </Td>
-            <Td type="text">{item.denominatorDays}</Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text">{item.denominatorDays}</PBTd>
+            <PBTd type="text" align="right">
               {item.interestReduction}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.excessInterestReduction}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.receivedAmount}
-            </Td>
-          </Tr>
+            </PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

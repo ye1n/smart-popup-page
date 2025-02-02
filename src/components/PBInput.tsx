@@ -9,7 +9,7 @@ type Props = {
   isRequired?: boolean;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const Input: React.FC<Props> = ({
+const PBInput: React.FC<Props> = ({
   defaultValue = "",
   width,
   height,
@@ -45,4 +45,4 @@ const Input: React.FC<Props> = ({
   </div>
 );
 
-export default Input;
+export default PBInput;

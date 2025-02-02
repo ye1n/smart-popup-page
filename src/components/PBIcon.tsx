@@ -5,7 +5,7 @@ type Props = {
   className?: string;
 };
 
-const Icon: React.FC<Props> = ({
+const PBIcon: React.FC<Props> = ({
   icon,
   width = 16,
   height = 16,
@@ -33,4 +33,4 @@ const Icon: React.FC<Props> = ({
   return null;
 };
 
-export default Icon;
+export default PBIcon;

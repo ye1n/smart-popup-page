@@ -1,7 +1,7 @@
-import Table from "../../../../components/table/Table";
-import Tbody from "../../../../components/table/Tbody";
-import Td from "../../../../components/table/Td";
-import Tr from "../../../../components/table/Tr";
+import PBTable from "../../../../components/table/PBTable";
+import PBTbody from "../../../../components/table/PBTbody";
+import PBTd from "../../../../components/table/PBTd";
+import PBTr from "../../../../components/table/PBTr";
 
 export default function AccountListTable() {
   const TableData = [
@@ -42,49 +42,49 @@ export default function AccountListTable() {
   ];
 
   return (
-    <Table minWidth={1214} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label">상품명</Td>
-          <Td type="label" colSpan={3}>
+    <PBTable minWidth={1214} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label">상품명</PBTd>
+          <PBTd type="label" colSpan={3}>
             깃발(1,2,3)
-          </Td>
-          <Td type="label">대출일자</Td>
-          <Td type="label">만기일자</Td>
-          <Td type="label">계좌상태</Td>
-          <Td type="label">관리상태</Td>
-          <Td type="label">사고구분</Td>
-          <Td type="label">송무진행</Td>
-          <Td type="label">차기상환일</Td>
-          <Td type="label">대출금액</Td>
-          <Td type="label">대출잔액</Td>
-          <Td type="label">연체일수</Td>
-          <Td type="label">계좌번호</Td>
-        </Tr>
+          </PBTd>
+          <PBTd type="label">대출일자</PBTd>
+          <PBTd type="label">만기일자</PBTd>
+          <PBTd type="label">계좌상태</PBTd>
+          <PBTd type="label">관리상태</PBTd>
+          <PBTd type="label">사고구분</PBTd>
+          <PBTd type="label">송무진행</PBTd>
+          <PBTd type="label">차기상환일</PBTd>
+          <PBTd type="label">대출금액</PBTd>
+          <PBTd type="label">대출잔액</PBTd>
+          <PBTd type="label">연체일수</PBTd>
+          <PBTd type="label">계좌번호</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td type="text">{item.productName}</Td>
-            <Td type="text">{item.flag01}</Td>
-            <Td type="text">{item.flag02}</Td>
-            <Td type="text">{item.flag03}</Td>
-            <Td type="text">{item.loanDate}</Td>
-            <Td type="text">{item.maturityDate}</Td>
-            <Td type="text">{item.accountStatus}</Td>
-            <Td type="text">{item.managementStatus}</Td>
-            <Td type="text">{item.accidentType}</Td>
-            <Td type="text">{item.litigationProgress}</Td>
-            <Td type="text">{item.nextRepaymentDate}</Td>
-            <Td type="text" align="right">
+          <PBTr key={index}>
+            <PBTd type="text">{item.productName}</PBTd>
+            <PBTd type="text">{item.flag01}</PBTd>
+            <PBTd type="text">{item.flag02}</PBTd>
+            <PBTd type="text">{item.flag03}</PBTd>
+            <PBTd type="text">{item.loanDate}</PBTd>
+            <PBTd type="text">{item.maturityDate}</PBTd>
+            <PBTd type="text">{item.accountStatus}</PBTd>
+            <PBTd type="text">{item.managementStatus}</PBTd>
+            <PBTd type="text">{item.accidentType}</PBTd>
+            <PBTd type="text">{item.litigationProgress}</PBTd>
+            <PBTd type="text">{item.nextRepaymentDate}</PBTd>
+            <PBTd type="text" align="right">
               {item.loanAmount}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.loanBalance}
-            </Td>
-            <Td type="text">{item.overdueDays}</Td>
-            <Td type="text">{item.accountNumber}</Td>
-          </Tr>
+            </PBTd>
+            <PBTd type="text">{item.overdueDays}</PBTd>
+            <PBTd type="text">{item.accountNumber}</PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

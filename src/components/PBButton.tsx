@@ -13,7 +13,7 @@ type Props = {
   onClick: () => void;
 };
 
-const Button: React.FC<Props> = ({
+const PBButton: React.FC<Props> = ({
   variant = "blue",
   label,
   icon,
@@ -46,4 +46,4 @@ const Button: React.FC<Props> = ({
   );
 };
 
-export default Button;
+export default PBButton;

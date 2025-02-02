@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const InputGroup: React.FC<Props> = ({ label, children, className = "" }) => {
+const PBInputGroup: React.FC<Props> = ({ label, children, className = "" }) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       {label && (
@@ -17,4 +17,4 @@ const InputGroup: React.FC<Props> = ({ label, children, className = "" }) => {
   );
 };
 
-export default InputGroup;
+export default PBInputGroup;

@@ -9,7 +9,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const Table: React.FC<Props> = ({
+const PBTable: React.FC<Props> = ({
   minWidth,
   width,
   height,
@@ -39,4 +39,4 @@ const Table: React.FC<Props> = ({
   );
 };
 
-export default Table;
+export default PBTable;

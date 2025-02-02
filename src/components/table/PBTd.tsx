@@ -9,7 +9,7 @@ type Props = {
   colSpan?: number;
 };
 
-const Td: React.FC<Props> = ({
+const PBTd: React.FC<Props> = ({
   type = "contents",
   align = "center",
   children,
@@ -42,4 +42,4 @@ const Td: React.FC<Props> = ({
   );
 };
 
-export default Td;
+export default PBTd;

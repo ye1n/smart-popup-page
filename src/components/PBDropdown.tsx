@@ -1,6 +1,6 @@
 import React from "react";
 import { icons } from "../constants/icons";
-import Icon from "./Icon";
+import PBIcon from "./PBIcon";
 
 type Props = {
   placeholder?: string;
@@ -14,7 +14,7 @@ type Props = {
   onChange?: (value: string) => void;
 };
 
-const Dropdown: React.FC<Props> = ({
+const PBDropdown: React.FC<Props> = ({
   placeholder = "",
   value,
   options,
@@ -51,7 +51,7 @@ const Dropdown: React.FC<Props> = ({
           <option key={index} label={option.label} value={option.value} />
         ))}
       </select>
-      <Icon
+      <PBIcon
         icon={icons.arrBottom}
         width={20}
         height={20}
@@ -61,4 +61,4 @@ const Dropdown: React.FC<Props> = ({
   );
 };
 
-export default Dropdown;
+export default PBDropdown;

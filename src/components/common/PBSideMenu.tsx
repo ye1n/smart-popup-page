@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Icon from "../Icon";
+import PBIcon from "../PBIcon";
 
 type Props = {
   data: Array<{
@@ -10,7 +10,7 @@ type Props = {
   }>;
 };
 
-const SideMenu: React.FC<Props> = ({ data }) => {
+const PBSideMenu: React.FC<Props> = ({ data }) => {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
 
   return (
@@ -28,7 +28,7 @@ const SideMenu: React.FC<Props> = ({ data }) => {
               onClick={() => setSelectedSideMenu(index)}
             >
               {item.activeIcon && item.inactiveIcon && (
-                <Icon
+                <PBIcon
                   icon={
                     selectedSideMenu === index
                       ? item.activeIcon
@@ -36,7 +36,6 @@ const SideMenu: React.FC<Props> = ({ data }) => {
                   }
                   width={item.width}
                   height={20}
-                  className="text-custom-white"
                 />
               )}
               <p className="text-xs whitespace-pre-wrap">{item.label}</p>
@@ -48,4 +47,4 @@ const SideMenu: React.FC<Props> = ({ data }) => {
   );
 };
 
-export default SideMenu;
+export default PBSideMenu;

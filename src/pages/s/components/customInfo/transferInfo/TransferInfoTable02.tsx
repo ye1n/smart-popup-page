@@ -1,8 +1,8 @@
 import PBCheckbox from "../../../../../components/PBCheckbox";
-import Table from "../../../../../components/table/Table";
-import Tbody from "../../../../../components/table/Tbody";
-import Td from "../../../../../components/table/Td";
-import Tr from "../../../../../components/table/Tr";
+import PBTable from "../../../../../components/table/PBTable";
+import PBTbody from "../../../../../components/table/PBTbody";
+import PBTd from "../../../../../components/table/PBTd";
+import PBTr from "../../../../../components/table/PBTr";
 
 export default function TransferInfoTable02() {
   const TableData = [
@@ -27,90 +27,90 @@ export default function TransferInfoTable02() {
   ];
 
   return (
-    <Table minWidth={1817} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label" colSpan={2} rowSpan={2}>
+    <PBTable minWidth={1817} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label" colSpan={2} rowSpan={2}>
             No.
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             실명번호
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             송금인 실명
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             송금인명
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             실명구분
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             변동일
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             수신은행
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             수신계좌
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             송금금액
-          </Td>
-          <Td type="label" colSpan={2}>
+          </PBTd>
+          <PBTd type="label" colSpan={2}>
             수수료
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             수수료
-          </Td>
-          <Td type="label" colSpan={3}>
+          </PBTd>
+          <PBTd type="label" colSpan={3}>
             수취조회결과
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             타행송금결과
-          </Td>
-          <Td type="label" rowSpan={2}>
+          </PBTd>
+          <PBTd type="label" rowSpan={2}>
             상태
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label">산출구분</Td>
-          <Td type="label">현금구분</Td>
-          <Td type="label">수취인성명</Td>
-          <Td type="label">심사원장</Td>
-          <Td type="label">통합이체관리</Td>
-        </Tr>
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label">산출구분</PBTd>
+          <PBTd type="label">현금구분</PBTd>
+          <PBTd type="label">수취인성명</PBTd>
+          <PBTd type="label">심사원장</PBTd>
+          <PBTd type="label">통합이체관리</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td>
+          <PBTr key={index}>
+            <PBTd>
               <div className="flex items-center justify-center">
                 <PBCheckbox isChecked />
               </div>
-            </Td>
-            <Td type="text">{index + 1}</Td>
-            <Td type="text">{item.realNumber}</Td>
-            <Td type="text">{item.senderName}</Td>
-            <Td type="text">{item.senderAlias}</Td>
-            <Td type="text">{item.nameType}</Td>
-            <Td type="text">{item.changeDate}</Td>
-            <Td type="text">{item.bank}</Td>
-            <Td type="text">{item.account}</Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text">{index + 1}</PBTd>
+            <PBTd type="text">{item.realNumber}</PBTd>
+            <PBTd type="text">{item.senderName}</PBTd>
+            <PBTd type="text">{item.senderAlias}</PBTd>
+            <PBTd type="text">{item.nameType}</PBTd>
+            <PBTd type="text">{item.changeDate}</PBTd>
+            <PBTd type="text">{item.bank}</PBTd>
+            <PBTd type="text">{item.account}</PBTd>
+            <PBTd type="text" align="right">
               {item.amount}
-            </Td>
-            <Td type="text">{item.calcType}</Td>
-            <Td type="text">{item.cashType}</Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text">{item.calcType}</PBTd>
+            <PBTd type="text">{item.cashType}</PBTd>
+            <PBTd type="text" align="right">
               {item.fee}
-            </Td>
-            <Td type="text">{item.recipient}</Td>
-            <Td type="text">{item.examiner}</Td>
-            <Td type="text">{item.transferMgmt}</Td>
-            <Td type="text">{item.transferResult}</Td>
-            <Td type="text">{item.status}</Td>
-          </Tr>
+            </PBTd>
+            <PBTd type="text">{item.recipient}</PBTd>
+            <PBTd type="text">{item.examiner}</PBTd>
+            <PBTd type="text">{item.transferMgmt}</PBTd>
+            <PBTd type="text">{item.transferResult}</PBTd>
+            <PBTd type="text">{item.status}</PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

@@ -1,8 +1,8 @@
 import PBCheckbox from "../../../../components/PBCheckbox";
-import Table from "../../../../components/table/Table";
-import Tbody from "../../../../components/table/Tbody";
-import Td from "../../../../components/table/Td";
-import Tr from "../../../../components/table/Tr";
+import PBTable from "../../../../components/table/PBTable";
+import PBTbody from "../../../../components/table/PBTbody";
+import PBTd from "../../../../components/table/PBTd";
+import PBTr from "../../../../components/table/PBTr";
 
 export default function ChTable02() {
   const TableData = [
@@ -25,33 +25,33 @@ export default function ChTable02() {
   ];
 
   return (
-    <Table minWidth={468} height={158} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label">-</Td>
-          <Td type="label">계좌번호</Td>
-          <Td type="label">상품명</Td>
-          <Td type="label">계좌상태</Td>
-          <Td type="label">진행상태</Td>
-          <Td type="label">법원명</Td>
-          <Td type="label">사건번호</Td>
-        </Tr>
+    <PBTable minWidth={468} height={158} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label">-</PBTd>
+          <PBTd type="label">계좌번호</PBTd>
+          <PBTd type="label">상품명</PBTd>
+          <PBTd type="label">계좌상태</PBTd>
+          <PBTd type="label">진행상태</PBTd>
+          <PBTd type="label">법원명</PBTd>
+          <PBTd type="label">사건번호</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td>
+          <PBTr key={index}>
+            <PBTd>
               <div className="flex items-center justify-center">
                 <PBCheckbox isChecked />
               </div>
-            </Td>
-            <Td type="text">{item.accountNumber}</Td>
-            <Td type="text">{item.productName}</Td>
-            <Td type="text">{item.accountStatus}</Td>
-            <Td type="text">{item.progressStatus}</Td>
-            <Td type="text">{item.courtName}</Td>
-            <Td type="text">{item.caseNumber}</Td>
-          </Tr>
+            </PBTd>
+            <PBTd type="text">{item.accountNumber}</PBTd>
+            <PBTd type="text">{item.productName}</PBTd>
+            <PBTd type="text">{item.accountStatus}</PBTd>
+            <PBTd type="text">{item.progressStatus}</PBTd>
+            <PBTd type="text">{item.courtName}</PBTd>
+            <PBTd type="text">{item.caseNumber}</PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }

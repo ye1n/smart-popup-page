@@ -1,7 +1,7 @@
-import Table from "../../../../components/table/Table";
-import Tbody from "../../../../components/table/Tbody";
-import Td from "../../../../components/table/Td";
-import Tr from "../../../../components/table/Tr";
+import PBTable from "../../../../components/table/PBTable";
+import PBTbody from "../../../../components/table/PBTbody";
+import PBTd from "../../../../components/table/PBTd";
+import PBTr from "../../../../components/table/PBTr";
 
 export default function ChTable03() {
   const TableData = [
@@ -38,51 +38,51 @@ export default function ChTable03() {
   ];
 
   return (
-    <Table minWidth={717} height={286} borderTop>
-      <Tbody>
-        <Tr>
-          <Td type="label" rowSpan={2}></Td>
-          <Td type="label" colSpan={3}>
+    <PBTable minWidth={717} height={286} borderTop>
+      <PBTbody>
+        <PBTr>
+          <PBTd type="label" rowSpan={2}></PBTd>
+          <PBTd type="label" colSpan={3}>
             변제계획
-          </Td>
-          <Td type="label" colSpan={5}>
+          </PBTd>
+          <PBTd type="label" colSpan={5}>
             변제거래내역
-          </Td>
-        </Tr>
-        <Tr>
-          <Td type="label">회차</Td>
-          <Td type="label">변제예정일</Td>
-          <Td type="label">변제예정금액</Td>
-          <Td type="label">입금일</Td>
-          <Td type="label">입금액</Td>
-          <Td type="label">누적입금액</Td>
-          <Td type="label">회차미납액</Td>
-          <Td type="label">OPB(입금후)</Td>
-        </Tr>
+          </PBTd>
+        </PBTr>
+        <PBTr>
+          <PBTd type="label">회차</PBTd>
+          <PBTd type="label">변제예정일</PBTd>
+          <PBTd type="label">변제예정금액</PBTd>
+          <PBTd type="label">입금일</PBTd>
+          <PBTd type="label">입금액</PBTd>
+          <PBTd type="label">누적입금액</PBTd>
+          <PBTd type="label">회차미납액</PBTd>
+          <PBTd type="label">OPB(입금후)</PBTd>
+        </PBTr>
         {TableData.map((item, index) => (
-          <Tr key={index}>
-            <Td type="text">{index + 1}</Td>
-            <Td type="text">{item.round}</Td>
-            <Td type="text">{item.expectedRepaymentDate}</Td>
-            <Td type="text" align="right">
+          <PBTr key={index}>
+            <PBTd type="text">{index + 1}</PBTd>
+            <PBTd type="text">{item.round}</PBTd>
+            <PBTd type="text">{item.expectedRepaymentDate}</PBTd>
+            <PBTd type="text" align="right">
               {item.expectedRepaymentAmount}
-            </Td>
-            <Td type="text">{item.depositDate}</Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text">{item.depositDate}</PBTd>
+            <PBTd type="text" align="right">
               {item.depositAmount}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.cumulativeDepositAmount}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.unpaidAmountPerRound}
-            </Td>
-            <Td type="text" align="right">
+            </PBTd>
+            <PBTd type="text" align="right">
               {item.opbAfterDeposit}
-            </Td>
-          </Tr>
+            </PBTd>
+          </PBTr>
         ))}
-      </Tbody>
-    </Table>
+      </PBTbody>
+    </PBTable>
   );
 }
