@@ -5,7 +5,7 @@ type Props = {
   variant?: "red";
 };
 
-const Badge: React.FC<Props> = ({ text, variant = "red" }) => {
+const PBBadge: React.FC<Props> = ({ text, variant = "red" }) => {
   const color = variant === "red" ? "bg-[#d92222] text-custom-white" : "";
 
   return (
@@ -15,4 +15,4 @@ const Badge: React.FC<Props> = ({ text, variant = "red" }) => {
   );
 };
 
-export default Badge;
+export default PBBadge;

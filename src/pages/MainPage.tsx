@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import Label from "../components/Label";
+import PBLabel from "../components/PBLabel";
 
 export default function MainPage() {
   const openPopup = (width: number, height: number, route: string) => {
@@ -12,7 +12,7 @@ export default function MainPage() {
   return (
     <div className="flex flex-col gap-6 p-4">
       <div className="flex flex-col gap-1">
-        <Label label="심사원장" />
+        <PBLabel label="심사원장" />
         <Button
           className="w-fit"
           label="smartsb_심사원장_1920*1080"
@@ -20,7 +20,7 @@ export default function MainPage() {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <Label label="콜원장" />
+        <PBLabel label="콜원장" />
         <Button
           className="w-fit"
           label="smartsb_콜원장_1920*1080"
@@ -28,7 +28,7 @@ export default function MainPage() {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <Label label="채권원장" />
+        <PBLabel label="채권원장" />
         <Button
           className="w-fit"
           label="smartsb_채권원장_1920*1080"

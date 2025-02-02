@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Input from "../../../components/Input";
 import InputGroup from "../../../components/InputGroup";
-import Tabs, { Tab } from "../../../components/Tabs";
+import PBTabs, { Tab } from "../../../components/PBTabs";
 import Button from "../../../components/Button";
 import Icon from "../../../components/Icon";
 import { icons } from "../../../constants/icons";
@@ -9,12 +9,12 @@ import ChTable01 from "./components/ChTable01";
 import ChTable02 from "./components/ChTable02";
 import Dropdown from "../../../components/Dropdown";
 import ChTable03 from "./components/ChTable03";
-import Label from "../../../components/Label";
+import PBLabel from "../../../components/PBLabel";
 import Table from "../../../components/table/Table";
 import Tbody from "../../../components/table/Tbody";
 import Tr from "../../../components/table/Tr";
 import Td from "../../../components/table/Td";
-import InfoBadge from "../../../components/InfoBadge";
+import PBInfoBadge from "../../../components/PBInfoBadge";
 
 export default function Ch02() {
   const topTabs = [
@@ -50,7 +50,7 @@ export default function Ch02() {
       {/* 메인하단 */}
       <div className="flex flex-col gap-4 p-4">
         {/* section1 */}
-        <Tabs
+        <PBTabs
           tabs={topTabs}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
@@ -134,7 +134,7 @@ export default function Ch02() {
             <div className="flex flex-col gap-4">
               {/* 가수금 */}
               <div>
-                <Label label="가수금" className="mb-2" />
+                <PBLabel label="가수금" className="mb-2" />
                 <div className="flex items-center gap-2">
                   <Table width={546}>
                     <Tbody>
@@ -165,7 +165,7 @@ export default function Ch02() {
               </div>
               {/* 가지급금 */}
               <div>
-                <Label label="가지급금" className="mb-2" />
+                <PBLabel label="가지급금" className="mb-2" />
                 <Table width={273}>
                   <Tbody>
                     <Tr>
@@ -184,7 +184,7 @@ export default function Ch02() {
               </div>
               {/* 요구불예금 */}
               <div>
-                <Label label="요구불예금" className="mb-2" />
+                <PBLabel label="요구불예금" className="mb-2" />
                 <Table width={453}>
                   <Tbody>
                     <Tr>
@@ -212,7 +212,7 @@ export default function Ch02() {
               </div>
               {/* 상환처리 */}
               <div className="flex flex-col gap-2 ">
-                <Label label="상환처리" />
+                <PBLabel label="상환처리" />
                 <div className="flex items-center gap-2">
                   <Table width={445}>
                     <Tbody>
@@ -282,11 +282,11 @@ export default function Ch02() {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <InfoBadge
+                  <PBInfoBadge
                     variant="red"
                     text={`※ 부족금이 0보다 작거나 같은 경우 상환처리가 가능합니다. (단, 가수금 > 가지급금)`}
                   />
-                  <InfoBadge
+                  <PBInfoBadge
                     text={`※ 상환총합계 (원금+이자+미징수-과잉-환출이자)`}
                   />
                 </div>

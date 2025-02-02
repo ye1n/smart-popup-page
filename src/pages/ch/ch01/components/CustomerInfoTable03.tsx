@@ -1,5 +1,5 @@
 import Button from "../../../../components/Button";
-import Checkbox from "../../../../components/Checkbox";
+import PBCheckbox from "../../../../components/PBCheckbox";
 import Input from "../../../../components/Input";
 import Table from "../../../../components/table/Table";
 import Tbody from "../../../../components/table/Tbody";
@@ -73,7 +73,7 @@ export default function CustomerInfoTable03() {
           <Td colSpan={2}>
             <div className="flex items-center justify-center mr-1">
               <Input align="left" defaultValue="추가담당자" />
-              <Checkbox label="자동배정중지" />
+              <PBCheckbox label="자동배정중지" />
             </div>
           </Td>
         </Tr>

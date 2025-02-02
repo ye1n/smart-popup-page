@@ -5,8 +5,8 @@ import InputGroup from "../../components/InputGroup";
 import { SSideMenuData, TopBtnData } from "../../data/Data";
 import Icon from "../../components/Icon";
 import { icons } from "../../constants/icons";
-import Label from "../../components/Label";
-import Tabs, { Tab } from "../../components/Tabs";
+import PBLabel from "../../components/PBLabel";
+import PBTabs, { Tab } from "../../components/PBTabs";
 import IncomeInfoTable from "./components/IncomeInfoTable";
 import Tbody from "../../components/table/Tbody";
 import Tr from "../../components/table/Tr";
@@ -106,7 +106,7 @@ export default function S() {
           <div className="grid grid-cols-3 gap-6">
             {/* 판정결과 */}
             <div className="col-span-1">
-              <Label label="판정결과" className="mb-2" />
+              <PBLabel label="판정결과" className="mb-2" />
               <Table minWidth={488} borderTop>
                 <Tbody>
                   <Tr>
@@ -130,7 +130,7 @@ export default function S() {
             </div>
             {/* 신청정보 */}
             <div className="col-span-2">
-              <Label label="신청정보" className="mb-2" />
+              <PBLabel label="신청정보" className="mb-2" />
               <Table minWidth={976} borderTop>
                 <Tbody>
                   <Tr>
@@ -161,7 +161,7 @@ export default function S() {
           <div className="grid grid-cols-2 gap-6">
             {/* 소득정보 */}
             <div className="col-span-1">
-              <Label label="소득정보" className="mb-2" />
+              <PBLabel label="소득정보" className="mb-2" />
               <Table minWidth={734} borderTop>
                 <Tbody>
                   <Tr>
@@ -193,7 +193,7 @@ export default function S() {
             </div>
             {/* 차량정보 */}
             <div className="col-span-1">
-              <Label label="차량정보" className="mb-2" />
+              <PBLabel label="차량정보" className="mb-2" />
               <Table minWidth={734} borderTop>
                 <Tbody>
                   <Tr>
@@ -218,9 +218,9 @@ export default function S() {
           <div className="grid grid-cols-2 gap-6">
             {/* 고객정보 */}
             <div className="flex flex-col col-span-1 gap-2">
-              <Label label="고객정보" />
+              <PBLabel label="고객정보" />
               <div className="flex justify-between">
-                <Tabs
+                <PBTabs
                   tabs={customInfoTabs}
                   activeTab={activeTab}
                   setActiveTab={setActiveTab}
@@ -244,7 +244,7 @@ export default function S() {
             </div>
             {/* 소득정보 */}
             <div className="flex flex-col col-span-1 gap-2">
-              <Label label="소득정보" />
+              <PBLabel label="소득정보" />
               <div className="h-[26px]">
                 <Button label="건보료계산기" onClick={() => {}} />
               </div>
@@ -253,7 +253,7 @@ export default function S() {
           </div>
           {/* 임대아파트정보 */}
           <div className="flex flex-col gap-2">
-            <Label label="임대아파트정보" />
+            <PBLabel label="임대아파트정보" />
             <div className="flex gap-2">
               <Button label="신분증 진위확인" onClick={() => {}} />
               <Button label="담보정보" onClick={() => {}} />
@@ -272,7 +272,7 @@ export default function S() {
           {/* 약정정보 */}
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-between">
-              <Label label="약정정보" />
+              <PBLabel label="약정정보" />
               <div className="flex gap-2">
                 <Button label="약정정보 저장" onClick={() => {}} />
                 <Button label="알람" onClick={() => {}} />
@@ -291,7 +291,7 @@ export default function S() {
         {/* 메모 */}
         <div className="flex flex-col gap-2">
           <div className="flex items-start justify-between">
-            <Label label="메모" />
+            <PBLabel label="메모" />
             <Button label="등록" onClick={() => {}} />
           </div>
           <div className="flex gap-2">
@@ -307,7 +307,7 @@ export default function S() {
         {/* 문자발송 및 메모이력확인 */}
         <div className="flex flex-col h-full gap-2">
           <div className="flex items-start justify-between">
-            <Label label="문자발송 및 메모이력확인" />
+            <PBLabel label="문자발송 및 메모이력확인" />
             <Button label="발송" onClick={() => {}} />
           </div>
           <div className="flex flex-wrap gap-2">

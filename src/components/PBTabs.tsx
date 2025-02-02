@@ -14,7 +14,7 @@ export type Tab = {
   label: string;
 };
 
-const Tabs: React.FC<Props> = ({
+const PBTabs: React.FC<Props> = ({
   tabs,
   className = "",
   width,
@@ -49,4 +49,4 @@ const Tabs: React.FC<Props> = ({
   );
 };
 
-export default Tabs;
+export default PBTabs;

@@ -8,7 +8,7 @@ type Props = {
   buttonStyle?: boolean;
 };
 
-const Radio: React.FC<Props> = ({
+const PBRadio: React.FC<Props> = ({
   checkedColor = "#0f54df",
   isChecked = false,
   label = "",
@@ -55,4 +55,4 @@ const Radio: React.FC<Props> = ({
   );
 };
 
-export default Radio;
+export default PBRadio;

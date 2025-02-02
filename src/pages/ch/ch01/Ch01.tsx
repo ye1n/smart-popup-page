@@ -14,14 +14,14 @@ import Tr from "../../../components/table/Tr";
 import Icon from "../../../components/Icon";
 import { icons } from "../../../constants/icons";
 import Button from "../../../components/Button";
-import Checkbox from "../../../components/Checkbox";
-import Label from "../../../components/Label";
+import PBCheckbox from "../../../components/PBCheckbox";
+import PBLabel from "../../../components/PBLabel";
 import Dropdown from "../../../components/Dropdown";
 import SideMenu from "../../../components/common/SideMenu";
 import { ChSideMenuData } from "../../../data/Data";
-import Tabs, { Tab } from "../../../components/Tabs";
-import Radio from "../../../components/Radio";
-import Badge from "../../../components/Badge";
+import PBTabs, { Tab } from "../../../components/PBTabs";
+import PBRadio from "../../../components/PBRadio";
+import PBBadge from "../../../components/PBBadge";
 
 export default function Ch01() {
   const counselTabs = [
@@ -83,8 +83,8 @@ export default function Ch01() {
           <div className="flex flex-col col-span-2 gap-4">
             <div className="grid grid-cols-2 gap-7">
               <div className="flex items-center gap-2 border-t bg-custom-form-bg border-[#333333] py-2 px-4">
-                <Badge text="경매" />
-                <Badge text="개인희생" />
+                <PBBadge text="경매" />
+                <PBBadge text="개인희생" />
               </div>
               <Table borderTop>
                 <Tbody>
@@ -113,7 +113,7 @@ export default function Ch01() {
             </div>
             {/* 고객정보 */}
             <div className="flex flex-col gap-2">
-              <Label label="고객정보" />
+              <PBLabel label="고객정보" />
               <div className="grid grid-cols-2 gap-7">
                 <div className="flex flex-col gap-2">
                   <CustomerInfoTable01 />
@@ -159,24 +159,24 @@ export default function Ch01() {
                 <div className="flex gap-2">
                   <Button label="SMS금지" onClick={() => {}} />
                   <Button label="DM금지" onClick={() => {}} />
-                  <Radio buttonStyle label="특수채권" isChecked />
-                  <Checkbox
+                  <PBRadio buttonStyle label="특수채권" isChecked />
+                  <PBCheckbox
                     buttonStyle
                     isChecked
                     checkedColor="#ff9015"
                     label="안내전화금지"
                   />
-                  <Checkbox
+                  <PBCheckbox
                     buttonStyle
                     checkedColor="#ff9015"
                     label="만기연장1차상담완료"
                   />
-                  <Checkbox
+                  <PBCheckbox
                     buttonStyle
                     checkedColor="#ff9015"
                     label="권리침해안내제외"
                   />
-                  <Checkbox
+                  <PBCheckbox
                     buttonStyle
                     checkedColor="#ff9015"
                     label="가상계좌자동중지"
@@ -201,9 +201,9 @@ export default function Ch01() {
             {/* 계좌목록 */}
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
-                <Label label="계좌목록" />
+                <PBLabel label="계좌목록" />
                 <div className="flex items-center gap-2">
-                  <Checkbox buttonStyle label="해지포함 (해지건수: 10)" />
+                  <PBCheckbox buttonStyle label="해지포함 (해지건수: 10)" />
                   <Table width={244}>
                     <Tbody>
                       <Tr>
@@ -251,13 +251,13 @@ export default function Ch01() {
             </Table>
             {/* 상담이력 */}
             <div className="flex flex-col gap-2">
-              <Label label="상담이력" />
+              <PBLabel label="상담이력" />
               <div className="flex items-center gap-2">
-                <Checkbox buttonStyle label="전체" />
-                <Checkbox buttonStyle label="최근 6개월" />
-                <Checkbox buttonStyle label="고객기준" />
-                <Checkbox buttonStyle label="문자포함" />
-                <Checkbox buttonStyle label="자동포함" />
+                <PBCheckbox buttonStyle label="전체" />
+                <PBCheckbox buttonStyle label="최근 6개월" />
+                <PBCheckbox buttonStyle label="고객기준" />
+                <PBCheckbox buttonStyle label="문자포함" />
+                <PBCheckbox buttonStyle label="자동포함" />
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex gap-2">
@@ -342,16 +342,16 @@ export default function Ch01() {
             {/* 회수메모 */}
             <div className="flex flex-col gap-2">
               <div className="flex items-start justify-between">
-                <Label label="회수메모" />
+                <PBLabel label="회수메모" />
                 <Button label="등록" onClick={() => {}} />
               </div>
               <textarea className="w-full h-[120px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
             </div>
             {/* 상담등록 */}
             <div className="flex flex-col gap-2">
-              <Label label="상담등록" />
+              <PBLabel label="상담등록" />
               <div className="flex justify-between">
-                <Tabs
+                <PBTabs
                   tabs={counselTabs}
                   activeTab={activeTab}
                   setActiveTab={setActiveTab}

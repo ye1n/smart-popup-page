@@ -1,21 +1,21 @@
 import { useState } from "react";
 import Input from "../../../components/Input";
 import InputGroup from "../../../components/InputGroup";
-import Tabs, { Tab } from "../../../components/Tabs";
+import PBTabs, { Tab } from "../../../components/PBTabs";
 import Button from "../../../components/Button";
 import Icon from "../../../components/Icon";
 import { icons } from "../../../constants/icons";
 import Dropdown from "../../../components/Dropdown";
-import Label from "../../../components/Label";
+import PBLabel from "../../../components/PBLabel";
 import Table from "../../../components/table/Table";
 import Tbody from "../../../components/table/Tbody";
 import Tr from "../../../components/table/Tr";
 import Td from "../../../components/table/Td";
 import ChTable01 from "./components/ChTable01";
-import Checkbox from "../../../components/Checkbox";
+import PBCheckbox from "../../../components/PBCheckbox";
 import ChTable02 from "./components/ChTable02";
 import ChTable03 from "./components/ChTable03";
-import InfoBadge from "../../../components/InfoBadge";
+import PBInfoBadge from "../../../components/PBInfoBadge";
 
 export default function Ch03() {
   const topTabs = [
@@ -51,12 +51,12 @@ export default function Ch03() {
           {/* 사고이력 */}
           <div>
             <div className="flex items-start justify-between mb-2">
-              <Label label="사고이력" />
+              <PBLabel label="사고이력" />
               <div className="flex gap-4">
                 <div className="flex gap-2">
-                  <Checkbox buttonStyle label="접수" />
-                  <Checkbox buttonStyle label="진행" />
-                  <Checkbox buttonStyle label="종결" />
+                  <PBCheckbox buttonStyle label="접수" />
+                  <PBCheckbox buttonStyle label="진행" />
+                  <PBCheckbox buttonStyle label="종결" />
                 </div>
                 <Button label="조회" onClick={() => {}} />
               </div>
@@ -66,7 +66,7 @@ export default function Ch03() {
           {/* 연결계좌 */}
           <div>
             <div className="flex items-start justify-between mb-2">
-              <Label label="연결계좌" />
+              <PBLabel label="연결계좌" />
             </div>
             <ChTable02 />
           </div>
@@ -74,7 +74,7 @@ export default function Ch03() {
         <div className="flex w-full gap-6">
           <div className="grid w-full grid-cols-3 gap-x-6 gap-y-4">
             <div className="flex flex-col col-span-3 gap-2">
-              <Tabs
+              <PBTabs
                 tabs={topTabs}
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
@@ -294,7 +294,7 @@ export default function Ch03() {
                   변제계획 및 변제거래내역
                 </p>
                 <div className="flex items-center gap-2">
-                  <InfoBadge text={`업데이트 일시 : 2024-01-01-23:23:23`} />
+                  <PBInfoBadge text={`업데이트 일시 : 2024-01-01-23:23:23`} />
                   <Button label="변제스케줄" onClick={() => {}} />
                 </div>
               </div>
@@ -424,7 +424,7 @@ export default function Ch03() {
           {/* 메모 */}
           <div className="flex flex-col gap-2">
             <div className="flex items-start justify-between">
-              <Label label="메모" />
+              <PBLabel label="메모" />
               <Button label="등록" onClick={() => {}} />
             </div>
             <textarea className="w-[146px] h-[499px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />

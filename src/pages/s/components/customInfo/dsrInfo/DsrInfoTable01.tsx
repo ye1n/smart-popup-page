@@ -1,4 +1,4 @@
-import Checkbox from "../../../../../components/Checkbox";
+import PBCheckbox from "../../../../../components/PBCheckbox";
 import Table from "../../../../../components/table/Table";
 import Tbody from "../../../../../components/table/Tbody";
 import Td from "../../../../../components/table/Td";
@@ -74,7 +74,7 @@ export default function DsrInfoTable01() {
           <Tr key={index}>
             <Td>
               <div className="flex items-center justify-center">
-                <Checkbox isChecked />
+                <PBCheckbox isChecked />
               </div>
             </Td>
             <Td type="text">{index + 1}</Td>

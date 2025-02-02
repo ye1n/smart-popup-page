@@ -8,7 +8,7 @@ type Props = {
   buttonStyle?: boolean;
 };
 
-const Checkbox: React.FC<Props> = ({
+const PBCheckbox: React.FC<Props> = ({
   checkedColor = "#222",
   isChecked = false,
   label = "",
@@ -53,4 +53,4 @@ const Checkbox: React.FC<Props> = ({
   );
 };
 
-export default Checkbox;
+export default PBCheckbox;

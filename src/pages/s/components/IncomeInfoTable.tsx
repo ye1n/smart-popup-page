@@ -7,7 +7,7 @@ import Tbody from "../../../components/table/Tbody";
 import Td from "../../../components/table/Td";
 import Tr from "../../../components/table/Tr";
 import { icons } from "../../../constants/icons";
-import Checkbox from "../../../components/Checkbox";
+import PBCheckbox from "../../../components/PBCheckbox";
 
 export default function IncomeInfoTable() {
   const [selectedJob, setSelectedJob] = useState("self_employed");
@@ -501,8 +501,8 @@ export default function IncomeInfoTable() {
               </Td>
               <Td colSpan={2}>
                 <div className="flex items-center gap-4 px-2">
-                  <Checkbox label="유" isChecked />
-                  <Checkbox label="무" />
+                  <PBCheckbox label="유" isChecked />
+                  <PBCheckbox label="무" />
                 </div>
               </Td>
               <Td>

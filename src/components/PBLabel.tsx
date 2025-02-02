@@ -3,7 +3,7 @@ type Props = {
   className?: string;
 };
 
-const Label: React.FC<Props> = ({ label, className = "" }) => {
+const PBLabel: React.FC<Props> = ({ label, className = "" }) => {
   return (
     <div className={`flex items-center gap-1.5 ${className}`}>
       <div className="w-0.5 h-[9px] bg-custom-black" />
@@ -12,4 +12,4 @@ const Label: React.FC<Props> = ({ label, className = "" }) => {
   );
 };
 
-export default Label;
+export default PBLabel;

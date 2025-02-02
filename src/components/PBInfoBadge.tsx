@@ -5,7 +5,7 @@ type Props = {
   variant?: "red" | "gray";
 };
 
-const InfoBadge: React.FC<Props> = ({ text, variant = "gray" }) => {
+const PBInfoBadge: React.FC<Props> = ({ text, variant = "gray" }) => {
   const color =
     variant === "red"
       ? "bg-[#d92222] text-[#d92222]"
@@ -20,4 +20,4 @@ const InfoBadge: React.FC<Props> = ({ text, variant = "gray" }) => {
   );
 };
 
-export default InfoBadge;
+export default PBInfoBadge;

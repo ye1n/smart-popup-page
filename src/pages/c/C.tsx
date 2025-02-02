@@ -2,13 +2,13 @@ import Button from "../../components/Button";
 import Dropdown from "../../components/Dropdown";
 import Input from "../../components/Input";
 import InputGroup from "../../components/InputGroup";
-import Label from "../../components/Label";
-import Radio from "../../components/Radio";
+import PBLabel from "../../components/PBLabel";
+import PBRadio from "../../components/PBRadio";
 import Table from "../../components/table/Table";
 import Tbody from "../../components/table/Tbody";
 import Td from "../../components/table/Td";
 import Tr from "../../components/table/Tr";
-import AccountHistoryTable from "./components/accountHistoryTable";
+import AccountHistoryTable from "./components/AccountHistoryTable";
 import ReviewHistoryTable from "./components/ReviewHistoryTable";
 
 export default function C() {
@@ -62,7 +62,7 @@ export default function C() {
           <div className="grid grid-cols-2 gap-6">
             {/* 심사이력 */}
             <div className="flex flex-col col-span-1 gap-2">
-              <Label label="심사이력" />
+              <PBLabel label="심사이력" />
               <ReviewHistoryTable />
               <Table minWidth={734}>
                 <Tbody>
@@ -117,7 +117,7 @@ export default function C() {
             </div>
             {/* 계좌이력 */}
             <div className="flex flex-col col-span-1 gap-2">
-              <Label label="계좌이력" />
+              <PBLabel label="계좌이력" />
               <AccountHistoryTable />
               <Table minWidth={734}>
                 <Tbody>
@@ -230,8 +230,8 @@ export default function C() {
                     <Td type="label">인/아웃바운드</Td>
                     <Td>
                       <div className="flex items-center gap-4 px-2 py-1">
-                        <Radio label="인바운드" />
-                        <Radio label="아웃바운드" isChecked />
+                        <PBRadio label="인바운드" />
+                        <PBRadio label="아웃바운드" isChecked />
                       </div>
                     </Td>
                   </Tr>

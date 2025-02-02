@@ -1,4 +1,4 @@
-import Checkbox from "../../../../../components/Checkbox";
+import PBCheckbox from "../../../../../components/PBCheckbox";
 import DsrInfoTable01 from "./DsrInfoTable01";
 import DsrInfoTable02 from "./DsrInfoTable02";
 
@@ -17,8 +17,8 @@ export default function DsrInfo() {
         <div className="flex items-end justify-between mb-2">
           <p className="text-xs font-bold text-custom-black">DSR 조회내역</p>
           <div className="flex gap-2">
-            <Checkbox buttonStyle label="DSR 조회" />
-            <Checkbox
+            <PBCheckbox buttonStyle label="DSR 조회" />
+            <PBCheckbox
               isChecked
               buttonStyle
               checkedColor="#ff9015"

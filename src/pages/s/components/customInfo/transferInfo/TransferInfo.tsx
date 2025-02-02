@@ -1,5 +1,5 @@
 import Button from "../../../../../components/Button";
-import Checkbox from "../../../../../components/Checkbox";
+import PBCheckbox from "../../../../../components/PBCheckbox";
 import Icon from "../../../../../components/Icon";
 import Input from "../../../../../components/Input";
 import Table from "../../../../../components/table/Table";
@@ -61,14 +61,18 @@ export default function TransferInfo() {
         <div className="flex items-end justify-between mb-2">
           <p className="text-xs font-bold text-custom-black">계좌내역 (B)</p>
           <div className="flex gap-1">
-            <Checkbox
+            <PBCheckbox
               isChecked
               buttonStyle
               checkedColor="#ff9015"
               label="당행자체대환"
             />
-            <Checkbox buttonStyle checkedColor="#ff9015" label="권리침해대환" />
-            <Checkbox buttonStyle checkedColor="#ff9015" label="대환" />
+            <PBCheckbox
+              buttonStyle
+              checkedColor="#ff9015"
+              label="권리침해대환"
+            />
+            <PBCheckbox buttonStyle checkedColor="#ff9015" label="대환" />
             <Button
               variant="icon-white-outline"
               label=""
@@ -181,11 +185,11 @@ export default function TransferInfo() {
               </Td>
               <Td colSpan={3}>
                 <div className="flex items-center gap-4 px-2">
-                  <Checkbox isChecked label="공증인증대상" />
-                  <Checkbox label="공증대상" />
-                  <Checkbox label="인감대상" />
-                  <Checkbox label="소득증빙대상" />
-                  <Checkbox label="CMS대상" />
+                  <PBCheckbox isChecked label="공증인증대상" />
+                  <PBCheckbox label="공증대상" />
+                  <PBCheckbox label="인감대상" />
+                  <PBCheckbox label="소득증빙대상" />
+                  <PBCheckbox label="CMS대상" />
                 </div>
               </Td>
             </Tr>
