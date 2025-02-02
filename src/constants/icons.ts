@@ -64,18 +64,16 @@ import TableIcon02 from "../assets/icons/table-icon-02.svg?react";
 import TableIcon03 from "../assets/icons/table-icon-03.svg?react";
 
 const pngIcons = {
+  // side menu icons
   sideMn04: SideMn04,
   sideMn05: SideMn05,
 
+  // side menu white icons
   sideMnWh04: SideMnWh04,
   sideMnWh05: SideMnWh05,
 };
 
 const svgIcons = {
-  // arrow icons
-  arrBottom: ArrBottom,
-  arrRight: ArrRight,
-
   // top menu icons
   topBtn01: TopBtn01,
   topBtn02: TopBtn02,
@@ -129,6 +127,9 @@ const svgIcons = {
   edit: Edit,
   remove: Remove,
   calendar: Calendar,
+
+  arrBottom: ArrBottom,
+  arrRight: ArrRight,
 
   tableIcon01: TableIcon01,
   tableIcon02: TableIcon02,
