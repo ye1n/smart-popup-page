@@ -45,7 +45,7 @@ export default function Ch01() {
       {/* 메인 */}
       <div>
         {/* 메인상단 */}
-        <div className="grid grid-cols-3 gap-6 p-4 bg-custom-bg">
+        <div className="grid grid-cols-3 gap-6 p-4 bg-pb-custom-bg">
           <div className="flex items-center col-span-2 gap-6">
             <PBInputGroup>
               <div className="flex gap-0.5">
@@ -82,7 +82,7 @@ export default function Ch01() {
           {/* 좌측 */}
           <div className="flex flex-col col-span-2 gap-4">
             <div className="grid grid-cols-2 gap-7">
-              <div className="flex items-center gap-2 border-t bg-custom-form-bg border-[#333333] py-2 px-4">
+              <div className="flex items-center gap-2 border-t bg-pb-custom-form-bg border-[#333333] py-2 px-4">
                 <PBBadge text="경매" />
                 <PBBadge text="개인희생" />
               </div>
@@ -144,7 +144,7 @@ export default function Ch01() {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="flex items-center justify-between px-4 py-2 bg-custom-form-bg">
+              <div className="flex items-center justify-between px-4 py-2 bg-pb-custom-form-bg">
                 <div className="flex items-center gap-4">
                   <div className="flex gap-8">
                     <PBInputGroup label="회수등급">
@@ -305,7 +305,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={5}>
-                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-custom-black" />
+                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-pb-custom-black" />
                     </PBTd>
                   </PBTr>
                   <PBTr>
@@ -319,7 +319,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={5}>
-                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-custom-black" />
+                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-pb-custom-black" />
                     </PBTd>
                   </PBTr>
                   <PBTr>
@@ -333,7 +333,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={5}>
-                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-custom-black" />
+                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-pb-custom-black" />
                     </PBTd>
                   </PBTr>
                 </PBTbody>
@@ -345,7 +345,7 @@ export default function Ch01() {
                 <PBLabel label="회수메모" />
                 <PBButton label="등록" onClick={() => {}} />
               </div>
-              <textarea className="w-full h-[120px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+              <textarea className="w-full h-[120px] border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
             </div>
             {/* 상담등록 */}
             <div className="flex flex-col gap-2">
@@ -407,7 +407,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={4}>
-                      <textarea className="block w-full h-[120px] outline-none resize-none text-xs text-custom-black p-2" />
+                      <textarea className="block w-full h-[120px] outline-none resize-none text-xs text-pb-custom-black p-2" />
                     </PBTd>
                   </PBTr>
                 </PBTbody>

@@ -14,16 +14,16 @@ const PBSideMenu: React.FC<Props> = ({ data }) => {
   const [selectedSideMenu, setSelectedSideMenu] = useState(0);
 
   return (
-    <div className="shadow-lg w-20 h-fit bg-custom-white py-[10px] rounded-b-lg">
-      <div className="flex flex-col divide-y border-y border-custom-btn-line divide-custom-btn-line">
+    <div className="shadow-lg w-20 h-fit bg-pb-custom-white py-[10px] rounded-b-lg">
+      <div className="flex flex-col divide-y border-y border-pb-custom-btn-line divide-pb-custom-btn-line">
         {data.map((item, index) => (
           <div key={index} className="w-20">
             <button
               key={index}
               className={`w-full flex flex-col items-center justify-center rounded-lg h-[56px] ${
                 selectedSideMenu === index
-                  ? "bg-custom-secondary shadow-inner text-custom-white"
-                  : "bg-custom-white text-custom-black"
+                  ? "bg-pb-custom-secondary shadow-inner text-pb-custom-white"
+                  : "bg-pb-custom-white text-pb-custom-black"
               }`}
               onClick={() => setSelectedSideMenu(index)}
             >

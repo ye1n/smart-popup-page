@@ -8,7 +8,7 @@ type Props = {
 const PBTbody: React.FC<Props> = ({ children, className = "" }) => {
   return (
     <tbody
-      className={`border-b divide-y divide-custom-form-line border-custom-form-line ${className}`}
+      className={`border-b divide-y divide-pb-custom-form-line border-pb-custom-form-line ${className}`}
     >
       {children && children}
     </tbody>

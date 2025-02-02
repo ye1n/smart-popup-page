@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        custom: {
+        "pb-custom": {
           black: "#222222",
           white: "#ffffff",
           primary: "#0f54df",

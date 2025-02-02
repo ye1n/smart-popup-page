@@ -33,7 +33,7 @@ export default function Ch02() {
   return (
     <div>
       {/* 메인상단 */}
-      <div className="flex items-center gap-6 p-4 bg-custom-bg">
+      <div className="flex items-center gap-6 p-4 bg-pb-custom-bg">
         <PBInputGroup label="고객명">
           <PBInput defaultValue="김저축" width={150} />
         </PBInputGroup>
@@ -58,7 +58,7 @@ export default function Ch02() {
         />
         {/* section2 */}
         <div className="flex flex-col gap-2">
-          <div className="flex items-center justify-between border-t bg-custom-form-bg border-[#333333] py-2 px-4">
+          <div className="flex items-center justify-between border-t bg-pb-custom-form-bg border-[#333333] py-2 px-4">
             <div className="flex gap-8">
               <PBInputGroup label="상환구분">
                 <PBInput
@@ -103,9 +103,9 @@ export default function Ch02() {
         <ChTable02 />
         {/* section4 */}
         <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-8 px-4 py-2 bg-custom-form-bg">
+          <div className="flex items-center gap-8 px-4 py-2 bg-pb-custom-form-bg">
             <PBInputGroup label="약정일">
-              <div className="flex items-center pr-1 bg-custom-white">
+              <div className="flex items-center pr-1 bg-pb-custom-white">
                 <PBDropdown
                   align="left"
                   options={[{ label: "31", value: "" }]}

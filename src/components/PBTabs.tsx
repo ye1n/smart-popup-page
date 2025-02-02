@@ -24,7 +24,7 @@ const PBTabs: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`flex w-fit h-[26px] rounded overflow-hidden divide-x divide-custom-white ${className}`}
+      className={`flex w-fit h-[26px] rounded overflow-hidden divide-x divide-pb-custom-white ${className}`}
     >
       {tabs.map((tab) => (
         <button
@@ -35,8 +35,8 @@ const PBTabs: React.FC<Props> = ({
           }}
           className={`text-xs px-2 text-center h-full ${
             activeTab.id === tab.id
-              ? "text-custom-white font-bold bg-custom-primary"
-              : "text-custom-black font-normal bg-custom-form-bg shadow-inner"
+              ? "text-pb-custom-white font-bold bg-pb-custom-primary"
+              : "text-pb-custom-black font-normal bg-pb-custom-form-bg shadow-inner"
           }`}
           style={{
             width: width ? `${width}px` : "84px",

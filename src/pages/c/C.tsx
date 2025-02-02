@@ -16,7 +16,7 @@ export default function C() {
     <div className="flex">
       <div className="w-full">
         {/* 메인상단 */}
-        <div className="flex flex-col gap-2 p-4 bg-custom-bg">
+        <div className="flex flex-col gap-2 p-4 bg-pb-custom-bg">
           <div className="flex gap-6">
             <PBInputGroup label="고객명">
               <PBInput defaultValue="김저축" width={150} />
@@ -285,7 +285,7 @@ export default function C() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={4}>
-                      <textarea className="block w-full h-[128px] outline-none resize-none text-xs text-custom-black p-2" />
+                      <textarea className="block w-full h-[128px] outline-none resize-none text-xs text-pb-custom-black p-2" />
                     </PBTd>
                   </PBTr>
                 </PBTbody>

@@ -22,7 +22,7 @@ const PBInput: React.FC<Props> = ({
 }) => (
   <div
     className={`flex items-center px-1 ${className} ${
-      isRequired ? "bg-custom-form-acc" : "bg-custom-white"
+      isRequired ? "bg-pb-custom-form-acc" : "bg-pb-custom-white"
     }`}
     style={{
       width: width ? `${width}px` : "100%",
@@ -32,7 +32,7 @@ const PBInput: React.FC<Props> = ({
     {icon && iconPosition === "left" && icon}
     <input
       defaultValue={defaultValue}
-      className={`bg-transparent placeholder:text-custom-gray-4 block px-1 outline-none text-xs text-custom-black w-full h-full ${
+      className={`bg-transparent placeholder:text-pb-custom-gray-4 block px-1 outline-none text-xs text-pb-custom-black w-full h-full ${
         align === "left"
           ? "text-left"
           : align === "right"

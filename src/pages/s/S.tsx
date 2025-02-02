@@ -37,7 +37,7 @@ export default function S() {
       {/* 메인 */}
       <div className="grid grid-cols-1">
         {/* 메인상단 */}
-        <div className="flex flex-col gap-4 p-4 bg-custom-bg">
+        <div className="flex flex-col gap-4 p-4 bg-pb-custom-bg">
           <div className="flex gap-6">
             <PBInputGroup label="고객명">
               <PBInput defaultValue="김저축" width={150} />
@@ -68,10 +68,10 @@ export default function S() {
             {TopBtnData.map((item, index) => (
               <button
                 key={index}
-                className="flex items-center rounded shadow bg-custom-white w-[120px] h-[26px] px-2"
+                className="flex items-center rounded shadow bg-pb-custom-white w-[120px] h-[26px] px-2"
               >
                 {item.icon && <item.icon className="w-5 h-5 mr-2" />}
-                <p className="flex-1 text-[11px] font-medium text-custom-black">
+                <p className="flex-1 text-[11px] font-medium text-pb-custom-black">
                   {item.label}
                 </p>
               </button>
@@ -305,7 +305,7 @@ export default function S() {
               onClick={() => {}}
             />
           </div>
-          <textarea className="w-[268px] h-[250px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+          <textarea className="w-[268px] h-[250px] border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
         </div>
         {/* 문자발송 및 메모이력확인 */}
         <div className="flex flex-col h-full gap-2">
@@ -356,7 +356,7 @@ export default function S() {
               className=""
             />
           </div>
-          <textarea className="w-[268px] h-full border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+          <textarea className="w-[268px] h-full border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
         </div>
       </div>
     </div>

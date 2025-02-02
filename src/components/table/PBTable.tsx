@@ -29,7 +29,7 @@ const PBTable: React.FC<Props> = ({
     >
       <table
         className={`w-full ${
-          !borderTop ? "border-t border-custom-form-line" : ""
+          !borderTop ? "border-t border-pb-custom-form-line" : ""
         }`}
         style={{ minWidth: minWidth ? `${minWidth}px` : "auto" }}
       >

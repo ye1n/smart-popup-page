@@ -15,7 +15,7 @@ export default function TransferInfo() {
     <div className="flex flex-col h-[298px] overflow-y-auto">
       <div className="mb-2">
         <div className="flex items-end justify-between mb-2">
-          <p className="text-xs font-bold text-custom-black">CMS내역 (A)</p>
+          <p className="text-xs font-bold text-pb-custom-black">CMS내역 (A)</p>
           <div className="flex gap-1">
             <PBButton
               variant="icon-white-outline"
@@ -59,7 +59,7 @@ export default function TransferInfo() {
       </div>
       <div className="mb-[26px]">
         <div className="flex items-end justify-between mb-2">
-          <p className="text-xs font-bold text-custom-black">계좌내역 (B)</p>
+          <p className="text-xs font-bold text-pb-custom-black">계좌내역 (B)</p>
           <div className="flex gap-1">
             <PBCheckbox
               isChecked
@@ -145,7 +145,9 @@ export default function TransferInfo() {
       </div>
       <div className="mb-4">
         <div className="mb-2">
-          <p className="text-xs font-bold text-custom-black">인지세 설정 (C)</p>
+          <p className="text-xs font-bold text-pb-custom-black">
+            인지세 설정 (C)
+          </p>
         </div>
         <PBTable borderTop>
           <PBTbody>
@@ -180,7 +182,7 @@ export default function TransferInfo() {
       </div>
       <div>
         <div className="flex items-end justify-between mb-2">
-          <p className="text-xs font-bold text-custom-black">기타정보</p>
+          <p className="text-xs font-bold text-pb-custom-black">기타정보</p>
           <PBButton
             variant="white-outline-shadow"
             label="NCCS자서대행"

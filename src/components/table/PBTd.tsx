@@ -21,13 +21,13 @@ const PBTd: React.FC<Props> = ({
     <td
       rowSpan={rowSpan}
       colSpan={colSpan}
-      className={`border-x border-custom-form-line ${className} ${
+      className={`border-x border-pb-custom-form-line ${className} ${
         type === "label"
-          ? "px-2 text-xs text-custom-black bg-custom-label-bg h-[26px]"
+          ? "px-2 text-xs text-pb-custom-black bg-pb-custom-label-bg h-[26px]"
           : type === "gray-label"
-          ? "px-2 text-xs text-custom-black bg-custom-form-bg h-[26px]"
+          ? "px-2 text-xs text-pb-custom-black bg-pb-custom-form-bg h-[26px]"
           : type === "text"
-          ? "px-2 text-xs text-custom-black h-[26px] bg-custom-white"
+          ? "px-2 text-xs text-pb-custom-black h-[26px] bg-pb-custom-white"
           : ""
       } ${
         align === "left"

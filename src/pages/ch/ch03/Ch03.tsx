@@ -34,7 +34,7 @@ export default function Ch03() {
   return (
     <div>
       {/* 메인상단 */}
-      <div className="flex items-center gap-6 p-4 bg-custom-bg">
+      <div className="flex items-center gap-6 p-4 bg-pb-custom-bg">
         <PBInputGroup label="고객명">
           <PBInput defaultValue="김저축" width={150} />
         </PBInputGroup>
@@ -290,7 +290,7 @@ export default function Ch03() {
             {/* 변제계획 및 변제거래내역 */}
             <div className="flex flex-col col-span-2 gap-2">
               <div className="flex items-start justify-between">
-                <p className="text-xs font-bold text-custom-black">
+                <p className="text-xs font-bold text-pb-custom-black">
                   변제계획 및 변제거래내역
                 </p>
                 <div className="flex items-center gap-2">
@@ -317,7 +317,9 @@ export default function Ch03() {
             {/* 변제요약 */}
             <div className="col-span-1">
               <div className="h-6">
-                <p className="text-xs font-bold text-custom-black">변제요약</p>
+                <p className="text-xs font-bold text-pb-custom-black">
+                  변제요약
+                </p>
               </div>
               <PBTable minWidth={276} borderTop>
                 <PBTbody>
@@ -427,7 +429,7 @@ export default function Ch03() {
               <PBLabel label="메모" />
               <PBButton label="등록" onClick={() => {}} />
             </div>
-            <textarea className="w-[146px] h-[499px] border outline-none resize-none border-custom-form-line border-t-[#333333] text-xs text-custom-black p-2" />
+            <textarea className="w-[146px] h-[499px] border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
           </div>
         </div>
       </div>

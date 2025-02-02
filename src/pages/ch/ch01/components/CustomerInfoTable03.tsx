@@ -21,7 +21,7 @@ export default function CustomerInfoTable03() {
             <div className="flex items-center justify-between">
               담당자
               <button
-                className="bg-custom-white w-[17px] h-[18px]"
+                className="bg-pb-custom-white w-[17px] h-[18px]"
                 onClick={() => {}}
               >
                 ?
@@ -63,7 +63,7 @@ export default function CustomerInfoTable03() {
             <div className="flex items-center justify-between">
               마케팅
               <button
-                className="bg-custom-white w-[17px] h-[18px]"
+                className="bg-pb-custom-white w-[17px] h-[18px]"
                 onClick={() => {}}
               >
                 ?

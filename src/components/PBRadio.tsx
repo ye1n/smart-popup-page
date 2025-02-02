@@ -21,7 +21,7 @@ const PBRadio: React.FC<Props> = ({
     <button
       className={`flex items-center justify-center gap-1 ${className} ${
         buttonStyle
-          ? "border border-custom-btn-line bg-custom-white shadow font-medium h-[24px] rounded px-2"
+          ? "border border-pb-custom-btn-line bg-pb-custom-white shadow font-medium h-[24px] rounded px-2"
           : ""
       }`}
       onClick={() => {
@@ -50,7 +50,7 @@ const PBRadio: React.FC<Props> = ({
           stroke-linejoin="round"
         />
       </svg>
-      {label && <p className="text-xs text-custom-black">{label}</p>}
+      {label && <p className="text-xs text-pb-custom-black">{label}</p>}
     </button>
   );
 };

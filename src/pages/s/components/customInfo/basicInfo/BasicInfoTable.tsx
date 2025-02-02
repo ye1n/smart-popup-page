@@ -20,9 +20,18 @@ export default function BasicInfoTable() {
             <div className="flex items-center justify-between">
               <PBInput align="left" defaultValue="김저축" className="flex-1" />
               <div className="flex gap-1 pr-1">
-                <PBIcon icon={icons.tableIcon01} className="bg-custom-gray-3" />
-                <PBIcon icon={icons.tableIcon02} className="bg-custom-gray-3" />
-                <PBIcon icon={icons.tableIcon03} className="bg-custom-gray-3" />
+                <PBIcon
+                  icon={icons.tableIcon01}
+                  className="bg-pb-custom-gray-3"
+                />
+                <PBIcon
+                  icon={icons.tableIcon02}
+                  className="bg-pb-custom-gray-3"
+                />
+                <PBIcon
+                  icon={icons.tableIcon03}
+                  className="bg-pb-custom-gray-3"
+                />
               </div>
             </div>
           </PBTd>

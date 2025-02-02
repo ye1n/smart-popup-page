@@ -9,7 +9,7 @@ const PBInfoBadge: React.FC<Props> = ({ text, variant = "gray" }) => {
   const color =
     variant === "red"
       ? "bg-[#d92222] text-[#d92222]"
-      : "bg-custom-gray-1 text-custom-gray-1";
+      : "bg-pb-custom-gray-1 text-pb-custom-gray-1";
 
   return (
     <div

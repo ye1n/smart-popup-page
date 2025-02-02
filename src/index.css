@@ -22,7 +22,7 @@
 
   ::-webkit-scrollbar-thumb {
     border: 2px solid transparent;
-    @apply rounded-[10px] bg-custom-form-bg bg-clip-padding;
+    @apply rounded-[10px] bg-pb-custom-form-bg bg-clip-padding;
   }
 
   ::-webkit-scrollbar-track {

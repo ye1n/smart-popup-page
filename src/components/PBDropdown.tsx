@@ -28,7 +28,7 @@ const PBDropdown: React.FC<Props> = ({
   return (
     <div
       className={`relative ${
-        isRequired ? "bg-custom-form-acc" : "bg-custom-white"
+        isRequired ? "bg-pb-custom-form-acc" : "bg-pb-custom-white"
       }`}
       style={{
         width: width ? `${width}px` : "100%",
@@ -37,7 +37,7 @@ const PBDropdown: React.FC<Props> = ({
     >
       <select
         value={value}
-        className={`block pr-[24px] pl-2 appearance-none w-full h-full outline-none text-xs text-custom-black bg-transparent ${className} ${
+        className={`block pr-[24px] pl-2 appearance-none w-full h-full outline-none text-xs text-pb-custom-black bg-transparent ${className} ${
           align === "left"
             ? "text-left"
             : align === "right"
