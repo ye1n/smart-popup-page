@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  body,
-  html {
+  body {
     font-family: NotoSansCJKKR;
     white-space: nowrap;
     /* overflow: hidden; */
@@ -14,18 +13,20 @@
   th {
     padding: 0;
   }
+}
 
+@layer utilities {
   /* scrollbar */
-  ::-webkit-scrollbar {
+  .custom-scrollbar::-webkit-scrollbar {
     @apply w-4;
   }
 
-  ::-webkit-scrollbar-thumb {
-    border: 2px solid transparent;
+  .custom-scrollbar::-webkit-scrollbar-thumb {
     @apply rounded-[10px] bg-pb-custom-form-bg bg-clip-padding;
+    border: 2px solid transparent;
   }
 
-  ::-webkit-scrollbar-track {
+  .custom-scrollbar::-webkit-scrollbar-track {
     @apply bg-transparent;
     border: 1px solid #e0e0e0;
   }

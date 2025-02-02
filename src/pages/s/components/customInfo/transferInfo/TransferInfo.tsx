@@ -12,7 +12,7 @@ import PBTransferInfoTable02 from "./TransferInfoTable02";
 
 export default function TransferInfo() {
   return (
-    <div className="flex flex-col h-[298px] overflow-y-auto">
+    <div className="flex flex-col h-[298px] overflow-y-auto custom-scrollbar">
       <div className="mb-2">
         <div className="flex items-end justify-between mb-2">
           <p className="text-xs font-bold text-pb-custom-black">CMS내역 (A)</p>

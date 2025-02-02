@@ -19,7 +19,7 @@ const PBTable: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`overflow-auto ${className} ${
+      className={`overflow-auto custom-scrollbar ${className} ${
         borderTop ? "border-t border-t-[#333333]" : ""
       }`}
       style={{
