@@ -6,7 +6,7 @@ import PBTr from "../../../../components/table/PBTr";
 
 export default function CustomerInfoTable01() {
   return (
-    <PBTable minWidth={636} borderTop>
+    <PBTable minWidth={622} borderTop>
       <PBTbody>
         <PBTr>
           <PBTd type="label">전화구분</PBTd>

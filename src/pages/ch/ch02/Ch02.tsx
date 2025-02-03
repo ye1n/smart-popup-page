@@ -32,7 +32,7 @@ export default function Ch02() {
 
   return (
     <div>
-      {/* 메인상단 */}
+      {/* 메인(파란색 영역) */}
       <div className="flex items-center gap-6 p-4 bg-pb-custom-bg">
         <PBInputGroup label="고객명">
           <PBInput defaultValue="김저축" width={150} />
@@ -47,7 +47,7 @@ export default function Ch02() {
           <PBInput defaultValue="123-12-1234567-1234" width={150} />
         </PBInputGroup>
       </div>
-      {/* 메인하단 */}
+      {/* 메인(흰색 영역) */}
       <div className="flex flex-col gap-4 p-4">
         {/* section1 */}
         <PBTabs

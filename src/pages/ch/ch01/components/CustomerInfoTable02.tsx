@@ -7,7 +7,7 @@ import PBTr from "../../../../components/table/PBTr";
 
 export default function CustomerInfoTable02() {
   return (
-    <PBTable minWidth={636}>
+    <PBTable minWidth={622}>
       <PBTbody>
         <PBTr>
           <PBTd align="left" type="label">

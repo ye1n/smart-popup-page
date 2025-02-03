@@ -16,7 +16,7 @@ export default function C() {
   return (
     <div className="flex">
       <div className="w-full">
-        {/* 메인상단 */}
+        {/* 메인(파란색 영역) */}
         <div className="flex flex-col gap-2 p-4 bg-pb-custom-bg">
           <div className="flex gap-6">
             <PBInputGroup label="고객명">
@@ -57,7 +57,7 @@ export default function C() {
             </PBInputGroup>
           </div>
         </div>
-        {/* 메인하단 */}
+        {/* 메인(흰색 영역) */}
         <div className="flex flex-col gap-4 py-4 pl-4">
           {/* 심사이력/계좌이력 */}
           <div className="grid grid-cols-2 gap-6">

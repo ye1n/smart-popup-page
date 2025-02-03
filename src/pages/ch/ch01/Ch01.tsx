@@ -45,9 +45,9 @@ export default function Ch01() {
     <div className="flex pr-4">
       {/* 메인 */}
       <div>
-        {/* 메인상단 */}
-        <div className="grid grid-cols-3 gap-6 p-4 bg-pb-custom-bg">
-          <div className="flex items-center col-span-2 gap-6">
+        {/* 메인(파란색 영역) */}
+        <div className="grid grid-cols-7 gap-6 p-4 bg-pb-custom-bg">
+          <div className="flex items-center col-span-5 gap-6">
             <PBInputGroup>
               <div className="flex gap-0.5">
                 <PBInput defaultValue="김저축" width={150} />
@@ -69,7 +69,7 @@ export default function Ch01() {
               <PBButton label="채권관리히스토리" onClick={() => {}} />
             </PBInputGroup>
           </div>
-          <div className="flex items-center col-span-1 gap-6">
+          <div className="flex items-center col-span-2 gap-6">
             <PBInputGroup label="채널상세">
               <PBInput defaultValue="채널명" width={150} />
             </PBInputGroup>
@@ -78,10 +78,10 @@ export default function Ch01() {
             </PBInputGroup>
           </div>
         </div>
-        {/* 메인하단 */}
-        <div className="grid grid-cols-3 gap-6 p-4">
+        {/* 메인(흰색 영역) */}
+        <div className="grid grid-cols-7 gap-6 p-4">
           {/* 좌측 */}
-          <div className="flex flex-col col-span-2 gap-4">
+          <div className="flex flex-col col-span-5 gap-4">
             <div className="grid grid-cols-2 gap-7">
               <div className="flex items-center gap-2 border-t bg-pb-custom-form-bg border-[#333333] py-2 px-4">
                 <PBBadge text="경매" />
@@ -223,12 +223,12 @@ export default function Ch01() {
             </div>
           </div>
           {/* 우측 */}
-          <div className="flex flex-col col-span-1 gap-4">
+          <div className="flex flex-col col-span-2 gap-4">
             <div className="flex gap-2">
               <PBButton label="마케팅동의이력" onClick={() => {}} />
               <PBButton label="약관동의이력" onClick={() => {}} />
             </div>
-            <PBTable minWidth={522}>
+            <PBTable minWidth={494}>
               <PBTbody>
                 <PBTr>
                   <PBTd type="label">부재</PBTd>
@@ -286,7 +286,7 @@ export default function Ch01() {
                   <PBButton label="조회" onClick={() => {}} />
                 </div>
               </div>
-              <PBTable minWidth={522}>
+              <PBTable minWidth={494}>
                 <PBTbody>
                   <PBTr>
                     <PBTd type="label">등록일시</PBTd>
@@ -359,7 +359,7 @@ export default function Ch01() {
                 />
                 <PBButton label="등록" onClick={() => {}} />
               </div>
-              <PBTable minWidth={522}>
+              <PBTable minWidth={494}>
                 <PBTbody>
                   <PBTr>
                     <PBTd type="label" align="left">

@@ -34,7 +34,7 @@ export default function Ch03() {
 
   return (
     <div>
-      {/* 메인상단 */}
+      {/* 메인(파란색 영역) */}
       <div className="flex items-center gap-6 p-4 bg-pb-custom-bg">
         <PBInputGroup label="고객명">
           <PBInput defaultValue="김저축" width={150} />
@@ -46,7 +46,7 @@ export default function Ch03() {
           <PBInput defaultValue="996176-******" width={150} />
         </PBInputGroup>
       </div>
-      {/* 메인하단 */}
+      {/* 메인(흰색 영역) */}
       <div className="flex flex-col gap-4 p-4">
         <div className="grid grid-cols-2 gap-6">
           {/* 사고이력 */}
@@ -73,8 +73,8 @@ export default function Ch03() {
           </div>
         </div>
         <div className="flex w-full gap-6">
-          <div className="grid w-full grid-cols-3 gap-x-6 gap-y-4">
-            <div className="flex flex-col col-span-3 gap-2">
+          <div className="flex flex-col w-full gap-4">
+            <div className="flex flex-col gap-2">
               <PBTabs
                 tabs={topTabs}
                 activeTab={activeTab}
@@ -288,140 +288,142 @@ export default function Ch03() {
                 </PBTbody>
               </PBTable>
             </div>
-            {/* 변제계획 및 변제거래내역 */}
-            <div className="flex flex-col col-span-2 gap-2">
-              <div className="flex items-start justify-between">
-                <p className="text-xs font-bold text-pb-custom-black">
-                  변제계획 및 변제거래내역
-                </p>
-                <div className="flex items-center gap-2">
-                  <PBInfoBadge text={`업데이트 일시 : 2024-01-01-23:23:23`} />
-                  <PBButton label="변제스케줄" onClick={() => {}} />
+            <div className="grid grid-cols-7 gap-6">
+              {/* 변제계획 및 변제거래내역 */}
+              <div className="flex flex-col col-span-5 gap-2">
+                <div className="flex items-start justify-between">
+                  <p className="text-xs font-bold text-pb-custom-black">
+                    변제계획 및 변제거래내역
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <PBInfoBadge text={`업데이트 일시 : 2024-01-01-23:23:23`} />
+                    <PBButton label="변제스케줄" onClick={() => {}} />
+                  </div>
+                </div>
+                <div>
+                  <ChTable03 />
+                  <PBTable width={252}>
+                    <PBTbody>
+                      <PBTr>
+                        <PBTd type="label" align="left">
+                          합계
+                        </PBTd>
+                        <PBTd type="text" align="right">
+                          100,000,000
+                        </PBTd>
+                      </PBTr>
+                    </PBTbody>
+                  </PBTable>
                 </div>
               </div>
-              <div>
-                <ChTable03 />
-                <PBTable width={252}>
+              {/* 변제요약 */}
+              <div className="col-span-2">
+                <div className="h-6">
+                  <p className="text-xs font-bold text-pb-custom-black">
+                    변제요약
+                  </p>
+                </div>
+                <PBTable minWidth={276} borderTop>
                   <PBTbody>
                     <PBTr>
                       <PBTd type="label" align="left">
-                        합계
+                        인가시 대출잔액
                       </PBTd>
-                      <PBTd type="text" align="right">
-                        100,000,000
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        총 변제 예정금액
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        변제율
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        총 변제회차
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        변제시작일자
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        변제종료일자
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        현재회차
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        납입회차
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        미납회차
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        잔여회차
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        입금 총 액
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
+                      </PBTd>
+                    </PBTr>
+                    <PBTr>
+                      <PBTd type="label" align="left">
+                        남은 변제금액(OPB)
+                      </PBTd>
+                      <PBTd type="text" align="left">
+                        입력
                       </PBTd>
                     </PBTr>
                   </PBTbody>
                 </PBTable>
               </div>
-            </div>
-            {/* 변제요약 */}
-            <div className="col-span-1">
-              <div className="h-6">
-                <p className="text-xs font-bold text-pb-custom-black">
-                  변제요약
-                </p>
-              </div>
-              <PBTable minWidth={276} borderTop>
-                <PBTbody>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      인가시 대출잔액
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      총 변제 예정금액
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      변제율
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      총 변제회차
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      변제시작일자
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      변제종료일자
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      현재회차
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      납입회차
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      미납회차
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      잔여회차
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      입금 총 액
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                  <PBTr>
-                    <PBTd type="label" align="left">
-                      남은 변제금액(OPB)
-                    </PBTd>
-                    <PBTd type="text" align="left">
-                      입력
-                    </PBTd>
-                  </PBTr>
-                </PBTbody>
-              </PBTable>
             </div>
           </div>
           {/* 메모 */}
