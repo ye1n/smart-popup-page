@@ -4,6 +4,7 @@ import PBInput from "../../components/PBInput";
 import PBInputGroup from "../../components/PBInputGroup";
 import PBLabel from "../../components/PBLabel";
 import PBRadio from "../../components/PBRadio";
+import PBTextarea from "../../components/PBTextarea";
 import PBTable from "../../components/table/PBTable";
 import PBTbody from "../../components/table/PBTbody";
 import PBTd from "../../components/table/PBTd";
@@ -285,7 +286,7 @@ export default function C() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={4}>
-                      <textarea className="block w-full h-[128px] outline-none resize-none text-xs text-pb-custom-black p-2" />
+                      <PBTextarea height={128} />
                     </PBTd>
                   </PBTr>
                 </PBTbody>

@@ -22,6 +22,7 @@ import { ChSideMenuData } from "../../../data/Data";
 import PBTabs, { Tab } from "../../../components/PBTabs";
 import PBRadio from "../../../components/PBRadio";
 import PBBadge from "../../../components/PBBadge";
+import PBTextarea from "../../../components/PBTextarea";
 
 export default function Ch01() {
   const counselTabs = [
@@ -305,7 +306,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={5}>
-                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-pb-custom-black" />
+                      <PBTextarea />
                     </PBTd>
                   </PBTr>
                   <PBTr>
@@ -319,7 +320,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={5}>
-                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-pb-custom-black" />
+                      <PBTextarea />
                     </PBTd>
                   </PBTr>
                   <PBTr>
@@ -333,7 +334,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={5}>
-                      <textarea className="block w-full p-2 text-xs outline-none resize-none text-pb-custom-black" />
+                      <PBTextarea />
                     </PBTd>
                   </PBTr>
                 </PBTbody>
@@ -345,7 +346,7 @@ export default function Ch01() {
                 <PBLabel label="회수메모" />
                 <PBButton label="등록" onClick={() => {}} />
               </div>
-              <textarea className="w-full h-[120px] border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
+              <PBTextarea height={120} border />
             </div>
             {/* 상담등록 */}
             <div className="flex flex-col gap-2">
@@ -407,7 +408,7 @@ export default function Ch01() {
                   </PBTr>
                   <PBTr>
                     <PBTd colSpan={4}>
-                      <textarea className="block w-full h-[120px] outline-none resize-none text-xs text-pb-custom-black p-2" />
+                      <PBTextarea height={120} />
                     </PBTd>
                   </PBTr>
                 </PBTbody>

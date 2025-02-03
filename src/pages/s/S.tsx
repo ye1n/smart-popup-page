@@ -20,6 +20,7 @@ import PBTable from "../../components/table/PBTable";
 import DsrInfo from "./components/customInfo/dsrInfo/DsrInfo";
 import Score from "./components/customInfo/score/Score";
 import PBTransferInfo from "./components/customInfo/transferInfo/TransferInfo";
+import PBTextarea from "../../components/PBTextarea";
 
 export default function S() {
   const customInfoTabs = [
@@ -35,8 +36,8 @@ export default function S() {
   return (
     <div className="flex">
       {/* 메인 */}
-      <div className="grid grid-cols-1">
-        {/* 메인상단 */}
+      <div className="grid w-full grid-cols-1">
+        {/* 메인(파란색 영역) */}
         <div className="flex flex-col gap-4 p-4 bg-pb-custom-bg">
           <div className="flex gap-6">
             <PBInputGroup label="고객명">
@@ -78,7 +79,7 @@ export default function S() {
             ))}
           </div>
         </div>
-        {/* 메인하단 */}
+        {/* 메인(흰색 영역) */}
         <div className="flex flex-col gap-4 p-4">
           <div className="flex items-center gap-2">
             <PBTable width={488}>
@@ -110,7 +111,7 @@ export default function S() {
             {/* 판정결과 */}
             <div className="col-span-1">
               <PBLabel label="판정결과" className="mb-2" />
-              <PBTable minWidth={488} borderTop>
+              <PBTable minWidth={486} borderTop>
                 <PBTbody>
                   <PBTr>
                     <PBTd type="label">판정</PBTd>
@@ -165,7 +166,7 @@ export default function S() {
             {/* 소득정보 */}
             <div className="col-span-1">
               <PBLabel label="소득정보" className="mb-2" />
-              <PBTable minWidth={734} borderTop>
+              <PBTable minWidth={732} borderTop>
                 <PBTbody>
                   <PBTr>
                     <PBTd type="label">플랫폼 제공소득</PBTd>
@@ -197,7 +198,7 @@ export default function S() {
             {/* 차량정보 */}
             <div className="col-span-1">
               <PBLabel label="차량정보" className="mb-2" />
-              <PBTable minWidth={734} borderTop>
+              <PBTable minWidth={732} borderTop>
                 <PBTbody>
                   <PBTr>
                     <PBTd type="label">담보순위</PBTd>
@@ -305,7 +306,7 @@ export default function S() {
               onClick={() => {}}
             />
           </div>
-          <textarea className="w-[268px] h-[250px] border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
+          <PBTextarea width={268} height={250} border />
         </div>
         {/* 문자발송 및 메모이력확인 */}
         <div className="flex flex-col h-full gap-2">
@@ -356,7 +357,7 @@ export default function S() {
               className=""
             />
           </div>
-          <textarea className="w-[268px] h-full border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
+          <PBTextarea width={268} border />
         </div>
       </div>
     </div>

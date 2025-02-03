@@ -16,6 +16,7 @@ import PBCheckbox from "../../../components/PBCheckbox";
 import ChTable02 from "./components/ChTable02";
 import ChTable03 from "./components/ChTable03";
 import PBInfoBadge from "../../../components/PBInfoBadge";
+import PBTextarea from "../../../components/PBTextarea";
 
 export default function Ch03() {
   const topTabs = [
@@ -429,7 +430,7 @@ export default function Ch03() {
               <PBLabel label="메모" />
               <PBButton label="등록" onClick={() => {}} />
             </div>
-            <textarea className="w-[146px] h-[499px] border outline-none resize-none border-pb-custom-form-line border-t-[#333333] text-xs text-pb-custom-black p-2" />
+            <PBTextarea width={146} height={499} border />
           </div>
         </div>
       </div>
