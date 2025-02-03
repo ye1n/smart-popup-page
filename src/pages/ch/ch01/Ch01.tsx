@@ -34,7 +34,7 @@ export default function Ch01() {
 
   const openPopup = (route: string) => {
     const width = 1280;
-    const height = 720;
+    const height = 860;
     const left = window.screenX + (window.outerWidth - width) / 2;
     const top = window.screenY + (window.outerHeight - height) / 2;
     const windowFeatures = `width=${width},height=${height},left=${left},top=${top},scrollbars=no,resizable=no`;
